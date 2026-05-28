@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -5,8 +6,63 @@ import { ArrowLeft, ExternalLink, CheckCircle2, Code2, ArrowRight } from "lucide
 import { GithubIcon } from "@/components/GithubIcon";
 import { getProject, projects } from "@/lib/projects";
 
+const BASE_URL = 'https://valentin-milliand.vercel.app';
+
+const APP_CATEGORY: Record<string, string> = {
+  'AI Tool': 'BusinessApplication',
+  'SaaS': 'BusinessApplication',
+  'Marketplace': 'BusinessApplication',
+  'Creator Platform': 'EntertainmentApplication',
+  'Developer Tool': 'DeveloperApplication',
+  'Templates': 'BusinessApplication',
+};
+
 export function generateStaticParams() {
   return projects.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const project = getProject(slug);
+  if (!project) return {};
+
+  const title = `${project.title} — ${project.tagline}`;
+  const description = project.description;
+  const ogImage = project.screenshots?.[0]
+    ? { url: project.screenshots[0].src, width: 1280, height: 720, alt: project.screenshots[0].alt }
+    : { url: '/og.png', width: 1200, height: 630, alt: title };
+
+  return {
+    title,
+    description,
+    keywords: [
+      project.title,
+      ...project.tags,
+      project.category,
+      project.tagline,
+    ],
+    openGraph: {
+      title,
+      description,
+      type: 'website',
+      url: `${BASE_URL}/projects/${slug}`,
+      images: [ogImage],
+      siteName: 'Aevia',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [ogImage.url],
+    },
+    alternates: {
+      canonical: `${BASE_URL}/projects/${slug}`,
+    },
+  };
 }
 
 const statusBadge: Record<string, string> = {
@@ -29,7 +85,32 @@ export default async function ProjectPage({
   const project = getProject(slug);
   if (!project) notFound();
 
+  const softwareSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: project.title,
+    description: project.longDescription,
+    applicationCategory: APP_CATEGORY[project.category] ?? 'BusinessApplication',
+    operatingSystem: 'Web',
+    url: project.live,
+    offers: project.live
+      ? { '@type': 'Offer', price: '0', priceCurrency: 'EUR', url: project.live }
+      : undefined,
+    creator: {
+      '@type': 'Person',
+      name: 'Valentin Milliand',
+      url: BASE_URL,
+    },
+    featureList: project.highlights,
+    keywords: project.tags.join(', '),
+  };
+
   return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
+      />
     <div className="min-h-screen pt-24 pb-32 px-6">
       {/* Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
@@ -221,5 +302,6 @@ export default async function ProjectPage({
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -18,22 +18,32 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://valentin-milliand.vercel.app"),
   title: {
-    default: "Valentin Milliand — Full Stack Engineer & AI Builder",
-    template: "%s | Valentin Milliand",
+    default: "Aevia — Outils digitaux pour TPE/PME | Site web, Sécurité, CRM",
+    template: "%s | Aevia",
   },
   description:
-    "Full Stack Engineer & AI Builder specializing in NestJS, Next.js, and Anthropic Claude. Building production-ready AI products: multi-channel inboxes, creator platforms, security SaaS, and developer tools.",
+    "Créez votre site web en 7 jours, auditez votre sécurité en 60 secondes et centralisez WhatsApp, Instagram et email en un seul inbox. Outils digitaux IA pour TPE et PME.",
   keywords: [
+    "Aevia",
+    "AeviaLaunch",
+    "AeviaSecurity",
+    "AeviaInbox",
+    "créer site web PME",
+    "builder site web IA",
+    "audit sécurité site web",
+    "CRM multi-canal PME",
+    "inbox WhatsApp Instagram",
+    "outils digitaux entreprise",
+    "site vitrine professionnel",
+    "générateur site web IA",
+    "AI website builder",
+    "website security audit",
     "Valentin Milliand",
-    "Full Stack Engineer",
-    "AI Builder",
     "NestJS",
     "Next.js",
     "TypeScript",
     "Anthropic Claude",
     "SaaS",
-    "freelance developer",
-    "AI products",
   ],
   authors: [{ name: "Valentin Milliand", url: "https://valentin-milliand.vercel.app" }],
   creator: "Valentin Milliand",
@@ -42,60 +52,147 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "fr_FR",
+    alternateLocale: ["en_US", "es_ES", "de_DE", "pt_BR"],
     url: "https://valentin-milliand.vercel.app",
-    siteName: "Valentin Milliand",
-    title: "Valentin Milliand — Full Stack Engineer & AI Builder",
+    siteName: "Aevia",
+    title: "Aevia — Outils digitaux pour TPE/PME",
     description:
-      "Full Stack Engineer & AI Builder specializing in NestJS, Next.js, and Anthropic Claude. Building production-ready AI products.",
+      "Créez votre site web en 7 jours, auditez votre sécurité en 60 secondes et centralisez vos messages clients. Outils digitaux IA pour petites entreprises.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Valentin Milliand — Full Stack Engineer & AI Builder",
+        alt: "Aevia — Outils digitaux pour TPE/PME : site web, sécurité, CRM",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Valentin Milliand — Full Stack Engineer & AI Builder",
+    title: "Aevia — Outils digitaux pour TPE/PME",
     description:
-      "Full Stack Engineer & AI Builder specializing in NestJS, Next.js, and Anthropic Claude. Building production-ready AI products.",
+      "Créez votre site web en 7 jours, auditez votre sécurité en 60 secondes et centralisez vos messages clients.",
     images: ["/og.png"],
     creator: "@valentinmilliand",
   },
   robots: {
     index: true,
     follow: true,
-    googleBot: { index: true, follow: true },
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   alternates: {
     canonical: "https://valentin-milliand.vercel.app",
+    languages: {
+      "fr": "https://valentin-milliand.vercel.app/fr",
+      "en": "https://valentin-milliand.vercel.app/en",
+      "es": "https://valentin-milliand.vercel.app/es",
+      "de": "https://valentin-milliand.vercel.app/de",
+      "pt": "https://valentin-milliand.vercel.app/pt",
+      "x-default": "https://valentin-milliand.vercel.app/fr",
+    },
   },
 };
+
+const BASE_URL = 'https://valentin-milliand.vercel.app'
 
 const personSchema = {
   '@context': 'https://schema.org',
   '@type': 'Person',
+  '@id': `${BASE_URL}/#person`,
   name: 'Valentin Milliand',
-  url: 'https://valentin-milliand.vercel.app',
+  url: BASE_URL,
   jobTitle: 'Full Stack Engineer & AI Builder',
   description:
-    'Full Stack Engineer specializing in NestJS, Next.js, TypeScript, and Anthropic Claude. Building production-ready AI products.',
+    'Full Stack Engineer specializing in NestJS, Next.js, TypeScript, and Anthropic Claude. Building production-ready AI products for small businesses.',
   sameAs: [
     'https://github.com/Maeglin10',
     'https://linkedin.com/in/valentin-milliand',
   ],
   knowsAbout: [
-    'NestJS',
-    'Next.js',
-    'TypeScript',
-    'PostgreSQL',
-    'Anthropic Claude',
-    'AI product development',
-    'SaaS',
+    'NestJS', 'Next.js', 'TypeScript', 'PostgreSQL',
+    'Anthropic Claude', 'AI product development', 'SaaS',
+    'website builder', 'security audit', 'CRM',
   ],
+}
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': `${BASE_URL}/#organization`,
+  name: 'Aevia',
+  url: BASE_URL,
+  description: 'Outils digitaux pour TPE et PME — création de site web, audit de sécurité, CRM multi-canal et gestion client par IA.',
+  founder: { '@id': `${BASE_URL}/#person` },
+  sameAs: [
+    'https://github.com/Maeglin10',
+    'https://linkedin.com/in/valentin-milliand',
+  ],
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Produits Aevia',
+    itemListElement: [
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'SoftwareApplication',
+          name: 'AeviaLaunch',
+          description: 'Créateur de site web IA — 181 templates, contenu généré par Claude AI en moins de 5 secondes',
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Web',
+          url: 'https://aevia-launch.vercel.app',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'SoftwareApplication',
+          name: 'AeviaSecurity',
+          description: 'Audit de sécurité automatisé — scan DNS, SSL, headers HTTP, score 0-100 en moins de 60 secondes',
+          applicationCategory: 'SecurityApplication',
+          operatingSystem: 'Web',
+          url: 'https://aevia-security.vercel.app',
+          offers: { '@type': 'Offer', price: '0', priceCurrency: 'EUR' },
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'SoftwareApplication',
+          name: 'AeviaInbox',
+          description: 'CRM multi-canal — WhatsApp, Instagram et email unifiés avec réponses IA automatiques pour PME',
+          applicationCategory: 'BusinessApplication',
+          operatingSystem: 'Web',
+        },
+      },
+    ],
+  },
+}
+
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': `${BASE_URL}/#website`,
+  url: BASE_URL,
+  name: 'Aevia',
+  description: 'Outils digitaux pour TPE/PME — site web, sécurité, CRM',
+  publisher: { '@id': `${BASE_URL}/#organization` },
+  inLanguage: ['fr-FR', 'en-US', 'es-ES', 'de-DE', 'pt-BR'],
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${BASE_URL}/fr/blog?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
 }
 
 export default function RootLayout({
@@ -112,6 +209,14 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#09090b] text-white">
