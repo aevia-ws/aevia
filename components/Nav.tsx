@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useState, useTransition } from "react";
+import { useState, useTransition, useRef, useEffect } from "react";
 import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Globe } from "lucide-react";
 import { AeviaLogo } from "@/components/AeviaLogo";
 
 // navLinks are locale-agnostic paths — locale prefix is prepended in the component
+// "Sites web" removed — duplicate of AeviaLaunch in the Produits submenu (both → /templates)
 const navLinks = [
-  { href: "/templates", label: "Sites web" },
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
@@ -113,6 +113,29 @@ export function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Hover open with a small close delay so crossing into the panel doesn't dismiss it
+  function openDropdown() {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setDropdownOpen(true);
+  }
+  function scheduleClose() {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    closeTimer.current = setTimeout(() => setDropdownOpen(false), 200);
+  }
+
+  // Close when clicking outside the dropdown
+  useEffect(() => {
+    function onDocClick(e: MouseEvent) {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setDropdownOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onDocClick);
+    return () => document.removeEventListener("mousedown", onDocClick);
+  }, []);
 
   // Detect locale from pathname (e.g. /fr/blog → "fr")
   const segments = pathname.split("/");
@@ -133,18 +156,25 @@ export function Nav() {
 
         <nav className="hidden sm:flex items-center gap-1">
           <div
+            ref={dropdownRef}
             className="relative"
-            onMouseEnter={() => setDropdownOpen(true)}
-            onMouseLeave={() => setDropdownOpen(false)}
+            onMouseEnter={openDropdown}
+            onMouseLeave={scheduleClose}
           >
-            <button className="px-3 py-1.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors flex items-center gap-1">
+            <button
+              onClick={() => setDropdownOpen((v) => !v)}
+              aria-expanded={dropdownOpen}
+              aria-haspopup="true"
+              className="px-3 py-1.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors flex items-center gap-1"
+            >
               Produits
               <ChevronDown size={14} className={`transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
             </button>
 
             {dropdownOpen && (
-              <div className="absolute left-0 mt-1 w-80 bg-zinc-900 border border-zinc-800 rounded-xl shadow-xl shadow-black/40 overflow-hidden">
-                <div className="p-2 flex flex-col gap-1">
+              // top-full + pt-2 creates a transparent hover bridge (no dead gap that dismisses the menu)
+              <div className="absolute left-0 top-full pt-2 w-80" onClick={() => setDropdownOpen(false)}>
+                <div className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-xl shadow-black/40 overflow-hidden p-2 flex flex-col gap-1">
                   {products.map((p) => {
                     const Icon = p.icon;
                     const isLive = p.status === "live";
