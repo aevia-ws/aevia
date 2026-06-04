@@ -450,7 +450,7 @@ Le lazy loading consiste à ne charger les images que lorsqu'elles sont sur le p
 
 En pratique, un visiteur qui arrive sur votre homepage n'a besoin que des images visibles sans faire défiler. Les images plus bas dans la page peuvent attendre.
 
-La mise en place est simple avec l'attribut HTML natif : `loading="lazy"` sur vos balises `<img>`. Les frameworks modernes comme Next.js l'appliquent automatiquement.
+La mise en place est simple avec l'attribut HTML natif : \`loading="lazy"\` sur vos balises \`<img>\`. Les frameworks modernes comme Next.js l'appliquent automatiquement.
 
 Gain typique : 40 à 60 % de réduction du poids initial chargé par la page.
 
@@ -464,7 +464,7 @@ En moyenne, un script tiers ajoute 100 à 500 ms de temps de chargement. Si vous
 
 Actions concrètes :
 - **Auditez vos scripts** : lesquels utilisez-vous vraiment ? Désactivez tout ce qui ne sert pas
-- **Chargez-les en différé** avec l'attribut `defer` ou `async` sur les balises `<script>`
+- **Chargez-les en différé** avec l'attribut \`defer\` ou \`async\` sur les balises \`<script>\`
 - **Utilisez Google Analytics 4 en mode serverless** pour éviter le cookie et réduire le script client
 - **Remplacez Hotjar** par des alternatives plus légères si vous n'utilisez que les cartes de chaleur basiques
 
@@ -474,7 +474,7 @@ Actions concrètes :
 
 La mise en cache consiste à stocker une version de votre page ou de vos ressources plus près du visiteur, pour ne pas avoir à les recalculer ou retransférer à chaque visite.
 
-**Mise en cache navigateur** : configurez des headers HTTP `Cache-Control` pour que les ressources statiques (images, CSS, JS) soient stockées dans le navigateur du visiteur pendant 1 à 12 mois.
+**Mise en cache navigateur** : configurez des headers HTTP \`Cache-Control\` pour que les ressources statiques (images, CSS, JS) soient stockées dans le navigateur du visiteur pendant 1 à 12 mois.
 
 **CDN (Content Delivery Network)** : un CDN comme Cloudflare (gratuit pour les fonctionnalités de base) distribue votre contenu depuis des serveurs proches géographiquement de vos visiteurs. Pour un site français avec des visiteurs en Europe, c'est une réduction de 30 à 50 % des temps de chargement.
 

@@ -21,7 +21,7 @@ const products = [
     internal: null,
     description: "Site web en 7 jours — 3 templates pro",
     icon: Sparkles,
-    status: "live" as const,
+    status: "live" as "live" | "soon",
     external: true,
   },
   {
@@ -30,7 +30,7 @@ const products = [
     internal: null,
     description: "Audit sécurité & performance en 60s",
     icon: Shield,
-    status: "live" as const,
+    status: "live" as "live" | "soon",
     external: true,
   },
   {
@@ -39,7 +39,7 @@ const products = [
     internal: null,
     description: "CRM multi-canal — WhatsApp, Instagram, Email",
     icon: MessageSquare,
-    status: "live" as const,
+    status: "live" as "live" | "soon",
     external: true,
   },
 ];
