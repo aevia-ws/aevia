@@ -17,7 +17,7 @@ const timelineItems = [
   {
     title: "Building the Sky ecosystem",
     description:
-      "6 interconnected SaaS products: Skybot Inbox, AeviaSecurity, AeviaMarket, AeviaLive, AeviaApp, AeviaLaunch",
+      "6 interconnected SaaS products: AeviaInbox, AeviaSecurity, AeviaMarket, AeviaLive, AeviaApp, AeviaLaunch",
   },
   {
     title: "Available for freelance",
@@ -269,12 +269,6 @@ export default function About() {
         <div className="mx-auto max-w-3xl flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
           <span>© 2025 Valentin Milliand</span>
           <div className="flex items-center gap-6">
-            <Link
-              href="/projects"
-              className="hover:text-zinc-300 transition-colors"
-            >
-              Projects
-            </Link>
             <Link
               href="/contact"
               className="hover:text-zinc-300 transition-colors"

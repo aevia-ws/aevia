@@ -9,12 +9,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://valentin-milliand.vercel.app/projects',
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
       url: 'https://valentin-milliand.vercel.app/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',

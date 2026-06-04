@@ -7,27 +7,26 @@ import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Gl
 import { AeviaLogo } from "@/components/AeviaLogo";
 
 // navLinks are locale-agnostic paths — locale prefix is prepended in the component
-// "Sites web" removed — duplicate of AeviaLaunch in the Produits submenu (both → /templates)
+// "Sites web" removed — duplicate of AeviaLaunch in the Produits submenu
 const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
-// navLinks kept minimal — Landing/Ecom/Vitrine live inside /templates showcase
-
+// All products link to their external live deployments
 const products = [
   {
     name: "AeviaLaunch",
     href: "https://aevia-launch.vercel.app",
-    internal: "/templates",
+    internal: null,
     description: "Site web en 7 jours — 3 templates pro",
     icon: Sparkles,
     status: "live" as const,
-    external: false,
+    external: true,
   },
   {
     name: "AeviaSecurity",
-    href: "https://web-bx4tjhk2h-valentins-projects-7cad2c95.vercel.app",
+    href: "https://skysecurity-eight.vercel.app",
     internal: null,
     description: "Audit sécurité & performance en 60s",
     icon: Shield,
@@ -36,12 +35,12 @@ const products = [
   },
   {
     name: "AeviaInbox",
-    href: "#",
+    href: "https://skybot-inbox-ui.vercel.app",
     internal: null,
     description: "CRM multi-canal — WhatsApp, Instagram, Email",
     icon: MessageSquare,
-    status: "soon" as const,
-    external: false,
+    status: "live" as const,
+    external: true,
   },
 ];
 
@@ -228,7 +227,7 @@ export function Nav() {
           <LangSwitcher />
 
           <a
-            href="https://web-bx4tjhk2h-valentins-projects-7cad2c95.vercel.app"
+            href="https://skysecurity-eight.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-4 py-1.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
@@ -297,7 +296,7 @@ export function Nav() {
 
           <div className="mt-3 pt-3 border-t border-zinc-800">
             <a
-              href="https://web-bx4tjhk2h-valentins-projects-7cad2c95.vercel.app"
+              href="https://skysecurity-eight.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-2.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"

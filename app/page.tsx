@@ -793,21 +793,6 @@ export default function Home() {
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.5 }}
-            className="mt-10 flex justify-center"
-          >
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-400 text-sm font-medium hover:border-violet-500/50 hover:text-violet-300 transition-all duration-200"
-            >
-              View all projects
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </motion.div>
         </div>
       </section>
 
@@ -857,7 +842,6 @@ export default function Home() {
         <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-500">
           <span>© 2026 Valentin Milliand · Aevia Ecosystem</span>
           <div className="flex items-center gap-6">
-            <Link href="/projects" className="hover:text-zinc-300 transition-colors">Projects</Link>
             <Link href="/contact" className="hover:text-zinc-300 transition-colors">Contact</Link>
             <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">AeviaLaunch</a>
             <a href="https://linkedin.com/in/valentin-milliand" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-zinc-300 transition-colors" aria-label="Visit my LinkedIn profile">

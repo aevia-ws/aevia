@@ -5,7 +5,7 @@ import { routing } from './i18n/routing';
 const intlMiddleware = createMiddleware(routing);
 
 // Pages that exist outside [locale] routing — don't redirect them
-const NON_LOCALE_PATHS = ['/about', '/contact', '/projects'];
+const NON_LOCALE_PATHS = ['/about', '/contact'];
 
 export default function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;

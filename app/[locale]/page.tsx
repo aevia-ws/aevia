@@ -61,8 +61,8 @@ export default function Home() {
       name: "AeviaInbox",
       tagline: p("inbox_tagline"),
       description: p("inbox_desc"),
-      href: "#",
-      status: "soon" as const,
+      href: "https://skybot-inbox-ui.vercel.app",
+      status: "live" as const,
       icon: <MessageSquare className="w-6 h-6" />,
       accentFrom: "from-cyan-500",
       accentTo: "to-blue-500",
@@ -239,15 +239,9 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2.5 relative z-10">
                     {isLive ? (
                       <>
-                        {product.name === "AeviaLaunch" ? (
-                          <Link href="/templates" className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${product.accentFrom} ${product.accentTo} text-white text-sm font-semibold hover:opacity-90 transition-opacity`}>
-                            {product.cta} <ArrowRight className="w-3.5 h-3.5" />
-                          </Link>
-                        ) : (
-                          <a href={product.href} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${product.accentFrom} ${product.accentTo} text-white text-sm font-semibold hover:opacity-90 transition-opacity`}>
-                            {product.cta} <ArrowRight className="w-3.5 h-3.5" />
-                          </a>
-                        )}
+                        <a href={product.href} target="_blank" rel="noopener noreferrer" className={`inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r ${product.accentFrom} ${product.accentTo} text-white text-sm font-semibold hover:opacity-90 transition-opacity`}>
+                          {product.cta} <ArrowRight className="w-3.5 h-3.5" />
+                        </a>
                         {product.ctaSecondary && product.ctaSecondaryHref && (
                           <a href={product.ctaSecondaryHref} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full border border-zinc-700 text-zinc-300 text-sm font-medium hover:border-zinc-500 hover:text-white transition-colors">
                             <ExternalLink className="w-3.5 h-3.5" /> {product.ctaSecondary}
@@ -284,9 +278,9 @@ export default function Home() {
                   {ts("desc")}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <Link href="/templates" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+                  <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
                     {ts("cta1")} <ArrowRight className="w-4 h-4" />
-                  </Link>
+                  </a>
                   <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors">
                     {ts("cta2")}
                   </Link>
@@ -393,7 +387,7 @@ export default function Home() {
               <span>· {f("tagline")}</span>
             </div>
             <div className="flex items-center gap-6">
-              <Link href="/templates" className="hover:text-zinc-300 transition-colors">{f("templates")}</Link>
+              <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("templates")}</a>
               <a href="https://aevia-security.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("security")}</a>
               <Link href="/contact" className="hover:text-zinc-300 transition-colors">{f("contact")}</Link>
               <a href="https://linkedin.com/in/valentin-milliand" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
