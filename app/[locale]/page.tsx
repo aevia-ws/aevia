@@ -61,7 +61,7 @@ export default function Home() {
       name: "AeviaInbox",
       tagline: p("inbox_tagline"),
       description: p("inbox_desc"),
-      href: "https://skybot-inbox-ui.vercel.app",
+      href: "https://aevia-inbox.vercel.app",
       status: "live" as const,
       icon: <MessageSquare className="w-6 h-6" />,
       accentFrom: "from-cyan-500",

@@ -26,7 +26,7 @@ const products = [
   },
   {
     name: "AeviaSecurity",
-    href: "https://skysecurity-eight.vercel.app",
+    href: "https://aevia-security.vercel.app",
     internal: null,
     description: "Audit sécurité & performance en 60s",
     icon: Shield,
@@ -35,7 +35,7 @@ const products = [
   },
   {
     name: "AeviaInbox",
-    href: "https://skybot-inbox-ui.vercel.app",
+    href: "https://aevia-inbox.vercel.app",
     internal: null,
     description: "CRM multi-canal — WhatsApp, Instagram, Email",
     icon: MessageSquare,
@@ -227,7 +227,7 @@ export function Nav() {
           <LangSwitcher />
 
           <a
-            href="https://skysecurity-eight.vercel.app"
+            href="https://aevia-security.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-4 py-1.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
@@ -296,7 +296,7 @@ export function Nav() {
 
           <div className="mt-3 pt-3 border-t border-zinc-800">
             <a
-              href="https://skysecurity-eight.vercel.app"
+              href="https://aevia-security.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-2.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
