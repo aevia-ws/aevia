@@ -578,7 +578,8 @@ export default function CookiesPage() {
             </a>
           </p>
           <p className="text-zinc-400">
-            <span className="text-zinc-300">Responsable :</span> Valentin Milliand — Aevia, France
+            <span className="text-zinc-300">Responsable :</span> Aevia WS — Valentin Milliand,
+            SIREN 852 546 225 (RCS Bourg-en-Bresse), France
           </p>
           <div className="pt-2 border-t border-zinc-800 mt-2 space-y-1">
             <p className="text-zinc-500 text-xs">Documents liés :</p>
@@ -587,6 +588,9 @@ export default function CookiesPage() {
             </a>
             <a href="/fr/legal/terms" className="text-violet-400 hover:text-violet-300 transition-colors text-xs block">
               Conditions Générales d'Utilisation et de Vente &rarr;
+            </a>
+            <a href="/fr/legal/mentions" className="text-violet-400 hover:text-violet-300 transition-colors text-xs block">
+              Mentions légales &rarr;
             </a>
           </div>
         </div>

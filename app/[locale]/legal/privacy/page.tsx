@@ -21,13 +21,15 @@ export default function PrivacyPage() {
           Le responsable du traitement de vos données personnelles est :
         </p>
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-5 text-sm space-y-1">
-          <p><span className="text-white font-semibold">Aevia</span> — entreprise individuelle (auto-entrepreneur)</p>
-          <p><span className="text-zinc-400">Représentant légal :</span> Valentin Milliand</p>
+          <p><span className="text-white font-semibold">Aevia WS</span> — entrepreneur individuel (auto-entrepreneur)</p>
+          <p><span className="text-zinc-400">Directeur de la publication :</span> Valentin Milliand</p>
+          <p><span className="text-zinc-400">SIREN :</span> 852 546 225 — RCS Bourg-en-Bresse</p>
           <p><span className="text-zinc-400">Pays d'établissement :</span> France</p>
+          <p><span className="text-zinc-400">Adresse :</span> Adresse du siège social communiquée sur demande à contact@aevia.io</p>
           <p>
             <span className="text-zinc-400">Contact :</span>{" "}
-            <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-              hello@aevia.io
+            <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+              contact@aevia.io
             </a>
           </p>
           <p>
@@ -572,8 +574,8 @@ export default function PrivacyPage() {
           </p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email général :</span>{" "}
-            <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-              hello@aevia.io
+            <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+              contact@aevia.io
             </a>
           </p>
           <p className="text-zinc-400">

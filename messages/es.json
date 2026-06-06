@@ -90,14 +90,35 @@
     "copyright": "© 2026 Aevia · Todos los derechos reservados · Valentin Milliand",
     "privacy": "Política de privacidad",
     "terms": "Términos",
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "mentions": "Aviso legal"
   },
-  "skills": { "title": "Stack técnico" },
+  "skills": {
+    "title": "Stack técnico"
+  },
   "cookie_banner": {
     "aria_label": "Banner de consentimiento de cookies",
     "text": "Usamos cookies para mejorar tu experiencia y medir la audiencia. Puedes aceptar o rechazar las cookies no esenciales.",
     "learn_more": "Más información",
     "accept": "Aceptar todo",
     "reject": "Rechazar"
+  },
+  "legal_mentions": {
+    "last_updated": "Última actualización: 6 de junio de 2026",
+    "title": "Aviso legal",
+    "intro": "De conformidad con la legislación aplicable, a continuación se indican los datos del editor y del proveedor de alojamiento de este sitio web.",
+    "editor_heading": "Editor del sitio",
+    "editor_label": "Editor",
+    "editor_status": "empresario individual (auto-entrepreneur)",
+    "director_label": "Director de la publicación",
+    "siren_label": "SIREN",
+    "rcs_value": "RCS Bourg-en-Bresse",
+    "vat_label": "IVA",
+    "vat_value": "IVA no aplicable, art. 293 B del CGI francés",
+    "contact_label": "Contacto",
+    "address_label": "Dirección",
+    "address_value": "Dirección del domicilio social facilitada previa solicitud en contact@aevia.io",
+    "hosting_heading": "Alojamiento",
+    "hosting_intro": "El sitio está alojado por:"
   }
 }

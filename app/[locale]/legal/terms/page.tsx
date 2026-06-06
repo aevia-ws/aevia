@@ -19,16 +19,21 @@ export default function TermsPage() {
         </h2>
         <div className="bg-zinc-900/60 border border-zinc-800 rounded-xl p-5 text-sm space-y-1.5">
           <p>
-            <span className="text-white font-semibold">Aevia</span> — entreprise individuelle
+            <span className="text-white font-semibold">Aevia WS</span> — entrepreneur individuel
             (auto-entrepreneur)
           </p>
-          <p><span className="text-zinc-400">Représentant légal :</span> Valentin Milliand</p>
+          <p><span className="text-zinc-400">Directeur de la publication :</span> Valentin Milliand</p>
+          <p><span className="text-zinc-400">SIREN :</span> 852 546 225 — RCS Bourg-en-Bresse</p>
+          <p><span className="text-zinc-400">TVA :</span> TVA non applicable, art. 293 B du CGI</p>
           <p><span className="text-zinc-400">Pays d'établissement :</span> France</p>
-          <p><span className="text-zinc-400">Statut :</span> Auto-entrepreneur, soumis au régime micro-entreprise</p>
           <p>
-            <span className="text-zinc-400">Contact commercial :</span>{" "}
-            <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-              hello@aevia.io
+            <span className="text-zinc-400">Adresse :</span>{" "}
+            Adresse du siège social communiquée sur demande à contact@aevia.io
+          </p>
+          <p>
+            <span className="text-zinc-400">Contact :</span>{" "}
+            <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+              contact@aevia.io
             </a>
           </p>
           <p>
@@ -301,8 +306,8 @@ export default function TermsPage() {
         </p>
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
           Pour exercer ce droit, contactez-nous à{" "}
-          <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-            hello@aevia.io
+          <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+            contact@aevia.io
           </a>{" "}
           avec l'objet &laquo; Exercice du droit de rétractation &raquo; en précisant votre
           nom et la date de souscription.
@@ -563,8 +568,8 @@ export default function TermsPage() {
         <p className="text-sm leading-relaxed text-zinc-400 mb-3">
           Le Client peut résilier son abonnement à tout moment depuis son espace de gestion
           ou en contactant{" "}
-          <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-            hello@aevia.io
+          <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+            contact@aevia.io
           </a>.
           La résiliation prend effet à la fin de la période de facturation mensuelle en cours.
           Aucun remboursement au prorata n'est appliqué.
@@ -652,8 +657,8 @@ export default function TermsPage() {
           Pour les litiges avec des consommateurs (personnes physiques non professionnelles),
           et conformément à l'article L.612-1 du Code de la consommation, vous pouvez
           recourir gratuitement à un médiateur de la consommation. Nous contacter à{" "}
-          <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-            hello@aevia.io
+          <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+            contact@aevia.io
           </a>{" "}
           pour toute demande de médiation.
         </p>
@@ -668,12 +673,13 @@ export default function TermsPage() {
           <p className="text-zinc-300 font-semibold mb-2">Pour toute question relative aux présentes conditions :</p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email :</span>{" "}
-            <a href="mailto:hello@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-              hello@aevia.io
+            <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+              contact@aevia.io
             </a>
           </p>
           <p className="text-zinc-400">
-            <span className="text-zinc-300">Éditeur :</span> Valentin Milliand — Aevia, France
+            <span className="text-zinc-300">Éditeur :</span> Aevia WS — Valentin Milliand,
+            SIREN 852 546 225 (RCS Bourg-en-Bresse), France
           </p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Politique de confidentialité :</span>{" "}

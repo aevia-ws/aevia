@@ -90,14 +90,35 @@
     "copyright": "© 2026 Aevia · Tous droits réservés · Valentin Milliand",
     "privacy": "Politique de confidentialité",
     "terms": "CGU",
-    "cookies": "Cookies"
+    "cookies": "Cookies",
+    "mentions": "Mentions légales"
   },
-  "skills": { "title": "Stack technique" },
+  "skills": {
+    "title": "Stack technique"
+  },
   "cookie_banner": {
     "aria_label": "Bandeau de consentement aux cookies",
     "text": "Nous utilisons des cookies pour améliorer votre expérience et mesurer l'audience. Vous pouvez accepter ou refuser les cookies non essentiels.",
     "learn_more": "En savoir plus",
     "accept": "Tout accepter",
     "reject": "Refuser"
+  },
+  "legal_mentions": {
+    "last_updated": "Dernière mise à jour : 6 juin 2026",
+    "title": "Mentions légales",
+    "intro": "Conformément à la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l’économie numérique (LCEN), voici les informations relatives à l’éditeur et à l’hébergeur du présent site.",
+    "editor_heading": "Éditeur du site",
+    "editor_label": "Éditeur",
+    "editor_status": "entrepreneur individuel (auto-entrepreneur)",
+    "director_label": "Directeur de la publication",
+    "siren_label": "SIREN",
+    "rcs_value": "RCS Bourg-en-Bresse",
+    "vat_label": "TVA",
+    "vat_value": "TVA non applicable, art. 293 B du CGI",
+    "contact_label": "Contact",
+    "address_label": "Adresse",
+    "address_value": "Adresse du siège social communiquée sur demande à contact@aevia.io",
+    "hosting_heading": "Hébergement",
+    "hosting_intro": "Le site est hébergé par :"
   }
 }
