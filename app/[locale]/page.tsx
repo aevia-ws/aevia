@@ -95,16 +95,18 @@ export default function Home() {
     <div className="min-h-screen" id="main-content">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative pt-44 pb-28 px-6 overflow-hidden">
+      <section className="relative pt-48 pb-32 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute -top-40 -right-40 w-[900px] h-[900px] rounded-full bg-violet-600/15 blur-[140px]" />
-          <div className="absolute top-60 -left-40 w-[600px] h-[600px] rounded-full bg-rose-600/12 blur-[120px]" />
+          {/* Crimson wash across top — the signature red sky effect */}
+          <div className="absolute inset-x-0 top-0 h-[75%] bg-gradient-to-b from-red-900/45 via-red-900/20 to-transparent" />
+          <div className="absolute -top-60 -right-60 w-[1000px] h-[1000px] rounded-full bg-red-700/25 blur-[180px]" />
+          <div className="absolute top-20 -left-40 w-[700px] h-[700px] rounded-full bg-rose-800/20 blur-[140px]" />
         </div>
         <div className="mx-auto max-w-5xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-8">
+            <h1 className="text-6xl sm:text-8xl font-bold tracking-tight text-white leading-[1.05] mb-8">
               {h("title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-rose-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-rose-400 to-red-500">
                 {h("title2")}
               </span>
               <br />{h("title3")}
