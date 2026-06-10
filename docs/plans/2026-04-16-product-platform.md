@@ -288,7 +288,7 @@ const showcaseProjects = [
     name: "AeviaLaunch",
     tagline: "AI-powered site builder",
     description: "Describe your business, choose from 21 premium templates, get a production-ready site in 60 seconds.",
-    url: "https://aevia-launch.vercel.app",
+    url: "https://launch.aevia.services",
     status: "live",
     accentColor: "#8b5cf6",
     features: ["21 premium templates", "AI content gen", "Live preview", "One-click deploy"],
@@ -304,7 +304,7 @@ const showcaseProjects = [
     name: "AeviaSecurity",
     tagline: "Automated security audit",
     description: "DNS, SSL, headers analysis + AI recommendations. PDF report. Score 0–100 in 60 seconds.",
-    url: "https://aevia-security.vercel.app",
+    url: "https://security.aevia.services",
     status: "live",
     accentColor: "#38bdf8",
     features: ["DNS/SSL analysis", "AI scoring", "PDF report", "Security headers"],
@@ -427,7 +427,7 @@ Read the file first. Then add a "Selected template" preview banner at the top wh
 
 Add a dedicated "Create your website" section between Ecosystem and Showcase:
 - 3 type cards: Landing Page / Business Site / E-commerce
-- Each card links to `https://aevia-launch.vercel.app/themes?type=landing` etc.
+- Each card links to `https://launch.aevia.services/themes?type=landing` etc.
 - "Or browse all 21 themes →" link
 
 ```tsx

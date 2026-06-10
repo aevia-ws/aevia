@@ -21,7 +21,7 @@ export default function Home() {
       name: "AeviaLaunch",
       tagline: p("launch_tagline"),
       description: p("launch_desc"),
-      href: "https://aevia-launch.vercel.app",
+      href: "https://launch.aevia.services",
       status: "live" as const,
       icon: <Sparkles className="w-6 h-6" />,
       accentFrom: "from-violet-500",
@@ -35,13 +35,13 @@ export default function Home() {
       ],
       cta: p("launch_cta"),
       ctaSecondary: p("launch_cta2"),
-      ctaSecondaryHref: "https://aevia-launch.vercel.app",
+      ctaSecondaryHref: "https://launch.aevia.services",
     },
     {
       name: "AeviaSecurity",
       tagline: p("security_tagline"),
       description: p("security_desc"),
-      href: "https://aevia-security.vercel.app",
+      href: "https://security.aevia.services",
       status: "live" as const,
       icon: <Shield className="w-6 h-6" />,
       accentFrom: "from-emerald-500",
@@ -61,7 +61,7 @@ export default function Home() {
       name: "AeviaInbox",
       tagline: p("inbox_tagline"),
       description: p("inbox_desc"),
-      href: "https://aevia-inbox.vercel.app",
+      href: "https://inbox.aevia.services",
       status: "live" as const,
       icon: <MessageSquare className="w-6 h-6" />,
       accentFrom: "from-cyan-500",
@@ -82,7 +82,7 @@ export default function Home() {
   const templates = [
     { label: "Landing Page", href: "https://aevia-landing.vercel.app", color: "from-violet-500/20 to-fuchsia-500/10", dot: "bg-violet-400", desc: ts("landing_desc") },
     { label: "E-Commerce", href: "https://aevia-ecommerce.vercel.app", color: "from-amber-500/20 to-orange-500/10", dot: "bg-amber-400", desc: ts("ecom_desc") },
-    { label: "Site Vitrine", href: "https://aevia-launch.vercel.app", color: "from-emerald-500/20 to-teal-500/10", dot: "bg-emerald-400", desc: ts("vitrine_desc") },
+    { label: "Site Vitrine", href: "https://launch.aevia.services", color: "from-emerald-500/20 to-teal-500/10", dot: "bg-emerald-400", desc: ts("vitrine_desc") },
   ];
 
   const whyItems = [
@@ -278,7 +278,7 @@ export default function Home() {
                   {ts("desc")}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+                  <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
                     {ts("cta1")} <ArrowRight className="w-4 h-4" />
                   </a>
                   <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors">
@@ -305,7 +305,7 @@ export default function Home() {
                 ))}
                 <div className="mt-1 p-4 rounded-xl border border-dashed border-zinc-700 text-center">
                   <p className="text-zinc-500 text-xs mb-1.5">{ts("custom_q")}</p>
-                  <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer"
+                  <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs text-violet-400 hover:text-violet-300 transition-colors">
                     {ts("custom_link")} <ArrowRight className="w-3 h-3" />
                   </a>
@@ -367,7 +367,7 @@ export default function Home() {
                   <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors">
                     {c("contact")} <ArrowRight className="w-4 h-4" />
                   </Link>
-                  <a href="https://aevia-security.vercel.app" target="_blank" rel="noopener noreferrer"
+                  <a href="https://security.aevia.services" target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors">
                     <Shield className="w-4 h-4" /> {c("audit")}
                   </a>
@@ -387,8 +387,8 @@ export default function Home() {
               <span>· {f("tagline")}</span>
             </div>
             <div className="flex items-center gap-6">
-              <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("templates")}</a>
-              <a href="https://aevia-security.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("security")}</a>
+              <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("templates")}</a>
+              <a href="https://security.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">{f("security")}</a>
               <Link href="/contact" className="hover:text-zinc-300 transition-colors">{f("contact")}</Link>
               <a href="https://linkedin.com/in/valentin-milliand" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <LinkedinIcon className="w-4 h-4 hover:text-zinc-300 transition-colors" />

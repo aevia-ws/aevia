@@ -59,9 +59,9 @@ const products: Array<{
   icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
   status: "live" | "soon";
 }> = [
-  { name: "AeviaLaunch",   href: "https://aevia-launch.vercel.app",    descKey: "descLaunch",    icon: Sparkles,      status: "live" },
-  { name: "AeviaSecurity", href: "https://aevia-security.vercel.app",  descKey: "descSecurity",  icon: Shield,        status: "live" },
-  { name: "AeviaInbox",    href: "https://aevia-inbox.vercel.app",     descKey: "descInbox",     icon: MessageSquare, status: "live" },
+  { name: "AeviaLaunch",   href: "https://launch.aevia.services",    descKey: "descLaunch",    icon: Sparkles,      status: "live" },
+  { name: "AeviaSecurity", href: "https://security.aevia.services",  descKey: "descSecurity",  icon: Shield,        status: "live" },
+  { name: "AeviaInbox",    href: "https://inbox.aevia.services",     descKey: "descInbox",     icon: MessageSquare, status: "live" },
 ];
 
 const LOCALES = [
@@ -230,7 +230,7 @@ export function Nav() {
           <LangSwitcher />
 
           <a
-            href="https://aevia-security.vercel.app"
+            href="https://security.aevia.services"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-2 px-4 py-1.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
@@ -297,7 +297,7 @@ export function Nav() {
 
           <div className="mt-3 pt-3 border-t border-zinc-800">
             <a
-              href="https://aevia-security.vercel.app"
+              href="https://security.aevia.services"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-2.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"

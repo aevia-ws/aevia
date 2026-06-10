@@ -15,7 +15,7 @@
 | Projet | URL actuelle | Statut | Rôle Avia |
 |--------|-------------|--------|-----------|
 | portfolio | valentin-milliand.vercel.app | ✅ Live | Hub central |
-| skylaunch | aevia-launch.vercel.app | ✅ Live | Module Launch |
+| skylaunch | launch.aevia.services | ✅ Live | Module Launch |
 | skybot-inbox-ui | TBD | 🔨 Backend | Module Inbox |
 | skysecurity/apps/web | TBD | 🔨 Build fixe | Module Security |
 | marketplace | TBD | 📸 Screenshot | Showcase |
@@ -96,9 +96,9 @@
 
 **Steps:**
 1. Après L14 (liens array), ajouter `ecosystemLinks` array:
-   - `{ label: "AeviaLaunch", url: "https://aevia-launch.vercel.app", external: true }`
+   - `{ label: "AeviaLaunch", url: "https://launch.aevia.services", external: true }`
    - `{ label: "AeviaInbox", url: "https://skybot-inbox.vercel.app", external: true, badge: "Soon" }`
-   - `{ label: "AeviaSecurity", url: "https://aevia-security.vercel.app", external: true, badge: "Soon" }`
+   - `{ label: "AeviaSecurity", url: "https://security.aevia.services", external: true, badge: "Soon" }`
 2. L29–61 (desktop nav): après le lien "Projets", ajouter dropdown "Ecosystem" avec icône "→"
 3. L76–110 (mobile nav): section accordion "Ecosystem" avec les 3 liens
 4. Chaque lien externe: `target="_blank"` + `rel="noopener noreferrer"`

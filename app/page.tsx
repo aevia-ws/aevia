@@ -63,7 +63,7 @@ const aeviaProducts: AeviaProduct[] = [
     tagline: "Site builder powered by AI",
     description:
       "Describe your business, choose from 21 premium templates, get a production-ready website in seconds. No code. No waiting.",
-    url: "https://aevia-launch.vercel.app/configure",
+    url: "https://launch.aevia.services/configure",
     status: "live",
     icon: <Sparkles className="w-5 h-5" />,
     accentFrom: "from-violet-500",
@@ -93,7 +93,7 @@ const aeviaProducts: AeviaProduct[] = [
     tagline: "Automated web security audit",
     description:
       "AI-powered security & performance audit. Get a scored PDF report with actionable recommendations in under 60 seconds.",
-    url: "https://aevia-security.vercel.app/audit",
+    url: "https://security.aevia.services/audit",
     status: "live",
     icon: <Shield className="w-5 h-5" />,
     accentFrom: "from-emerald-500",
@@ -139,7 +139,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "AeviaLaunch",
     description:
       "AI site generator with 21 premium templates. Describe your business, get a production-ready site in seconds.",
-    url: "https://aevia-launch.vercel.app",
+    url: "https://launch.aevia.services",
     tags: ["AI", "Next.js", "Framer Motion"],
     icon: <Sparkles className="w-5 h-5" />,
     accentFrom: "from-violet-500",
@@ -163,7 +163,7 @@ const portfolioProjects: PortfolioProject[] = [
     title: "AeviaSecurity",
     description:
       "Automated AI security & performance audit. PDF reports, 0–100 scoring, actionable recommendations.",
-    url: "https://aevia-security.vercel.app",
+    url: "https://security.aevia.services",
     tags: ["NestJS", "AI", "Security"],
     icon: <Shield className="w-5 h-5" />,
     accentFrom: "from-emerald-500",
@@ -249,7 +249,7 @@ const showcaseProjects = [
     name: "AeviaLaunch",
     tagline: "AI-powered site builder",
     description: "Describe your business, choose from 21 premium templates, get a production-ready website in seconds. No code. No waiting.",
-    url: "https://aevia-launch.vercel.app",
+    url: "https://launch.aevia.services",
     status: "live" as const,
     accentColor: "#8b5cf6",
     features: ["21 premium templates", "AI content generation", "Live preview", "One-click deploy"],
@@ -266,7 +266,7 @@ const showcaseProjects = [
     name: "AeviaSecurity",
     tagline: "Automated security & performance audit",
     description: "DNS, SSL, security headers analysis + AI recommendations. PDF report. Score your site 0–100 in under 60 seconds.",
-    url: "https://aevia-security.vercel.app",
+    url: "https://security.aevia.services",
     status: "live" as const,
     accentColor: "#38bdf8",
     features: ["DNS/SSL analysis", "AI scoring 0–100", "PDF report", "Security headers check"],
@@ -635,7 +635,7 @@ export default function Home() {
             {siteTypes.map((t, i) => (
               <motion.a
                 key={t.type}
-                href="https://aevia-launch.vercel.app/themes"
+                href="https://launch.aevia.services/themes"
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 24 }}
@@ -657,7 +657,7 @@ export default function Home() {
 
           <div className="text-center">
             <a
-              href="https://aevia-launch.vercel.app/themes"
+              href="https://launch.aevia.services/themes"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-zinc-400 hover:text-violet-300 text-sm font-medium transition-colors"
@@ -721,7 +721,7 @@ export default function Home() {
                 </p>
               </div>
               <a
-                href="https://aevia-launch.vercel.app/themes"
+                href="https://launch.aevia.services/themes"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-violet-500/50 hover:text-violet-300 transition-all duration-200"
@@ -737,7 +737,7 @@ export default function Home() {
             {featuredThemes.map((theme, i) => (
               <motion.a
                 key={theme.id}
-                href={`https://aevia-launch.vercel.app/themes/${theme.id}`}
+                href={`https://launch.aevia.services/themes/${theme.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 initial={{ opacity: 0, scale: 0.96 }}
@@ -843,7 +843,7 @@ export default function Home() {
           <span>© 2026 Valentin Milliand · Aevia Ecosystem</span>
           <div className="flex items-center gap-6">
             <Link href="/contact" className="hover:text-zinc-300 transition-colors">Contact</Link>
-            <a href="https://aevia-launch.vercel.app" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">AeviaLaunch</a>
+            <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">AeviaLaunch</a>
             <a href="https://linkedin.com/in/valentin-milliand" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-zinc-300 transition-colors" aria-label="Visit my LinkedIn profile">
               <LinkedinIcon className="w-4 h-4" aria-hidden="true" />
             </a>

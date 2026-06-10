@@ -121,9 +121,9 @@ export default function RootLayout({
         {/* Aevia Inbox webchat widget — production test */}
         <script
           async
-          src="https://aevia-inbox.vercel.app/webchat/widget.js"
+          src="https://inbox.aevia.services/webchat/widget.js"
           data-widget-id="wid_ce9571d1dd824e3704a48013699b3e91"
-          data-api-url="https://aevia-inbox.vercel.app/api"
+          data-api-url="https://inbox.aevia.services/api"
         />
       </body>
     </html>
