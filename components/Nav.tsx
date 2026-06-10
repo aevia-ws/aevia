@@ -6,42 +6,62 @@ import { useState, useTransition, useRef, useEffect } from "react";
 import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Globe } from "lucide-react";
 import { AeviaLogo } from "@/components/AeviaLogo";
 
-// navLinks are locale-agnostic paths — locale prefix is prepended in the component
-// "Sites web" removed — duplicate of AeviaLaunch in the Produits submenu
 const navLinks = [
   { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ];
 
-// All products link to their external live deployments
-const products = [
-  {
-    name: "AeviaLaunch",
-    href: "https://aevia-launch.vercel.app",
-    internal: null,
-    description: "Site web en 7 jours — 3 templates pro",
-    icon: Sparkles,
-    status: "live" as "live" | "soon",
-    external: true,
+const NAV_T = {
+  fr: {
+    products: "Produits", soon: "Bientôt", cta: "Audit gratuit",
+    mobileProducts: "Produits", mobileLang: "Langue",
+    descLaunch: "Site web en 7 jours — 3 templates pro",
+    descSecurity: "Audit sécurité & performance en 60s",
+    descInbox: "CRM multi-canal — WhatsApp, Instagram, Email",
   },
-  {
-    name: "AeviaSecurity",
-    href: "https://aevia-security.vercel.app",
-    internal: null,
-    description: "Audit sécurité & performance en 60s",
-    icon: Shield,
-    status: "live" as "live" | "soon",
-    external: true,
+  en: {
+    products: "Products", soon: "Coming soon", cta: "Free audit",
+    mobileProducts: "Products", mobileLang: "Language",
+    descLaunch: "Website in 7 days — 3 pro templates",
+    descSecurity: "Security & performance audit in 60s",
+    descInbox: "Multi-channel CRM — WhatsApp, Instagram, Email",
   },
-  {
-    name: "AeviaInbox",
-    href: "https://aevia-inbox.vercel.app",
-    internal: null,
-    description: "CRM multi-canal — WhatsApp, Instagram, Email",
-    icon: MessageSquare,
-    status: "live" as "live" | "soon",
-    external: true,
+  es: {
+    products: "Productos", soon: "Próximamente", cta: "Auditoría gratis",
+    mobileProducts: "Productos", mobileLang: "Idioma",
+    descLaunch: "Sitio web en 7 días — 3 plantillas pro",
+    descSecurity: "Auditoría de seguridad y rendimiento en 60s",
+    descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
   },
+  de: {
+    products: "Produkte", soon: "Bald", cta: "Gratis-Audit",
+    mobileProducts: "Produkte", mobileLang: "Sprache",
+    descLaunch: "Website in 7 Tagen — 3 Pro-Vorlagen",
+    descSecurity: "Sicherheits- & Performance-Audit in 60s",
+    descInbox: "Multichannel-CRM — WhatsApp, Instagram, E-Mail",
+  },
+  pt: {
+    products: "Produtos", soon: "Em breve", cta: "Auditoria grátis",
+    mobileProducts: "Produtos", mobileLang: "Idioma",
+    descLaunch: "Site em 7 dias — 3 templates pro",
+    descSecurity: "Auditoria de segurança e performance em 60s",
+    descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
+  },
+} as const;
+
+type NavTKey = keyof typeof NAV_T;
+type NavTrans = typeof NAV_T.fr;
+
+const products: Array<{
+  name: string;
+  href: string;
+  descKey: keyof NavTrans;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  status: "live" | "soon";
+}> = [
+  { name: "AeviaLaunch",   href: "https://aevia-launch.vercel.app",    descKey: "descLaunch",    icon: Sparkles,      status: "live" },
+  { name: "AeviaSecurity", href: "https://aevia-security.vercel.app",  descKey: "descSecurity",  icon: Shield,        status: "live" },
+  { name: "AeviaInbox",    href: "https://aevia-inbox.vercel.app",     descKey: "descInbox",     icon: MessageSquare, status: "live" },
 ];
 
 const LOCALES = [
@@ -113,19 +133,8 @@ export function Nav() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  // Hover open with a small close delay so crossing into the panel doesn't dismiss it
-  function openDropdown() {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-    setDropdownOpen(true);
-  }
-  function scheduleClose() {
-    if (closeTimer.current) clearTimeout(closeTimer.current);
-    closeTimer.current = setTimeout(() => setDropdownOpen(false), 200);
-  }
-
-  // Close when clicking outside the dropdown
+  // Click-based dropdown — closes only on outside click or item selection
   useEffect(() => {
     function onDocClick(e: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
@@ -136,11 +145,10 @@ export function Nav() {
     return () => document.removeEventListener("mousedown", onDocClick);
   }, []);
 
-  // Detect locale from pathname (e.g. /fr/blog → "fr")
   const segments = pathname.split("/");
-  const locale = LOCALES.some((l) => l.code === segments[1]) ? segments[1] : "fr";
+  const locale = (LOCALES.some((l) => l.code === segments[1]) ? segments[1] : "fr") as NavTKey;
+  const t = NAV_T[locale] ?? NAV_T.fr;
 
-  // Build a locale-prefixed href for internal links
   function localePath(path: string) {
     return `/${locale}${path}`;
   }
@@ -154,55 +162,50 @@ export function Nav() {
         </Link>
 
         <nav className="hidden sm:flex items-center gap-1">
-          <div
-            ref={dropdownRef}
-            className="relative"
-            onMouseEnter={openDropdown}
-            onMouseLeave={scheduleClose}
-          >
+          <div ref={dropdownRef} className="relative">
             <button
               onClick={() => setDropdownOpen((v) => !v)}
               aria-expanded={dropdownOpen}
               aria-haspopup="true"
               className="px-3 py-1.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors flex items-center gap-1"
             >
-              Produits
+              {t.products}
               <ChevronDown size={14} className={`transition-transform ${dropdownOpen ? "rotate-180" : ""}`} />
             </button>
 
             {dropdownOpen && (
-              // top-full + pt-2 creates a transparent hover bridge (no dead gap that dismisses the menu)
               <div className="absolute left-0 top-full pt-2 w-80" onClick={() => setDropdownOpen(false)}>
                 <div className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-xl shadow-black/40 overflow-hidden p-2 flex flex-col gap-1">
                   {products.map((p) => {
                     const Icon = p.icon;
                     const isLive = p.status === "live";
-                    const href = p.internal ? localePath(p.internal) : (isLive ? p.href : "#");
-                    const isExternal = p.external && isLive;
-
-                    const content = (
-                      <div className="flex gap-3 items-start p-2.5 rounded-lg hover:bg-zinc-800/60 transition-colors cursor-pointer group">
+                    return (
+                      <a
+                        key={p.name}
+                        href={p.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex gap-3 items-start p-2.5 rounded-lg transition-colors group ${isLive ? "hover:bg-zinc-800/60 cursor-pointer" : "opacity-60 cursor-not-allowed pointer-events-none"}`}
+                      >
                         <Icon className="w-5 h-5 text-violet-400 shrink-0 mt-0.5" />
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-0.5">
                             <span className="font-semibold text-white text-sm group-hover:text-violet-300 transition-colors">
                               {p.name}
                             </span>
-                            {p.status === "soon" ? (
-                              <span className="bg-amber-500/20 text-amber-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">Bientôt</span>
+                            {isLive ? (
+                              <>
+                                <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">Live</span>
+                                <ExternalLink className="w-3 h-3 text-zinc-600 group-hover:text-zinc-400 transition-colors" />
+                              </>
                             ) : (
-                              <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">Live</span>
+                              <span className="bg-amber-500/20 text-amber-300 text-[10px] px-1.5 py-0.5 rounded-full font-medium">{t.soon}</span>
                             )}
-                            {isExternal && <ExternalLink className="w-3 h-3 text-zinc-600 group-hover:text-zinc-400 transition-colors" />}
                           </div>
-                          <p className="text-xs text-zinc-500">{p.description}</p>
+                          <p className="text-xs text-zinc-500">{t[p.descKey]}</p>
                         </div>
-                      </div>
+                      </a>
                     );
-
-                    if (p.internal) return <Link key={p.name} href={href}>{content}</Link>;
-                    if (isExternal) return <a key={p.name} href={p.href} target="_blank" rel="noopener noreferrer">{content}</a>;
-                    return <div key={p.name} className="opacity-60 cursor-not-allowed">{content}</div>;
                   })}
                 </div>
               </div>
@@ -232,7 +235,7 @@ export function Nav() {
             rel="noopener noreferrer"
             className="ml-2 px-4 py-1.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
           >
-            Audit gratuit
+            {t.cta}
           </a>
         </nav>
 
@@ -264,33 +267,31 @@ export function Nav() {
           })}
 
           <div className="mt-2 pt-2 border-t border-zinc-800 flex flex-col gap-1">
-            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium">Produits</p>
+            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium">{t.mobileProducts}</p>
             {products.map((p) => {
               const isLive = p.status === "live";
-              const href = p.internal ? localePath(p.internal) : (p.external && isLive ? p.href : "#");
-              const Tag = p.internal ? Link : "a";
-              const extraProps = p.external && isLive && !p.internal ? { target: "_blank", rel: "noopener noreferrer" } : {};
               return (
-                <Tag
+                <a
                   key={p.name}
-                  href={href}
-                  {...(extraProps as object)}
+                  href={isLive ? p.href : "#"}
+                  target={isLive ? "_blank" : undefined}
+                  rel={isLive ? "noopener noreferrer" : undefined}
                   onClick={() => setMobileOpen(false)}
                   className="flex items-center justify-between px-3 py-2.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors"
                 >
                   <span>{p.name}</span>
-                  {p.status === "soon" ? (
-                    <span className="bg-amber-500/20 text-amber-300 text-[10px] px-1.5 py-0.5 rounded-full">Bientôt</span>
-                  ) : (
+                  {isLive ? (
                     <span className="bg-emerald-500/20 text-emerald-300 text-[10px] px-1.5 py-0.5 rounded-full">Live</span>
+                  ) : (
+                    <span className="bg-amber-500/20 text-amber-300 text-[10px] px-1.5 py-0.5 rounded-full">{t.soon}</span>
                   )}
-                </Tag>
+                </a>
               );
             })}
           </div>
 
           <div className="mt-2 pt-2 border-t border-zinc-800">
-            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium mb-1">Langue</p>
+            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium mb-1">{t.mobileLang}</p>
             <LangSwitcher />
           </div>
 
@@ -301,7 +302,7 @@ export function Nav() {
               rel="noopener noreferrer"
               className="block w-full text-center px-4 py-2.5 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
             >
-              Audit gratuit
+              {t.cta}
             </a>
           </div>
         </div>
