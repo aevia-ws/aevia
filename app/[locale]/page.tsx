@@ -80,9 +80,9 @@ export default function Home() {
   ];
 
   const templates = [
-    { label: "Landing Page", href: "https://aevia-landing.vercel.app", color: "from-violet-500/20 to-fuchsia-500/10", dot: "bg-violet-400", desc: ts("landing_desc") },
-    { label: "E-Commerce", href: "https://aevia-ecommerce.vercel.app", color: "from-amber-500/20 to-orange-500/10", dot: "bg-amber-400", desc: ts("ecom_desc") },
-    { label: "Site Vitrine", href: "https://launch.aevia.services", color: "from-emerald-500/20 to-teal-500/10", dot: "bg-emerald-400", desc: ts("vitrine_desc") },
+    { label: "Landing Page", href: "https://launch.aevia.services/templates/impact-05", color: "from-violet-500/20 to-fuchsia-500/10", dot: "bg-violet-400", desc: ts("landing_desc") },
+    { label: "E-Commerce", href: "https://launch.aevia.services/templates/impact-47", color: "from-amber-500/20 to-orange-500/10", dot: "bg-amber-400", desc: ts("ecom_desc") },
+    { label: "Site Vitrine", href: "https://launch.aevia.services/templates/impact-33", color: "from-emerald-500/20 to-teal-500/10", dot: "bg-emerald-400", desc: ts("vitrine_desc") },
   ];
 
   const whyItems = [
@@ -95,16 +95,16 @@ export default function Home() {
     <div className="min-h-screen" id="main-content">
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+      <section className="relative pt-44 pb-28 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute -top-40 -right-40 w-[700px] h-[700px] rounded-full bg-violet-600/10 blur-[120px]" />
-          <div className="absolute top-60 -left-40 w-[500px] h-[500px] rounded-full bg-cyan-600/6 blur-[100px]" />
+          <div className="absolute -top-40 -right-40 w-[900px] h-[900px] rounded-full bg-violet-600/15 blur-[140px]" />
+          <div className="absolute top-60 -left-40 w-[600px] h-[600px] rounded-full bg-rose-600/12 blur-[120px]" />
         </div>
         <div className="mx-auto max-w-5xl text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h1 className="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6">
+            <h1 className="text-5xl sm:text-7xl font-bold tracking-tight text-white leading-[1.1] mb-8">
               {h("title1")}{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-rose-500">
                 {h("title2")}
               </span>
               <br />{h("title3")}
