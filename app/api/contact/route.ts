@@ -77,9 +77,9 @@ export async function POST(req: NextRequest) {
       const safeMessage = escapeHtml(String(message)).replace(/\n/g, "<br>");
 
       await resend.emails.send({
-        from: "Portfolio Contact <onboarding@resend.dev>",
-        to: "valentin.milliand@gmail.com",
-        subject: subject ? `[Portfolio] ${safeSubject}` : `[Portfolio] New message from ${safeName}`,
+        from: "Aevia Contact <onboarding@resend.dev>",
+        to: "v.milliand@gmail.com",
+        subject: subject ? `[Aevia] ${safeSubject}` : `[Aevia] Message de ${safeName}`,
         html: `
           <p><strong>From:</strong> ${safeName} &lt;${safeEmail}&gt;</p>
           <p><strong>Subject:</strong> ${safeSubject}</p>

@@ -200,17 +200,7 @@ export default function Home() {
                     <div className={`p-3 rounded-xl bg-gradient-to-br ${product.accentFrom}/20 ${product.accentTo}/10 border border-white/5 text-white`}>
                       {product.icon}
                     </div>
-                    {isLive ? (
-                      <span className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-400 bg-emerald-500/10 ring-1 ring-emerald-500/20 px-2.5 py-1 rounded-full">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                        {p("available")}
-                      </span>
-                    ) : (
-                      <span className="text-[11px] font-semibold text-amber-300 bg-amber-500/10 ring-1 ring-amber-500/20 px-2.5 py-1 rounded-full">
-                        {p("coming_soon")}
-                      </span>
-                    )}
-                  </div>
+                    </div>
                   <div className="mb-4 relative z-10">
                     <h3 className="text-white font-bold text-xl mb-1">{product.name}</h3>
                     <p className={`text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r ${product.accentFrom} ${product.accentTo}`}>
@@ -361,10 +351,6 @@ export default function Home() {
                   <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors">
                     {c("contact")} <ArrowRight className="w-4 h-4" />
                   </Link>
-                  <a href="https://security.aevia.services" target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors">
-                    <Shield className="w-4 h-4" /> {c("audit")}
-                  </a>
                 </div>
               </div>
             </div>

@@ -82,9 +82,9 @@ export default function ContactPage() {
           transition={{ duration: 0.4 }}
           className="mb-12"
         >
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Get in touch</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Prendre contact</h1>
           <p className="text-zinc-400 text-lg max-w-xl">
-            Available for freelance projects, collaborations and consulting.
+            Un projet digital, une demo, ou une simple question — réponse sous 24h.
           </p>
         </motion.div>
 
@@ -222,7 +222,7 @@ export default function ContactPage() {
                 <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
                   <Mail className="w-4 h-4" />
                 </div>
-                <span className="text-zinc-300">valentin.milliand@gmail.com</span>
+                <a href="mailto:contact@aevia.io" className="text-zinc-300 hover:text-white transition-colors">contact@aevia.io</a>
               </div>
 
               <div className="flex items-center gap-3 text-sm">
@@ -249,15 +249,15 @@ export default function ContactPage() {
             </div>
 
             <div className="p-6 rounded-2xl border border-zinc-800 bg-zinc-900/40">
-              <h2 className="text-white font-semibold mb-4">What I can help with</h2>
+              <h2 className="text-white font-semibold mb-4">On peut parler de…</h2>
               <ul className="space-y-2.5">
                 {[
-                  "Full-stack product development",
-                  "AI agent integration (Claude, OpenAI)",
-                  "SaaS architecture & MVP",
-                  "n8n automation workflows",
-                  "API design & implementation",
-                  "Code review & consulting",
+                  "Site web & templates (AeviaLaunch)",
+                  "Audit sécurité (AeviaSecurity)",
+                  "CRM WhatsApp & IA (AeviaInbox)",
+                  "Projet sur-mesure & intégration IA",
+                  "Automatisation n8n & agents IA",
+                  "Questions tarifaires ou démo",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-zinc-400 text-sm">
                     <span className="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0" />
