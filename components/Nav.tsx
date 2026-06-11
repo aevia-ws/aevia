@@ -229,14 +229,12 @@ export function Nav() {
 
           <LangSwitcher />
 
-          <a
-            href="https://security.aevia.services"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/contact"
             className="ml-2 px-4 py-1.5 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
           >
             {t.cta}
-          </a>
+          </Link>
         </nav>
 
         <button
@@ -296,14 +294,13 @@ export function Nav() {
           </div>
 
           <div className="mt-3 pt-3 border-t border-zinc-800">
-            <a
-              href="https://security.aevia.services"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
+              onClick={() => setMobileOpen(false)}
               className="block w-full text-center px-4 py-2.5 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
             >
               {t.cta}
-            </a>
+            </Link>
           </div>
         </div>
       )}
