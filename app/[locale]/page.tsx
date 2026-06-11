@@ -289,7 +289,7 @@ export default function Home() {
                 ))}
                 <div className="mt-1 p-4 rounded-xl border border-dashed border-zinc-700 text-center">
                   <p className="text-zinc-500 text-xs mb-1.5">{ts("custom_q")}</p>
-                  <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer"
+                  <a href="https://launch.aevia.services/themes" target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-xs text-violet-400 hover:text-violet-300 transition-colors">
                     {ts("custom_link")} <ArrowRight className="w-3 h-3" />
                   </a>
