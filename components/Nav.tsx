@@ -13,35 +13,35 @@ const navLinks = [
 
 const NAV_T = {
   fr: {
-    products: "Produits", soon: "Bientôt", cta: "Audit gratuit",
+    products: "Produits", soon: "Bientôt", cta: "Contact",
     mobileProducts: "Produits", mobileLang: "Langue",
     descLaunch: "Site web en 7 jours — 3 templates pro",
     descSecurity: "Audit sécurité & performance en 60s",
     descInbox: "CRM multi-canal — WhatsApp, Instagram, Email",
   },
   en: {
-    products: "Products", soon: "Coming soon", cta: "Free audit",
+    products: "Products", soon: "Coming soon", cta: "Contact",
     mobileProducts: "Products", mobileLang: "Language",
     descLaunch: "Website in 7 days — 3 pro templates",
     descSecurity: "Security & performance audit in 60s",
     descInbox: "Multi-channel CRM — WhatsApp, Instagram, Email",
   },
   es: {
-    products: "Productos", soon: "Próximamente", cta: "Auditoría gratis",
+    products: "Productos", soon: "Próximamente", cta: "Contacto",
     mobileProducts: "Productos", mobileLang: "Idioma",
     descLaunch: "Sitio web en 7 días — 3 plantillas pro",
     descSecurity: "Auditoría de seguridad y rendimiento en 60s",
     descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
   },
   de: {
-    products: "Produkte", soon: "Bald", cta: "Gratis-Audit",
+    products: "Produkte", soon: "Bald", cta: "Kontakt",
     mobileProducts: "Produkte", mobileLang: "Sprache",
     descLaunch: "Website in 7 Tagen — 3 Pro-Vorlagen",
     descSecurity: "Sicherheits- & Performance-Audit in 60s",
     descInbox: "Multichannel-CRM — WhatsApp, Instagram, E-Mail",
   },
   pt: {
-    products: "Produtos", soon: "Em breve", cta: "Auditoria grátis",
+    products: "Produtos", soon: "Em breve", cta: "Contacto",
     mobileProducts: "Produtos", mobileLang: "Idioma",
     descLaunch: "Site em 7 dias — 3 templates pro",
     descSecurity: "Auditoria de segurança e performance em 60s",
