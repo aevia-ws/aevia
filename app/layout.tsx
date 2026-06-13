@@ -35,9 +35,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Aevia", url: "https://aevia.services" }],
   creator: "Aevia",
-  icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
-  },
   openGraph: {
     type: "website",
     locale: "fr_FR",
