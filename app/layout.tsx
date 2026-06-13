@@ -69,26 +69,20 @@ export const metadata: Metadata = {
   },
 };
 
-const personSchema = {
+const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Valentin Milliand',
-  url: 'https://valentin-milliand.vercel.app',
-  jobTitle: 'Full Stack Engineer & AI Builder',
+  '@type': 'Organization',
+  name: 'Aevia',
+  url: 'https://aevia.services',
   description:
-    'Full Stack Engineer specializing in NestJS, Next.js, TypeScript, and Anthropic Claude. Building production-ready AI products.',
+    "Suite d'outils digitaux pour PME et indépendants : création de landing pages, sécurité web, et messagerie omnicanale. Made in France.",
   sameAs: [
     'https://github.com/Maeglin10',
-    'https://linkedin.com/in/valentin-milliand',
   ],
-  knowsAbout: [
-    'NestJS',
-    'Next.js',
-    'TypeScript',
-    'PostgreSQL',
-    'Anthropic Claude',
-    'AI product development',
-    'SaaS',
+  makesOffer: [
+    { '@type': 'Offer', name: 'Aevia Launch', url: 'https://launch.aevia.services' },
+    { '@type': 'Offer', name: 'Aevia Security', url: 'https://security.aevia.services' },
+    { '@type': 'Offer', name: 'Aevia Inbox', url: 'https://inbox.aevia.services' },
   ],
 }
 
@@ -99,13 +93,13 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="fr"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#09090b] text-white">
