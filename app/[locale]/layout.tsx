@@ -3,9 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { CookieBanner } from '@/components/CookieBanner';
-import Script from 'next/script';
-
-const GA_ID = 'G-9XTKCZLYVF';
+import { ConsentAwareAnalytics } from '@/components/ConsentAwareAnalytics';
 const BASE = 'https://aevia.services';
 
 const LOCALES = routing.locales as readonly string[];
@@ -69,13 +67,7 @@ export default async function LocaleLayout({
   const messages = (await import(`../../messages/${locale}.json`)).default;
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
-      <Script id="ga4-init" strategy="afterInteractive">{`
-        window.dataLayer=window.dataLayer||[];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js',new Date());
-        gtag('config','${GA_ID}');
-      `}</Script>
+      <ConsentAwareAnalytics />
       {children}
       <CookieBanner />
     </NextIntlClientProvider>
