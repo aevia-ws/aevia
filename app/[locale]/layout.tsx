@@ -47,6 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description,
     },
     twitter: { card: 'summary_large_image', title, description, creator: '@aeviaio' },
+    icons: { icon: '/favicon.svg' },
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 } },
     alternates: {
       canonical: url,
