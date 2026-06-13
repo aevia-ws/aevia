@@ -1,4 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#09090b"/>
-  <text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" fill="#a78bfa" font-family="system-ui,sans-serif" font-weight="700" font-size="14">vm</text>
+  <defs>
+    <linearGradient id="silver" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#c0c8d8"/>
+      <stop offset="100%" stop-color="#8896aa"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Left chevron (primary) -->
+  <path d="M6 16L10.5 9.5L11.7 10.7L8.2 16L11.7 21.3L10.5 22.5L6 16Z" fill="url(#silver)"/>
+  <!-- Left chevron (secondary) -->
+  <path d="M3.5 16L8.5 8.5L9.7 9.7L5.7 16L9.7 22.3L8.5 23.5L3.5 16Z" fill="url(#silver)" opacity="0.6"/>
+  <!-- Right chevron (primary) -->
+  <path d="M26 16L21.5 9.5L20.3 10.7L23.8 16L20.3 21.3L21.5 22.5L26 16Z" fill="url(#silver)"/>
+  <!-- Right chevron (secondary) -->
+  <path d="M28.5 16L23.5 8.5L22.3 9.7L26.3 16L22.3 22.3L23.5 23.5L28.5 16Z" fill="url(#silver)" opacity="0.6"/>
+  <!-- Central A — top -->
+  <path d="M16 4L20.5 15H18.2L16 9.5L13.8 15H11.5L16 4Z" fill="url(#silver)"/>
+  <!-- Central A — crossbar -->
+  <path d="M13.2 16.5H18.8L19.7 19H12.3L13.2 16.5Z" fill="url(#silver)" opacity="0.65"/>
+  <!-- Central A — left leg -->
+  <path d="M12.3 19H13.9L14.7 23H11.7L12.3 19Z" fill="url(#silver)" opacity="0.8"/>
+  <!-- Central A — right leg -->
+  <path d="M19.7 19H18.1L17.3 23H20.3L19.7 19Z" fill="url(#silver)" opacity="0.8"/>
 </svg>

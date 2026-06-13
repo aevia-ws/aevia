@@ -16,54 +16,51 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://valentin-milliand.vercel.app"),
+  metadataBase: new URL("https://aevia.services"),
   title: {
-    default: "Valentin Milliand — Full Stack Engineer & AI Builder",
-    template: "%s | Valentin Milliand",
+    default: "Aevia — Suite digitale pour entreprises ambitieuses",
+    template: "%s | Aevia",
   },
   description:
-    "Full Stack Engineer & AI Builder specializing in NestJS, Next.js, and Anthropic Claude. Building production-ready AI products: multi-channel inboxes, creator platforms, security SaaS, and developer tools.",
+    "Aevia propose une suite d'outils digitaux pour PME et indépendants : création de landing pages, sécurité web, et messagerie omnicanale. Made in France.",
   keywords: [
-    "Valentin Milliand",
-    "Full Stack Engineer",
-    "AI Builder",
-    "NestJS",
-    "Next.js",
-    "TypeScript",
-    "Anthropic Claude",
-    "SaaS",
-    "freelance developer",
-    "AI products",
+    "Aevia",
+    "landing page",
+    "sécurité web",
+    "messagerie omnicanale",
+    "WhatsApp Business",
+    "SaaS France",
+    "création site web",
+    "PME digitale",
   ],
-  authors: [{ name: "Valentin Milliand", url: "https://valentin-milliand.vercel.app" }],
-  creator: "Valentin Milliand",
+  authors: [{ name: "Aevia", url: "https://aevia.services" }],
+  creator: "Aevia",
   icons: {
-    icon: "/favicon.svg",
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
-    url: "https://valentin-milliand.vercel.app",
-    siteName: "Valentin Milliand",
-    title: "Valentin Milliand — Full Stack Engineer & AI Builder",
+    locale: "fr_FR",
+    url: "https://aevia.services",
+    siteName: "Aevia",
+    title: "Aevia — Suite digitale pour entreprises ambitieuses",
     description:
-      "Full Stack Engineer & AI Builder specializing in NestJS, Next.js, and Anthropic Claude. Building production-ready AI products.",
+      "Landing pages premium, sécurité web automatisée, et messagerie omnicanale. La suite complète pour développer votre business en ligne.",
     images: [
       {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Valentin Milliand — Full Stack Engineer & AI Builder",
+        alt: "Aevia — Suite digitale",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Valentin Milliand — Full Stack Engineer & AI Builder",
+    title: "Aevia — Suite digitale pour entreprises ambitieuses",
     description:
-      "Full Stack Engineer & AI Builder specializing in NestJS, Next.js, and Anthropic Claude. Building production-ready AI products.",
+      "Landing pages premium, sécurité web automatisée, et messagerie omnicanale. La suite complète pour développer votre business en ligne.",
     images: ["/og.png"],
-    creator: "@valentinmilliand",
   },
   robots: {
     index: true,
@@ -71,7 +68,7 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: {
-    canonical: "https://valentin-milliand.vercel.app",
+    canonical: "https://aevia.services",
   },
 };
 
