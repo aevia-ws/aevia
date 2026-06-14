@@ -1,7 +1,7 @@
 export default function PrivacyPage() {
   return (
     <main className="max-w-3xl mx-auto px-6 py-20 text-zinc-300">
-      <p className="text-xs text-zinc-500 mb-2">Dernière mise à jour : 19 avril 2026</p>
+      <p className="text-xs text-zinc-500 mb-2">Dernière mise à jour : 14 juin 2026</p>
       <h1 className="text-3xl font-bold text-white mb-3 tracking-tight">
         Politique de Confidentialité
       </h1>
@@ -147,6 +147,36 @@ export default function PrivacyPage() {
           <li>Logs techniques (erreurs, performances)</li>
           <li>Statistiques d'usage agrégées via Plausible Analytics</li>
         </ul>
+
+        <h3 className="text-base font-semibold text-white mb-2 mt-5">3.7 Connexion via Google (Google Sign-In)</h3>
+        <p className="text-sm leading-relaxed mb-3">
+          Vous pouvez créer votre compte Aevia et vous connecter à l'ensemble des produits Aevia
+          (Inbox, Launch, Security) à l'aide de votre compte Google. Lorsque vous choisissez
+          « Se connecter avec Google », nous accédons uniquement aux données suivantes, avec votre
+          autorisation explicite via l'écran de consentement Google :
+        </p>
+        <ul className="list-disc list-inside text-sm text-zinc-400 space-y-1 mb-3 ml-2">
+          <li>Votre adresse email Google</li>
+          <li>Votre nom et prénom</li>
+          <li>Votre photo de profil Google (le cas échéant)</li>
+        </ul>
+        <p className="text-sm leading-relaxed mb-3">
+          Ces données sont utilisées exclusivement pour : créer et identifier votre compte Aevia
+          unique, vous authentifier de façon sécurisée, et pré-remplir votre profil. Nous
+          n'accédons à aucune autre donnée de votre compte Google (Gmail, Drive, Contacts,
+          Agenda, etc.) et ne demandons aucun périmètre (scope) sensible ou restreint.
+        </p>
+        <p className="text-sm leading-relaxed text-zinc-400 bg-zinc-900/40 border border-zinc-800 rounded-lg p-4">
+          <strong className="text-zinc-300">Conformité Google API Services User Data Policy :</strong>{" "}
+          L'utilisation et le transfert par Aevia des informations reçues des API Google
+          respectent la{" "}
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 transition-colors">
+            Google API Services User Data Policy
+          </a>, y compris ses exigences d'utilisation limitée (Limited Use). Les données Google ne
+          sont jamais vendues, ni utilisées à des fins publicitaires, ni transférées à des tiers
+          sauf pour fournir ou améliorer le service, se conformer à la loi, ou avec votre
+          consentement explicite. Aucune donnée Google n'est utilisée pour entraîner des modèles d'IA.
+        </p>
       </section>
 
       {/* ── 4. Bases légales ────────────────────────────────────────────────── */}
@@ -361,6 +391,30 @@ export default function PrivacyPage() {
               className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Meta &rarr;
+            </a>
+          </div>
+
+          <div className="border border-zinc-800 rounded-xl p-5 bg-zinc-900/30">
+            <div className="flex items-start justify-between mb-2">
+              <p className="font-semibold text-white">Google LLC</p>
+              <span className="text-xs text-zinc-500 bg-zinc-800 px-2 py-0.5 rounded-full">Authentification (Google Sign-In)</span>
+            </div>
+            <p className="text-zinc-400 leading-relaxed mb-2">
+              Service d'authentification « Se connecter avec Google » (Google OAuth 2.0). Lorsque
+              vous l'utilisez, nous recevons votre email, votre nom et votre photo de profil pour
+              créer et sécuriser votre compte Aevia unique. Aucun périmètre sensible n'est demandé.
+              L'usage des données respecte la Google API Services User Data Policy (Limited Use).
+            </p>
+            <p className="text-zinc-500 text-xs">
+              Transfert international : États-Unis — Google opère sous les Clauses Contractuelles Types (CCT).
+            </p>
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+            >
+              Politique de confidentialité Google &rarr;
             </a>
           </div>
 
