@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useTransition, useRef, useEffect } from "react";
-import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Globe } from "lucide-react";
+import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Globe, LogIn } from "lucide-react";
 import { AeviaLogo } from "@/components/AeviaLogo";
 
 const navLinks = [
@@ -14,6 +14,7 @@ const NAV_T = {
   fr: {
     products: "Produits", soon: "Bientôt", cta: "Contact",
     mobileProducts: "Produits", mobileLang: "Langue",
+    login: "Se connecter", loginSub: "Accéder à votre espace",
     descLaunch: "Site web en 7 jours — 3 templates pro",
     descSecurity: "Audit sécurité & performance en 60s",
     descInbox: "CRM multi-canal — WhatsApp, Instagram, Email",
@@ -21,6 +22,7 @@ const NAV_T = {
   en: {
     products: "Products", soon: "Coming soon", cta: "Contact",
     mobileProducts: "Products", mobileLang: "Language",
+    login: "Sign in", loginSub: "Access your account",
     descLaunch: "Website in 7 days — 3 pro templates",
     descSecurity: "Security & performance audit in 60s",
     descInbox: "Multi-channel CRM — WhatsApp, Instagram, Email",
@@ -28,6 +30,7 @@ const NAV_T = {
   es: {
     products: "Productos", soon: "Próximamente", cta: "Contacto",
     mobileProducts: "Productos", mobileLang: "Idioma",
+    login: "Iniciar sesión", loginSub: "Accede a tu cuenta",
     descLaunch: "Sitio web en 7 días — 3 plantillas pro",
     descSecurity: "Auditoría de seguridad y rendimiento en 60s",
     descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
@@ -35,6 +38,7 @@ const NAV_T = {
   de: {
     products: "Produkte", soon: "Bald", cta: "Kontakt",
     mobileProducts: "Produkte", mobileLang: "Sprache",
+    login: "Anmelden", loginSub: "Zugang zu Ihrem Konto",
     descLaunch: "Website in 7 Tagen — 3 Pro-Vorlagen",
     descSecurity: "Sicherheits- & Performance-Audit in 60s",
     descInbox: "Multichannel-CRM — WhatsApp, Instagram, E-Mail",
@@ -42,6 +46,7 @@ const NAV_T = {
   pt: {
     products: "Produtos", soon: "Em breve", cta: "Contacto",
     mobileProducts: "Produtos", mobileLang: "Idioma",
+    login: "Entrar", loginSub: "Acesse sua conta",
     descLaunch: "Site em 7 dias — 3 templates pro",
     descSecurity: "Auditoria de segurança e performance em 60s",
     descInbox: "CRM multicanal — WhatsApp, Instagram, Email",
@@ -127,17 +132,27 @@ function LangSwitcher() {
   );
 }
 
+const loginLinks = [
+  { name: "AeviaSecurity", href: "https://security.aevia.services/login", icon: Shield },
+  { name: "AeviaInbox",    href: "https://inbox.aevia.services/fr/account/login", icon: MessageSquare },
+] as const;
+
 export function Nav() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const loginRef = useRef<HTMLDivElement>(null);
 
-  // Click-based dropdown — closes only on outside click or item selection
+  // Click-based dropdowns — close on outside click or item selection
   useEffect(() => {
     function onDocClick(e: MouseEvent) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
         setDropdownOpen(false);
+      }
+      if (loginRef.current && !loginRef.current.contains(e.target as Node)) {
+        setLoginOpen(false);
       }
     }
     document.addEventListener("mousedown", onDocClick);
@@ -228,6 +243,43 @@ export function Nav() {
 
           <LangSwitcher />
 
+          <div ref={loginRef} className="relative">
+            <button
+              onClick={() => setLoginOpen((v) => !v)}
+              aria-expanded={loginOpen}
+              aria-haspopup="true"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors"
+            >
+              <LogIn size={14} />
+              <span>{t.login}</span>
+              <ChevronDown size={12} className={`transition-transform ${loginOpen ? "rotate-180" : ""}`} />
+            </button>
+
+            {loginOpen && (
+              <div className="absolute right-0 top-full pt-2 w-64" onClick={() => setLoginOpen(false)}>
+                <div className="bg-zinc-900 border border-zinc-800 rounded-xl shadow-xl shadow-black/40 overflow-hidden p-2 flex flex-col gap-1">
+                  <p className="text-[10px] text-zinc-600 uppercase tracking-wider font-medium px-2.5 pt-1 pb-0.5">{t.loginSub}</p>
+                  {loginLinks.map((l) => {
+                    const Icon = l.icon;
+                    return (
+                      <a
+                        key={l.name}
+                        href={l.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-800/60 transition-colors group"
+                      >
+                        <Icon className="w-4 h-4 text-violet-400 shrink-0" />
+                        <span className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">{l.name}</span>
+                        <ExternalLink className="w-3 h-3 text-zinc-600 group-hover:text-zinc-400 transition-colors ml-auto" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+
           <Link
             href="/contact"
             className="ml-2 px-4 py-1.5 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
@@ -262,6 +314,26 @@ export function Nav() {
               </Link>
             );
           })}
+
+          <div className="mt-2 pt-2 border-t border-zinc-800 flex flex-col gap-1">
+            <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium">{t.login}</p>
+            {loginLinks.map((l) => {
+              const Icon = l.icon;
+              return (
+                <a
+                  key={l.name}
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-3 px-3 py-2.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors"
+                >
+                  <Icon className="w-4 h-4 text-violet-400 shrink-0" />
+                  <span>{l.name}</span>
+                </a>
+              );
+            })}
+          </div>
 
           <div className="mt-2 pt-2 border-t border-zinc-800 flex flex-col gap-1">
             <p className="text-xs text-zinc-600 px-3 py-1 uppercase tracking-wider font-medium">{t.mobileProducts}</p>
