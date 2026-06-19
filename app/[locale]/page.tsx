@@ -136,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* ── Stats ────────────────────────────────────────────────────────── */}
-      <section className="px-6 pb-16">
+      <section className="px-6 py-16">
         <div className="mx-auto max-w-5xl">
           <motion.div
             initial={{ opacity: 0, y: 16 }}
