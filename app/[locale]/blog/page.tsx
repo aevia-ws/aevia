@@ -75,7 +75,7 @@ export default function BlogPage() {
                         </span>
                       );
                     })()}
-                    <span className="text-xs text-zinc-500">{formatDate(BLOG_POSTS[0].date)}</span>
+                    <span className="text-sm text-zinc-500">{formatDate(BLOG_POSTS[0].date)}</span>
                     <span className="flex items-center gap-1 text-xs text-zinc-500">
                       <Clock size={11} />
                       {BLOG_POSTS[0].readingTime} de lecture
