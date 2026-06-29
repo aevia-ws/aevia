@@ -1352,6 +1352,86 @@ En 2025, ne laissez plus vos concurrents prendre de l'avance sur le web. Offrez 
 👉 [Découvrir Aevia Launch et créer mon site dès aujourd'hui](https://launch.aevia.services)
 `,
   },
+  {
+    slug: "service-client-ia-lyon-automatisation-pme",
+    title: "Service client IA à Lyon : comment les PME lyonnaises répondent 24/7 sans embaucher",
+    excerpt: "Découvrez comment les PME lyonnaises automatisent leur service client avec l'IA et Aevia Inbox pour offrir une réponse 24/7 sans exploser la masse salariale.",
+    date: "2026-06-29",
+    readingTime: "6 min",
+    category: "CRM & Support",
+    content: `Dans une métropole économique dynamique comme Lyon, la réactivité commerciale n'est plus seulement un avantage concurrentiel : c'est une exigence absolue des consommateurs et des clients B2B. Du quartier de la Part-Dieu aux Pentes de la Croix-Rousse, en passant par la Presqu'île ou Gerland, les TPE et PME lyonnaises font face à un afflux constant de sollicitations quotidiennes. Cependant, maintenir une équipe disponible en permanence pour répondre aux emails, appels et demandes sur le web représente un coût salarial considérable qu'une petite entreprise ne peut pas toujours assumer. En 2025, l'adoption d'un **service client IA à Lyon** permet aux dirigeants de résoudre cette équation en assurant une présence 24/7 sans embaucher du personnel supplémentaire.
+
+---
+
+## Contexte digital lyonnais, volume de messages et coût des équipes
+
+Lyon s'affirme chaque année comme l'un des hubs technologiques et économiques majeurs de France. Que vous dirigiez une boutique e-commerce en plein essor, un groupe de restaurants prisés ou une société de prestations de services B2B, vos clients attendent une réponse immédiate, y compris les soirs et week-ends.
+
+Le constat opérationnel sur le terrain est souvent sans appel :
+
+- **Un volume croissant et fragmenté** : Les demandes de renseignements, de devis, de réservations ou de suivi de commande arrivent en continu tout au long de la journée et de la nuit.
+- **Le coût financier du support humain** : Embaucher un préparateur de commande ou un chargé de clientèle à temps plein à Lyon implique un coût global (salaire brut, charges patronales, frais de poste de travail) souvent supérieur à 45 000 € par an. Pour couvrir les plages du soir et du week-end, la facture devient rapidement insoutenable pour une PME.
+- **L'insatisfaction liée au délai de réponse** : Un prospect qui attend plus de 2 heures pour obtenir un tarif ou une disponibilité se tourne immédiatement vers un concurrent lyonnais plus réactif.
+
+Face à ces enjeux de productivité et de rentabilité, l'**automatisation PME Lyon** via l'intelligence artificielle s'impose comme le levier stratégique par excellence.
+
+---
+
+## Les canaux à gérer (webchat, email, voix)
+
+Pour offrir une expérience client fluide et sans couture, une entreprise doit être en mesure de traiter les messages provenant de multiples points de contact. Sans outil adapté, la dispersion des canaux crée des goulots d'étranglement et des oublis fréquents.
+
+Un dispositif complet d'automatisation intelligente doit prendre en charge les trois canaux fondamentaux de communication d'entreprise :
+
+1. **Le Webchat sur votre site internet** : Installé en bas de page, le chat en ligne est la première porte d'entrée pour les visiteurs indécis. Un **chatbot Lyon** nouvelle génération ne se contente pas de répéter des choix préenregistrés : il comprend le langage naturel, répond précisément aux questions techniques et guide l'utilisateur vers la conversion.
+2. **La boîte de réception Email** : Traiter manuellement des dizaines d'emails répétitifs (« Quels sont vos tarifs ? », « Quelle est la procédure de retour ? », « Avez-vous de la disponibilité jeudi ? ») consomme un temps précieux. L'IA analyse l'intention du message, prépare et envoie une réponse pertinente en quelques secondes.
+3. **Le canal Voix et téléphonie** : Les assistants vocaux intelligents permettent désormais de prendre les appels entrants, de répondre aux questions fréquentes ou de rediriger les demandes complexes vers le bon interlocuteur sans engorger votre standard.
+
+---
+
+## Comment Aevia Inbox centralise et répond automatiquement
+
+Pour surmonter le défi de la gestion multicanale, Aevia a conçu **Aevia Inbox**, une plateforme de **CRM Lyon** nouvelle génération qui unifie l'ensemble de vos communications au sein d'une interface unique.
+
+Aevia Inbox fonctionne comme un véritable copilote virtuel pour votre équipe commerciale :
+
+- **Centralisation totale** : Tous les messages reçus par chat, email ou téléphone arrivent dans un flux de travail unique et structuré. Finie la jonglerie permanente entre cinq applications différentes.
+- **Réponses autonomes et personnalisées** : Grâce à un modèle d'IA entraîné spécifiquement sur vos données (documents d'entreprise, catalogue produit, FAQ), Aevia Inbox répond automatiquement 24h/24 et 7j/7 avec un ton naturel et adapté à votre image de marque.
+- **Qualification et transmission d'alertes** : L'outil identifie instantanément la valeur de chaque contact. Lorsqu'un prospect chaud exprime une intention d'achat ferme ou demande un devis sur-mesure, Aevia Inbox attribue la tâche à votre meilleur commercial et génère une alerte prioritaire.
+
+---
+
+## Cas concret : un restaurant lyonnais qui gère 50 messages/jour avec 1 personne
+
+Pour illustrer l'impact direct sur le retour sur investissement (ROI), prenons l'exemple d'un établissement de restauration situé dans le centre de Lyon.
+
+Avant de déployer Aevia Inbox, ce restaurant recevait chaque jour plus de 50 sollicitations variées (demandes d'allergènes, modifications de réservations, privatisations d'entreprises, horaires des jours fériés). Le gérant et son responsable de salle passaient près de 2 heures par jour à répondre aux messages et à rater des appels en plein service.
+
+Après l'installation de l'assistant IA Aevia Inbox :
+
+- **85 % des demandes courantes** (horaires, menus, accès, réservations standard) sont désormais traitées instantanément par l'IA sans aucune intervention humaine.
+- **Les demandes de privatisation B2B** sont automatiquement qualifiées par l'IA et transmises directement au gérant sous forme de fiches complètes (date, nombre d'invités, budget).
+- **Résultat** : Une seule personne consacre désormais moins de 15 minutes par jour à la supervision du service client, tandis que le taux de transformation des réservations a augmenté de 22 % grâce à l'immédiateté des réponses.
+
+---
+
+## Mise en place en moins d'une journée
+
+L'un des plus grands préjugés concernant les projets de service client IA à Lyon réside dans leur complexité technique supposée. Avec Aevia Inbox, l'intégration est pensée pour être rapide et sans friction pour vos équipes.
+
+La mise en place s'effectue en trois temps forts au cours de la même journée :
+
+1. **Connectez vos canaux** : En quelques clics, vous raccordez votre adresse email professionnelle, votre numéro de téléphone et votre site web à l'interface Aevia Inbox.
+2. **Importez votre base de connaissances** : Téléchargez vos documents existants (brochures, tarifs, FAQ, fiches produits). L'IA assimilie immédiatement l'intégralité de vos informations métier.
+3. **Activez l'automatisation** : Vous définissez les règles de délégation (ce que l'IA traite seule et ce qui nécessite votre validation) et votre assistant virtuel est instantanément opérationnel pour répondre à vos clients lyonnais.
+
+---
+
+Maximisez la satisfaction de vos clients et libérez vos équipes des tâches chronophages. Adoptez la puissance de l'intelligence artificielle pour votre support commercial à Lyon.
+
+👉 [Découvrir Aevia Inbox et tester l'automatisation dès maintenant](https://inbox.aevia.services)
+`,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
