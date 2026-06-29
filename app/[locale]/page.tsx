@@ -34,8 +34,8 @@ export default function Home() {
         { icon: <Zap className="w-4 h-4" />, label: p("launch_f4") },
       ],
       cta: p("launch_cta"),
-      ctaSecondary: p("launch_cta2"),
-      ctaSecondaryHref: "https://launch.aevia.services",
+      ctaSecondary: null,
+      ctaSecondaryHref: null,
     },
     {
       name: "AeviaSecurity",
