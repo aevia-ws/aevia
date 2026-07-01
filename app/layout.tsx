@@ -106,12 +106,7 @@ export default function RootLayout({
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-violet-600 focus:text-white focus:rounded-lg focus:font-semibold">Skip to main content</a>
         <Nav />
         {children}
-        <script
-          async
-          src="https://inbox.aevia.services/webchat/widget.js"
-          data-widget-id="wid_2a6ea934ea6a6404d285e9fc93cb0707"
-          data-api-url="https://skybot-inbox-production.up.railway.app/api/v1"
-        />
+        {/* webchat widget moved to [locale]/layout.tsx for i18n locale injection */}
       </body>
     </html>
   );

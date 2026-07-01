@@ -70,6 +70,14 @@ export default async function LocaleLayout({
       <ConsentAwareAnalytics />
       {children}
       <CookieBanner />
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      <script
+        async
+        src="https://inbox.aevia.services/webchat/widget.js"
+        data-widget-id="wid_2a6ea934ea6a6404d285e9fc93cb0707"
+        data-api-url="https://skybot-inbox-production.up.railway.app/api/v1"
+        data-lang={locale}
+      />
     </NextIntlClientProvider>
   );
 }
