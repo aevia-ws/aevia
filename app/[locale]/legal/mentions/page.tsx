@@ -35,10 +35,10 @@ export default function MentionsPage() {
           <p>
             <span className="text-zinc-400">{t("contact_label")} :</span>{" "}
             <a
-              href="mailto:contact@aevia.io"
+              href="mailto:valentinmilliand@aevia.services"
               className="text-violet-400 hover:text-violet-300 transition-colors"
             >
-              contact@aevia.io
+              valentinmilliand@aevia.services
             </a>
           </p>
           <p>

@@ -25,11 +25,11 @@ export default function PrivacyPage() {
           <p><span className="text-zinc-400">Directeur de la publication :</span> Valentin Milliand</p>
           <p><span className="text-zinc-400">SIREN :</span> 852 546 225 — RCS Bourg-en-Bresse</p>
           <p><span className="text-zinc-400">Pays d'établissement :</span> France</p>
-          <p><span className="text-zinc-400">Adresse :</span> Adresse du siège social communiquée sur demande à contact@aevia.io</p>
+          <p><span className="text-zinc-400">Adresse :</span> Adresse du siège social communiquée sur demande à valentinmilliand@aevia.services</p>
           <p>
             <span className="text-zinc-400">Contact :</span>{" "}
-            <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-              contact@aevia.io
+            <a href="mailto:valentinmilliand@aevia.services" className="text-violet-400 hover:text-violet-300 transition-colors">
+              valentinmilliand@aevia.services
             </a>
           </p>
           <p>
@@ -628,8 +628,8 @@ export default function PrivacyPage() {
           </p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email général :</span>{" "}
-            <a href="mailto:contact@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
-              contact@aevia.io
+            <a href="mailto:valentinmilliand@aevia.services" className="text-violet-400 hover:text-violet-300 transition-colors">
+              valentinmilliand@aevia.services
             </a>
           </p>
           <p className="text-zinc-400">

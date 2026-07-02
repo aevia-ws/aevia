@@ -222,7 +222,7 @@ export default function ContactPage() {
                 <div className="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-400 flex-shrink-0" aria-hidden="true">
                   <Mail className="w-4 h-4" />
                 </div>
-                <a href="mailto:contact@aevia.io" className="text-zinc-300 hover:text-white transition-colors">contact@aevia.io</a>
+                <a href="mailto:valentinmilliand@aevia.services" className="text-zinc-300 hover:text-white transition-colors">valentinmilliand@aevia.services</a>
               </div>
 
               <div className="flex items-center gap-3 text-sm">

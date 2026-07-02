@@ -28,8 +28,8 @@ Live URL: **aevia.services/fr** — vérifier : `curl -sI https://aevia.services
 - `generateStaticParams` requiert `locales: ['fr','en','es','pt','de']` dans `lib/i18n.ts`
 
 ## Règles métier
-- **Aevia WS** — auto-entrepreneur, SIREN 852 546 225, contact@aevia.io
-- Adresse perso **JAMAIS affichée** : "Adresse communiquée sur demande à contact@aevia.io"
+- **Aevia WS** — auto-entrepreneur, SIREN 852 546 225, valentinmilliand@aevia.services
+- Adresse perso **JAMAIS affichée** : "Adresse communiquée sur demande à valentinmilliand@aevia.services"
 - Produits exposés dans le hub : Launch, Security, Inbox (pas les autres — archivés)
 - Aucune URL avec "sky" dans le copy front
 
