@@ -1,0 +1,19 @@
+# Aevia — SaaS pour entrepreneurs
+
+> Suite d'outils SaaS pour TPE, PME et entrepreneurs ambitieux en France et en Europe.
+
+Aevia conçoit trois produits complémentaires : AeviaLaunch (sites web professionnels en 7 jours), AeviaSecurity (audit de sécurité web instantané avec score et rapport IA), et AeviaInbox (inbox unifiée multi-canal avec agents IA pour la relation client). Fondé par Valentin Milliand, développeur fullstack basé à Lyon, France. SIREN 852 546 225.
+
+## Products
+
+- [AeviaLaunch](https://launch.aevia.services): Créateur de sites web professionnels en 7 jours. Thèmes par secteur (restaurant, coach, e-commerce, vitrine). Prix à partir de 297€.
+- [AeviaSecurity](https://security.aevia.services): Audit de sécurité web instantané. Vérifie SSL, DNS, headers HTTP, Core Web Vitals, SEO et accessibilité. Score sur 100 + rapport IA. Gratuit pour un scan, abonnements à partir de 9€/mois.
+- [AeviaInbox](https://inbox.aevia.services): Inbox unifiée multi-canal (WhatsApp, Instagram, Facebook, email, SMS). Agents IA pour réponses automatiques. Transfert voix intelligente.
+
+## Contact & Legal
+
+- Email: contact@aevia.io
+- SIREN: 852 546 225
+- Fondateur: Valentin Milliand
+- Localisation: Lyon, France
+- Langues: Français, Anglais, Espagnol, Allemand, Portugais
