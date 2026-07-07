@@ -58,8 +58,13 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Message too long (max 5000 chars)" }, { status: 400 });
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    // Email validation — bound the input length BEFORE regex evaluation (RFC 5321 max
+    // mailbox length) and use a regex where adjacent quantified groups can't overlap
+    // (the domain label excludes ".") so matching stays linear, not polynomial.
+    if (typeof email !== "string" || email.length > 254) {
+      return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+    }
+    const emailRegex = /^[^\s@]+@[^\s@.]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       return NextResponse.json({ error: "Invalid email" }, { status: 400 });
     }
