@@ -1,5 +1,6 @@
 "use client";
 
+import { use } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowLeft, Clock, Tag, Calendar, ArrowRight } from "lucide-react";
@@ -94,10 +95,15 @@ function renderContent(content: string) {
   return elements;
 }
 
-export default function ArticlePage({ params }: { params: { slug: string; locale: string } }) {
+export default function ArticlePage({
+  params,
+}: {
+  params: Promise<{ slug: string; locale: string }>;
+}) {
+  const resolvedParams = use(params);
   const pathname = usePathname();
-  const locale = params.locale ?? pathname.split("/")[1] ?? "fr";
-  const post = getBlogPost(params.slug);
+  const locale = resolvedParams.locale ?? pathname.split("/")[1] ?? "fr";
+  const post = getBlogPost(resolvedParams.slug);
 
   if (!post) notFound();
 
