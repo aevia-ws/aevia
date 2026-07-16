@@ -43,27 +43,51 @@ export default async function ArticleLayout({
 }) {
   const { slug, locale } = await params;
   const post = getBlogPost(slug);
-  const jsonLd = post
-    ? {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        headline: post.title,
-        description: post.excerpt,
-        datePublished: post.date,
-        dateModified: post.date,
-        articleSection: post.category,
-        inLanguage: locale,
-        mainEntityOfPage: { "@type": "WebPage", "@id": `${BASE}/${locale}/blog/${slug}` },
-        author: { "@type": "Organization", name: "Aevia", url: BASE },
-        publisher: {
-          "@type": "Organization",
-          name: "Aevia",
-          url: BASE,
-          logo: { "@type": "ImageObject", url: `${BASE}/icon.png` },
-        },
-        image: `${BASE}/og.png`,
-      }
-    : null;
+  const url = `${BASE}/${locale}/blog/${slug}`;
+
+  const graph: object[] = [];
+  if (post) {
+    graph.push({
+      "@type": "BlogPosting",
+      headline: post.title,
+      description: post.excerpt,
+      datePublished: post.date,
+      dateModified: post.date,
+      articleSection: post.category,
+      inLanguage: locale,
+      mainEntityOfPage: { "@type": "WebPage", "@id": url },
+      author: { "@type": "Organization", name: "Aevia", url: BASE },
+      publisher: {
+        "@type": "Organization",
+        name: "Aevia",
+        url: BASE,
+        logo: { "@type": "ImageObject", url: `${BASE}/icon.png` },
+      },
+      image: `${BASE}/og.png`,
+    });
+
+    graph.push({
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: `${BASE}/${locale}` },
+        { "@type": "ListItem", position: 2, name: "Blog", item: `${BASE}/${locale}/blog` },
+        { "@type": "ListItem", position: 3, name: post.title, item: url },
+      ],
+    });
+
+    if (post.faq && post.faq.length > 0) {
+      graph.push({
+        "@type": "FAQPage",
+        mainEntity: post.faq.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      });
+    }
+  }
+
+  const jsonLd = graph.length > 0 ? { "@context": "https://schema.org", "@graph": graph } : null;
 
   return (
     <>

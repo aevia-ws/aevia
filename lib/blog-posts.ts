@@ -1,3 +1,8 @@
+export interface BlogFaqItem {
+  q: string;
+  a: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -6,6 +11,8 @@ export interface BlogPost {
   readingTime: string;
   category: string;
   content: string;
+  /** Optional structured FAQ — emitted as FAQPage JSON-LD for rich results + LLM citation. */
+  faq?: BlogFaqItem[];
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -1587,6 +1594,24 @@ Ne laissez plus le téléphone sonner dans le vide pendant le service.
 
 👉 [Découvrir le standard téléphonique IA d'AeviaInbox](https://inbox.aevia.services)
 `,
+    faq: [
+      {
+        q: "L'IA prend-elle vraiment la réservation, ou juste un message ?",
+        a: "Elle prend réellement la réservation : elle vérifie les disponibilités, confirme au client et enregistre la réservation dans le calendrier du restaurant.",
+      },
+      {
+        q: "Que se passe-t-il si la demande est trop complexe ?",
+        a: "L'agent peut transférer l'appel ou noter la demande pour un rappel humain. La grande majorité des appels (réserver, horaires, commande) sont traités automatiquement.",
+      },
+      {
+        q: "Est-ce que ça marche avec ma caisse enregistreuse ?",
+        a: "Oui pour les caisses compatibles HubRise (dont Popina) : la commande peut être poussée directement vers la caisse.",
+      },
+      {
+        q: "Dans quelles langues l'agent vocal répond-il ?",
+        a: "Français, anglais, espagnol, portugais et plus — l'agent s'adapte à la langue du client.",
+      },
+    ],
   },
   {
     slug: "agent-vocal-ia-prise-rendez-vous",
@@ -1667,6 +1692,24 @@ Rendez à votre équipe le temps passé au téléphone.
 
 👉 [Découvrir l'agent vocal IA d'AeviaInbox](https://inbox.aevia.services)
 `,
+    faq: [
+      {
+        q: "L'agent a-t-il accès à mon agenda ?",
+        a: "Oui, il consulte les disponibilités en temps réel et pose le rendez-vous directement dans l'agenda synchronisé.",
+      },
+      {
+        q: "Peut-il gérer les annulations et les reports ?",
+        a: "Oui, il traite aussi bien la prise de rendez-vous que le report ou l'annulation.",
+      },
+      {
+        q: "Que se passe-t-il pour une demande médicale sensible ?",
+        a: "L'agent fixe le rendez-vous ; il ne donne pas d'avis médical et peut orienter vers un rappel humain si la demande sort de son périmètre.",
+      },
+      {
+        q: "L'agent vocal fonctionne-t-il en dehors des heures d'ouverture ?",
+        a: "Oui, 24h/24 — c'est justement là que se perdent le plus de rendez-vous aujourd'hui.",
+      },
+    ],
   },
   {
     slug: "combien-coute-agent-telephonique-ia",
@@ -1753,6 +1796,24 @@ Faites le calcul pour votre activité : combien vous coûtent aujourd'hui les ap
 
 👉 [Voir les tarifs d'AeviaInbox](https://inbox.aevia.services/fr/pricing)
 `,
+    faq: [
+      {
+        q: "Y a-t-il un engagement pour un agent téléphonique IA ?",
+        a: "Le modèle est un abonnement mensuel ; on choisit son palier selon son volume d'appels et de messages.",
+      },
+      {
+        q: "Puis-je prendre seulement la voix, sans les messages ?",
+        a: "Oui, le mode « voix seule » existe, tout comme « messages seuls » ou les deux combinés.",
+      },
+      {
+        q: "Faut-il du matériel ou une installation technique ?",
+        a: "Non, pas de matériel : l'agent fonctionne sur une ligne dédiée, sans installation lourde.",
+      },
+      {
+        q: "Le prix augmente-t-il si je reçois plus d'appels ?",
+        a: "On choisit un palier adapté à son volume ; si le volume grandit, on passe au palier supérieur.",
+      },
+    ],
   },
   {
     slug: "ne-plus-manquer-appels-clients-commerce",
@@ -1831,6 +1892,24 @@ Arrêtez de laisser vos clients aller chez le concurrent d'à côté faute de r�
 
 👉 [Découvrir AeviaInbox](https://inbox.aevia.services)
 `,
+    faq: [
+      {
+        q: "Le client se rend-il compte qu'il parle à une IA ?",
+        a: "L'agent est transparent et efficace ; l'important pour l'appelant, c'est d'obtenir une réponse ou une réservation immédiate.",
+      },
+      {
+        q: "Et pour les demandes vraiment particulières ?",
+        a: "Elles peuvent être transférées ou notées pour un rappel humain. La majorité des appels courants sont traités automatiquement.",
+      },
+      {
+        q: "Est-ce que ça remplace mon équipe ?",
+        a: "Non, ça la décharge des appels répétitifs pour qu'elle se concentre sur les clients présents — et ça couvre les moments où personne ne peut décrocher.",
+      },
+      {
+        q: "Puis-je aussi centraliser WhatsApp et les emails ?",
+        a: "Oui, la voix et les messageries (WhatsApp, Instagram, email) peuvent être réunies dans une seule solution.",
+      },
+    ],
   },
 ];
 
