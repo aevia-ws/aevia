@@ -9,6 +9,7 @@ import { AeviaLogo } from "@/components/AeviaLogo";
 const navLinks = [
   { href: "/solutions", label: "Solutions" },
   { href: "/blog", label: "Blog" },
+  { href: "/docs", label: "Docs" },
 ];
 
 const NAV_T = {
