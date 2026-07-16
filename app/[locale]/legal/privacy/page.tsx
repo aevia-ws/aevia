@@ -28,13 +28,13 @@ export default function PrivacyPage() {
           <p><span className="text-zinc-400">Adresse :</span> Adresse du siège social communiquée sur demande à valentinmilliand@aevia.services</p>
           <p>
             <span className="text-zinc-400">Contact :</span>{" "}
-            <a href="mailto:valentinmilliand@aevia.services" className="text-violet-400 hover:text-violet-300 transition-colors">
+            <a href="mailto:valentinmilliand@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
               valentinmilliand@aevia.services
             </a>
           </p>
           <p>
             <span className="text-zinc-400">Contact DPO / Vie privée :</span>{" "}
-            <a href="mailto:privacy@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
               privacy@aevia.io
             </a>
           </p>
@@ -52,7 +52,7 @@ export default function PrivacyPage() {
         </p>
         <ul className="space-y-3 text-sm">
           <li className="flex gap-3">
-            <span className="text-violet-400 font-bold shrink-0">Aevia Inbox</span>
+            <span className="text-red-400 font-bold shrink-0">Aevia Inbox</span>
             <span className="text-zinc-400">
               (app.aevia.io) — CRM multi-canal B2B. Centralise les conversations WhatsApp,
               Instagram, Messenger et email pour les entreprises. Abonnement mensuel (59 €, 159 €
@@ -60,7 +60,7 @@ export default function PrivacyPage() {
             </span>
           </li>
           <li className="flex gap-3">
-            <span className="text-fuchsia-400 font-bold shrink-0">AeviaLaunch</span>
+            <span className="text-red-300 font-bold shrink-0">AeviaLaunch</span>
             <span className="text-zinc-400">
               (launch.aevia.io) — Générateur de sites web assisté par IA. Crée des sites web
               professionnels à partir de données de formulaire. Paiement unique (599 €, 899 € ou
@@ -114,7 +114,7 @@ export default function PrivacyPage() {
           qualité de <strong className="text-zinc-300">sous-traitant</strong> au sens du RGPD. Le client
           abonné demeure responsable du traitement vis-à-vis de ses propres clients finaux. Un
           accord de traitement des données (DPA) est disponible sur demande à{" "}
-          <a href="mailto:privacy@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
             privacy@aevia.io
           </a>.
         </p>
@@ -170,7 +170,7 @@ export default function PrivacyPage() {
           <strong className="text-zinc-300">Conformité Google API Services User Data Policy :</strong>{" "}
           L'utilisation et le transfert par Aevia des informations reçues des API Google
           respectent la{" "}
-          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" className="text-violet-400 hover:text-violet-300 transition-colors">
+          <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noopener noreferrer" className="text-red-400 hover:text-red-300 transition-colors">
             Google API Services User Data Policy
           </a>, y compris ses exigences d'utilisation limitée (Limited Use). Les données Google ne
           sont jamais vendues, ni utilisées à des fins publicitaires, ni transférées à des tiers
@@ -296,7 +296,7 @@ export default function PrivacyPage() {
               href="https://stripe.com/fr/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Stripe &rarr;
             </a>
@@ -320,7 +320,7 @@ export default function PrivacyPage() {
               href="https://www.anthropic.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Anthropic &rarr;
             </a>
@@ -343,7 +343,7 @@ export default function PrivacyPage() {
               href="https://render.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Render &rarr;
             </a>
@@ -365,7 +365,7 @@ export default function PrivacyPage() {
               href="https://vercel.com/legal/privacy-policy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Vercel &rarr;
             </a>
@@ -388,7 +388,7 @@ export default function PrivacyPage() {
               href="https://www.facebook.com/privacy/policy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Meta &rarr;
             </a>
@@ -412,7 +412,7 @@ export default function PrivacyPage() {
               href="https://policies.google.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Google &rarr;
             </a>
@@ -432,7 +432,7 @@ export default function PrivacyPage() {
               href="https://plausible.io/privacy"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs text-violet-400 hover:text-violet-300 transition-colors mt-1 inline-block"
+              className="text-xs text-red-400 hover:text-red-300 transition-colors mt-1 inline-block"
             >
               Politique de confidentialité Plausible &rarr;
             </a>
@@ -456,7 +456,7 @@ export default function PrivacyPage() {
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour obtenir une copie des garanties mises en place ou plus d'informations sur ces
           transferts, vous pouvez nous contacter à{" "}
-          <a href="mailto:privacy@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
             privacy@aevia.io
           </a>.
         </p>
@@ -508,7 +508,7 @@ export default function PrivacyPage() {
           <p className="text-zinc-300 font-semibold mb-2">Comment exercer vos droits</p>
           <p className="text-zinc-400 leading-relaxed mb-3">
             Envoyez votre demande par email à{" "}
-            <a href="mailto:privacy@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
               privacy@aevia.io
             </a>{" "}
             en précisant votre nom, l'adresse email associée à votre compte et la nature de
@@ -527,7 +527,7 @@ export default function PrivacyPage() {
               href="https://www.cnil.fr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-violet-400 hover:text-violet-300 transition-colors"
+              className="text-red-400 hover:text-red-300 transition-colors"
             >
               www.cnil.fr
             </a>.
@@ -551,7 +551,7 @@ export default function PrivacyPage() {
         </p>
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour obtenir un DPA, contactez-nous à{" "}
-          <a href="mailto:privacy@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+          <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
             privacy@aevia.io
           </a>{" "}
           avec l'objet &laquo; Demande DPA &raquo;.
@@ -571,7 +571,7 @@ export default function PrivacyPage() {
         </p>
         <p className="text-sm leading-relaxed text-zinc-400">
           Pour en savoir plus, consultez notre{" "}
-          <a href="/fr/legal/cookies" className="text-violet-400 hover:text-violet-300 transition-colors">
+          <a href="/fr/legal/cookies" className="text-red-400 hover:text-red-300 transition-colors">
             Politique de Cookies
           </a>.
         </p>
@@ -622,13 +622,13 @@ export default function PrivacyPage() {
           <p className="text-zinc-300 font-semibold mb-2">Pour toute question relative à cette politique :</p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email :</span>{" "}
-            <a href="mailto:privacy@aevia.io" className="text-violet-400 hover:text-violet-300 transition-colors">
+            <a href="mailto:privacy@aevia.io" className="text-red-400 hover:text-red-300 transition-colors">
               privacy@aevia.io
             </a>
           </p>
           <p className="text-zinc-400">
             <span className="text-zinc-300">Email général :</span>{" "}
-            <a href="mailto:valentinmilliand@aevia.services" className="text-violet-400 hover:text-violet-300 transition-colors">
+            <a href="mailto:valentinmilliand@aevia.services" className="text-red-400 hover:text-red-300 transition-colors">
               valentinmilliand@aevia.services
             </a>
           </p>

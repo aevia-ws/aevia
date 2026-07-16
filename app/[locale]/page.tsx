@@ -24,9 +24,9 @@ export default function Home() {
       href: "https://launch.aevia.services",
       status: "live" as const,
       icon: <Sparkles className="w-6 h-6" />,
-      accentFrom: "from-violet-500",
-      accentTo: "to-fuchsia-500",
-      glow: "group-hover:shadow-violet-500/25",
+      accentFrom: "from-red-500",
+      accentTo: "to-red-700",
+      glow: "group-hover:shadow-red-500/25",
       features: [
         { icon: <Globe className="w-4 h-4" />, label: p("launch_f1") },
         { icon: <ShoppingBag className="w-4 h-4" />, label: p("launch_f2") },
@@ -80,14 +80,14 @@ export default function Home() {
   ];
 
   const templates = [
-    { label: "Landing Page", href: "https://launch.aevia.services/templates/impact-05", color: "from-violet-500/20 to-fuchsia-500/10", dot: "bg-violet-400", desc: ts("landing_desc") },
+    { label: "Landing Page", href: "https://launch.aevia.services/templates/impact-05", color: "from-red-500/20 to-red-700/10", dot: "bg-red-400", desc: ts("landing_desc") },
     { label: "E-Commerce", href: "https://launch.aevia.services/templates/impact-47", color: "from-amber-500/20 to-orange-500/10", dot: "bg-amber-400", desc: ts("ecom_desc") },
     { label: "Site Vitrine", href: "https://launch.aevia.services/templates/impact-33", color: "from-emerald-500/20 to-teal-500/10", dot: "bg-emerald-400", desc: ts("vitrine_desc") },
   ];
 
   const whyItems = [
     { icon: <Zap className="w-5 h-5" />, title: w("fast_title"), desc: w("fast_desc"), color: "from-amber-500/20 to-orange-500/10", textColor: "text-amber-400" },
-    { icon: <Code2 className="w-5 h-5" />, title: w("reliable_title"), desc: w("reliable_desc"), color: "from-violet-500/20 to-fuchsia-500/10", textColor: "text-violet-400" },
+    { icon: <Code2 className="w-5 h-5" />, title: w("reliable_title"), desc: w("reliable_desc"), color: "from-red-500/20 to-red-700/10", textColor: "text-red-400" },
     { icon: <CheckCircle2 className="w-5 h-5" />, title: w("simple_title"), desc: w("simple_desc"), color: "from-emerald-500/20 to-teal-500/10", textColor: "text-emerald-400" },
   ];
 
@@ -119,7 +119,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors"
               >
                 {h("cta_primary")}
                 <ArrowRight className="w-4 h-4" />
@@ -163,8 +163,8 @@ export default function Home() {
       <section id="produits" className="relative px-6 py-20 overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <div className="absolute inset-0 bg-zinc-950/70" />
-          <div className="absolute inset-0 opacity-[0.025]" style={{ backgroundImage: "radial-gradient(circle, #a78bfa 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-violet-600/6 blur-[120px]" />
+          <div className="absolute inset-0 opacity-[0.025]" style={{ backgroundImage: "radial-gradient(circle, #f87171 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[600px] rounded-full bg-red-600/6 blur-[120px]" />
         </div>
         <div className="mx-auto max-w-5xl">
           <motion.div
@@ -251,7 +251,7 @@ export default function Home() {
           <div className="rounded-2xl border border-zinc-800 bg-zinc-900/40 overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
               <div className="p-8 sm:p-10 flex flex-col justify-center">
-                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-fuchsia-500/10 ring-1 ring-fuchsia-500/20 text-fuchsia-300 text-xs font-medium mb-5 w-fit">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 ring-1 ring-red-500/20 text-red-300 text-xs font-medium mb-5 w-fit">
                   <Layout className="w-3 h-3" />
                   {ts("badge")}
                 </div>
@@ -262,7 +262,7 @@ export default function Home() {
                   {ts("desc")}
                 </p>
                 <div className="flex flex-wrap gap-3">
-                  <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-violet-600 to-fuchsia-600 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
+                  <a href="https://launch.aevia.services" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-red-600 to-red-800 hover:opacity-90 text-white text-sm font-semibold transition-opacity">
                     {ts("cta1")} <ArrowRight className="w-4 h-4" />
                   </a>
                   <Link href="/contact" className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-zinc-700 text-zinc-300 text-sm font-semibold hover:border-zinc-500 hover:text-white transition-colors">
@@ -290,7 +290,7 @@ export default function Home() {
                 <div className="mt-1 p-4 rounded-xl border border-dashed border-zinc-700 text-center">
                   <p className="text-zinc-500 text-xs mb-1.5">{ts("custom_q")}</p>
                   <a href="https://launch.aevia.services/themes" target="_blank" rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-violet-400 hover:text-violet-300 transition-colors">
+                    className="inline-flex items-center gap-1 text-xs text-red-400 hover:text-red-300 transition-colors">
                     {ts("custom_link")} <ArrowRight className="w-3 h-3" />
                   </a>
                 </div>
@@ -343,12 +343,12 @@ export default function Home() {
             transition={{ duration: 0.5 }}
           >
             <div className="rounded-2xl border border-zinc-800 bg-gradient-to-br from-zinc-900 to-zinc-900/50 p-10 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-violet-600/5 to-fuchsia-600/5 rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-800/5 rounded-2xl" />
               <div className="relative z-10">
                 <h2 className="text-2xl font-bold text-white mb-3">{c("title")}</h2>
                 <p className="text-zinc-400 max-w-md mx-auto mb-8">{c("desc")}</p>
                 <div className="flex flex-wrap items-center justify-center gap-4">
-                  <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-violet-600 hover:bg-violet-500 text-white text-sm font-semibold transition-colors">
+                  <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-red-600 hover:bg-red-500 text-white text-sm font-semibold transition-colors">
                     {c("contact")} <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

@@ -56,17 +56,17 @@ export function SolutionsIndexView() {
     <div className="min-h-screen">
       <section className="relative pt-40 pb-16 px-6 overflow-hidden">
         <div className="absolute inset-0 -z-10">
-          <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-violet-600/8 blur-[120px]" />
+          <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/8 blur-[120px]" />
           <div className="absolute top-40 -left-32 w-[400px] h-[400px] rounded-full bg-cyan-600/5 blur-[100px]" />
         </div>
         <div className="mx-auto max-w-5xl">
           <div className="flex items-center gap-2 mb-6">
-            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-violet-500/10 ring-1 ring-violet-500/20 text-violet-300 text-xs font-medium">
+            <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-red-500/10 ring-1 ring-red-500/20 text-red-300 text-xs font-medium">
               {t.badge}
             </div>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-[1.1] mb-4 max-w-3xl">
-            {t.title1} <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400">{t.title2}</span>
+            {t.title1} <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-red-600">{t.title2}</span>
           </h1>
           <p className="text-zinc-400 text-lg max-w-2xl leading-relaxed">{t.sub}</p>
         </div>

@@ -59,7 +59,7 @@ export default async function ArticleLayout({
           "@type": "Organization",
           name: "Aevia",
           url: BASE,
-          logo: { "@type": "ImageObject", url: `${BASE}/icon.svg` },
+          logo: { "@type": "ImageObject", url: `${BASE}/icon.png` },
         },
         image: `${BASE}/og.png`,
       }

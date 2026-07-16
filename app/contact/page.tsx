@@ -72,7 +72,7 @@ export default function ContactPage() {
     <div className="min-h-screen pt-24 pb-32 px-6" id="main-content">
       {/* Background */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-violet-600/8 blur-[120px]" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-600/8 blur-[120px]" />
       </div>
 
       <div className="mx-auto max-w-4xl">
@@ -115,7 +115,7 @@ export default function ContactPage() {
                     className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none transition-colors ${
                       fieldErrors.name
                         ? "border-red-500 focus:border-red-500"
-                        : "border-zinc-700 focus:border-violet-500"
+                        : "border-zinc-700 focus:border-red-500"
                     }`}
                   />
                   {fieldErrors.name && (
@@ -141,7 +141,7 @@ export default function ContactPage() {
                     className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none transition-colors ${
                       fieldErrors.email
                         ? "border-red-500 focus:border-red-500"
-                        : "border-zinc-700 focus:border-violet-500"
+                        : "border-zinc-700 focus:border-red-500"
                     }`}
                   />
                   {fieldErrors.email && (
@@ -160,7 +160,7 @@ export default function ContactPage() {
                   value={form.subject}
                   onChange={(e) => setForm({ ...form, subject: e.target.value })}
                   placeholder="Project idea, collaboration, etc."
-                  className="w-full px-4 py-2.5 rounded-xl border border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none focus:border-violet-500 transition-colors"
+                  className="w-full px-4 py-2.5 rounded-xl border border-zinc-700 bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none focus:border-red-500 transition-colors"
                 />
               </div>
 
@@ -181,7 +181,7 @@ export default function ContactPage() {
                   className={`w-full px-4 py-2.5 rounded-xl border bg-zinc-900 text-white placeholder:text-zinc-600 text-base focus:outline-none transition-colors resize-none ${
                     fieldErrors.message
                       ? "border-red-500 focus:border-red-500"
-                      : "border-zinc-700 focus:border-violet-500"
+                      : "border-zinc-700 focus:border-red-500"
                   }`}
                 />
                 {fieldErrors.message && (
@@ -200,7 +200,7 @@ export default function ContactPage() {
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-violet-600 hover:bg-violet-500 disabled:opacity-60 text-white text-base font-semibold transition-colors"
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-full bg-red-600 hover:bg-red-500 disabled:opacity-60 text-white text-base font-semibold transition-colors"
               >
                 <Send className="w-4 h-4" />
                 {status === "loading" ? "Sending..." : "Send message"}
@@ -260,7 +260,7 @@ export default function ContactPage() {
                   "Questions tarifaires ou démo",
                 ].map((item) => (
                   <li key={item} className="flex items-center gap-2 text-zinc-400 text-sm">
-                    <span className="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0" />
                     {item}
                   </li>
                 ))}

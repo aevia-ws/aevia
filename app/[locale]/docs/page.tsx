@@ -88,7 +88,7 @@ export default function DocsOverviewPage() {
             href={`${base}/launch`}
             className="group flex gap-4 p-5 rounded-xl border border-zinc-800 bg-zinc-900/40 hover:border-zinc-600 hover:bg-zinc-900/70 transition-colors"
           >
-            <Sparkles className="w-5 h-5 text-violet-400 shrink-0 mt-0.5" />
+            <Sparkles className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 mb-1">
                 <span className="font-semibold text-white">AeviaLaunch</span>
@@ -99,7 +99,7 @@ export default function DocsOverviewPage() {
                 à 7 jours selon la formule choisie.
               </p>
             </div>
-            <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-violet-400 group-hover:translate-x-0.5 transition-all shrink-0 mt-1" />
+            <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-red-400 group-hover:translate-x-0.5 transition-all shrink-0 mt-1" />
           </Link>
 
           <Link

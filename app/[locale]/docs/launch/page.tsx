@@ -35,19 +35,19 @@ export default function DocsLaunchPage() {
         </p>
         <ul className="space-y-3 text-sm">
           <li className="flex gap-3">
-            <span className="text-violet-400 font-bold shrink-0 w-32">Restaurant / Food</span>
+            <span className="text-red-400 font-bold shrink-0 w-32">Restaurant / Food</span>
             <span className="text-zinc-400">Vitrine avec menu, ambiance, réservation.</span>
           </li>
           <li className="flex gap-3">
-            <span className="text-violet-400 font-bold shrink-0 w-32">Consultant / Coach</span>
+            <span className="text-red-400 font-bold shrink-0 w-32">Consultant / Coach</span>
             <span className="text-zinc-400">Mise en avant de l&apos;offre, prise de contact.</span>
           </li>
           <li className="flex gap-3">
-            <span className="text-violet-400 font-bold shrink-0 w-32">E-commerce</span>
+            <span className="text-red-400 font-bold shrink-0 w-32">E-commerce</span>
             <span className="text-zinc-400">Catalogue produit et mise en valeur boutique.</span>
           </li>
           <li className="flex gap-3">
-            <span className="text-violet-400 font-bold shrink-0 w-32">Site vitrine</span>
+            <span className="text-red-400 font-bold shrink-0 w-32">Site vitrine</span>
             <span className="text-zinc-400">Présentation d&apos;entreprise multi-sections.</span>
           </li>
         </ul>
@@ -69,28 +69,28 @@ export default function DocsLaunchPage() {
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Landing</span>
-              <span className="text-xs text-violet-400 font-medium">2 h</span>
+              <span className="text-xs text-red-400 font-medium">2 h</span>
             </div>
             <p className="text-xs text-zinc-500">1 page de conversion sur thème existant.</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Essentiel</span>
-              <span className="text-xs text-violet-400 font-medium">2 h</span>
+              <span className="text-xs text-red-400 font-medium">2 h</span>
             </div>
             <p className="text-xs text-zinc-500">Site one-page complet sur thème existant.</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Pro</span>
-              <span className="text-xs text-violet-400 font-medium">24-48 h</span>
+              <span className="text-xs text-red-400 font-medium">24-48 h</span>
             </div>
             <p className="text-xs text-zinc-500">3 à 5 pages semi sur-mesure sur thème existant.</p>
           </div>
           <div className="rounded-xl border border-zinc-800 bg-zinc-900/40 p-4">
             <div className="flex items-baseline justify-between mb-1">
               <span className="font-semibold text-white text-sm">Premium</span>
-              <span className="text-xs text-violet-400 font-medium">5-7 j</span>
+              <span className="text-xs text-red-400 font-medium">5-7 j</span>
             </div>
             <p className="text-xs text-zinc-500">100 % sur-mesure, hors template.</p>
           </div>

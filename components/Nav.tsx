@@ -125,7 +125,7 @@ function LangSwitcher() {
             >
               <span>{l.flag}</span>
               <span>{l.label}</span>
-              {l.code === detectedCode && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-violet-400" />}
+              {l.code === detectedCode && <span className="ml-auto w-1.5 h-1.5 rounded-full bg-red-400" />}
             </button>
           ))}
         </div>
@@ -203,10 +203,10 @@ export function Nav() {
                         rel="noopener noreferrer"
                         className={`flex gap-3 items-start p-2.5 rounded-lg transition-colors group ${isLive ? "hover:bg-zinc-800/60 cursor-pointer" : "opacity-60 cursor-not-allowed pointer-events-none"}`}
                       >
-                        <Icon className="w-5 h-5 text-violet-400 shrink-0 mt-0.5" />
+                        <Icon className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
                         <div className="flex-1 min-w-0">
                           <div className="flex items-center gap-2 mb-0.5">
-                            <span className="font-semibold text-white text-sm group-hover:text-violet-300 transition-colors">
+                            <span className="font-semibold text-white text-sm group-hover:text-red-300 transition-colors">
                               {p.name}
                             </span>
                             {isLive ? (
@@ -271,8 +271,8 @@ export function Nav() {
                         rel="noopener noreferrer"
                         className="flex items-center gap-3 px-2.5 py-2 rounded-lg hover:bg-zinc-800/60 transition-colors group"
                       >
-                        <Icon className="w-4 h-4 text-violet-400 shrink-0" />
-                        <span className="text-sm font-medium text-white group-hover:text-violet-300 transition-colors">{l.name}</span>
+                        <Icon className="w-4 h-4 text-red-400 shrink-0" />
+                        <span className="text-sm font-medium text-white group-hover:text-red-300 transition-colors">{l.name}</span>
                         <ExternalLink className="w-3 h-3 text-zinc-600 group-hover:text-zinc-400 transition-colors ml-auto" />
                       </a>
                     );
@@ -330,7 +330,7 @@ export function Nav() {
                   onClick={() => setMobileOpen(false)}
                   className="flex items-center gap-3 px-3 py-2.5 rounded-md text-sm text-zinc-400 hover:text-white hover:bg-zinc-800/60 transition-colors"
                 >
-                  <Icon className="w-4 h-4 text-violet-400 shrink-0" />
+                  <Icon className="w-4 h-4 text-red-400 shrink-0" />
                   <span>{l.name}</span>
                 </a>
               );

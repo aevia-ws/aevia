@@ -36,7 +36,7 @@ export default function MentionsPage() {
             <span className="text-zinc-400">{t("contact_label")} :</span>{" "}
             <a
               href="mailto:valentinmilliand@aevia.services"
-              className="text-violet-400 hover:text-violet-300 transition-colors"
+              className="text-red-400 hover:text-red-300 transition-colors"
             >
               valentinmilliand@aevia.services
             </a>
@@ -63,7 +63,7 @@ export default function MentionsPage() {
               href="https://vercel.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-violet-400 hover:text-violet-300 transition-colors"
+              className="text-red-400 hover:text-red-300 transition-colors"
             >
               https://vercel.com
             </a>
