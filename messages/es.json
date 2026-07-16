@@ -7,11 +7,11 @@
     "ecosystem": "Ecosistema"
   },
   "hero": {
-    "badge": "Ecosistema Aevia — Herramientas digitales para empresas",
-    "title1": "Todo lo que tu",
-    "title2": "negocio necesita",
-    "title3": "en línea",
-    "description": "Sitio web, seguridad, gestión de clientes — tres herramientas pensadas para pymes que quieren una presencia digital seria sin complicaciones.",
+    "badge": "Restaurantes, peluquerías, talleres, clínicas — la IA que responde mientras trabajas",
+    "title1": "No pierdas ni un cliente más.",
+    "title2": "La IA de Aevia responde por ti",
+    "title3": "por teléfono, WhatsApp, email y en tu web",
+    "description": "Una reserva un viernes por la noche, una pregunta en domingo, una llamada que se te escapa en pleno ajetreo: Aevia responde en tu lugar, califica la solicitud y te avisa si es urgente. Tú te concentras en tu negocio — no en el teléfono.",
     "cta_primary": "Iniciar un proyecto",
     "cta_secondary": "Descubrir los servicios"
   },
@@ -26,13 +26,13 @@
     "ai_label": "IA que responde"
   },
   "products": {
-    "section_title": "Tres herramientas, una sola marca",
-    "section_sub": "Cada producto Aevia responde a una necesidad concreta. Independientes o combinados, cubren tu presencia digital de A a Z.",
+    "section_title": "Tres problemas resueltos, un solo lugar",
+    "section_sub": "Un sitio que te trae clientes, una IA que les responde, una auditoría que te protege. Por separado o juntos.",
     "available": "Disponible",
     "coming_soon": "Próximamente",
     "notify": "Avisarme en el lanzamiento",
-    "launch_tagline": "Tu sitio web en 7 días",
-    "launch_desc": "Elige entre 3 plantillas profesionales — landing page, e-commerce o vitrina. Personalizamos, desplegamos. O usa el builder IA para generar tu contenido en 60 segundos.",
+    "launch_tagline": "Un sitio que te trae clientes — listo en 7 días",
+    "launch_desc": "Una presencia online creíble antes de que acabe la semana, sin las idas y vueltas de una agencia tradicional. Elige un estilo entre nuestras plantillas, lo adaptamos a tu marca y lo publicamos — o genera todo en 60 segundos con el builder IA.",
     "launch_cta": "Ver plantillas",
     "launch_cta2": "Builder IA",
     "launch_f1": "Sitio vitrina profesional",
@@ -46,13 +46,13 @@
     "security_f2": "Informe PDF detallado",
     "security_f3": "Recomendaciones IA",
     "security_f4": "Rendimiento & SEO incluidos",
-    "inbox_tagline": "Todos tus clientes, una sola interfaz",
-    "inbox_desc": "Webchat, email, voz — centralizados. La IA responde por ti, califica tus leads y te alerta sobre prospectos calientes. CRM completo para pymes.",
+    "inbox_tagline": "Cada llamada atendida, cada mensaje respondido — incluso de noche",
+    "inbox_desc": "Un cliente que llama un sábado por la noche, un mensaje de Instagram a medianoche, un email en domingo: alguien responde, califica la solicitud y te avisa si merece la pena. No se te escapa nada, ni con el negocio cerrado.",
     "inbox_cta": "Unirse a la lista de espera",
-    "inbox_f1": "Webchat + Email + Voz",
-    "inbox_f2": "Respuestas IA automáticas",
-    "inbox_f3": "Puntuación de leads",
-    "inbox_f4": "Dashboard de analíticas"
+    "inbox_f1": "Teléfono, WhatsApp, email, web",
+    "inbox_f2": "Responde en segundos, día y noche",
+    "inbox_f3": "Prioriza tus clientes potenciales",
+    "inbox_f4": "Historial completo de cada conversación"
   },
   "templates_section": {
     "badge": "AeviaLaunch — Sitios web",
