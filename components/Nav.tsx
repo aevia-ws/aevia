@@ -7,6 +7,7 @@ import { Menu, X, Sparkles, Shield, MessageSquare, ChevronDown, ExternalLink, Gl
 import { AeviaLogo } from "@/components/AeviaLogo";
 
 const navLinks = [
+  { href: "/solutions", label: "Solutions" },
   { href: "/blog", label: "Blog" },
 ];
 
