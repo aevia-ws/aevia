@@ -7,11 +7,11 @@
     "ecosystem": "Ecosystem"
   },
   "hero": {
-    "badge": "Aevia Ecosystem — Digital tools for businesses",
-    "title1": "Everything your",
-    "title2": "business needs",
-    "title3": "online",
-    "description": "Website, security, customer management — three tools designed for SMBs that want a serious digital presence without the headaches.",
+    "badge": "Restaurants, salons, contractors, clinics — the AI that answers while you work",
+    "title1": "Stop losing customers.",
+    "title2": "Aevia's AI answers for you",
+    "title3": "on the phone, WhatsApp, email, and your website",
+    "description": "A dinner reservation on a Friday night, a question on a Sunday, a call you miss mid-rush: Aevia answers in your place, qualifies the request, and flags you when it matters. You focus on your work — not your phone.",
     "cta_primary": "Start a project",
     "cta_secondary": "Discover our services"
   },
@@ -26,13 +26,13 @@
     "ai_label": "AI that responds"
   },
   "products": {
-    "section_title": "Three tools, one brand",
-    "section_sub": "Each Aevia product answers a specific need. Independent or combined, they cover your digital presence from A to Z.",
+    "section_title": "Three problems solved, one place",
+    "section_sub": "A website that brings you customers, an AI that answers them, an audit that protects it all. Separately or together.",
     "available": "Available",
     "coming_soon": "Coming soon",
     "notify": "Notify me at launch",
-    "launch_tagline": "Your website in 7 days",
-    "launch_desc": "Choose from 3 professional templates — landing page, e-commerce or showcase. We customize, we deploy. Or use the AI builder to generate your content in 60 seconds.",
+    "launch_tagline": "A site that brings you customers — live in 7 days",
+    "launch_desc": "A credible online presence by the end of the week, without the back-and-forth of a traditional agency. Pick a style from our templates, we style it to match your brand and put it live — or generate everything in 60 seconds with the AI builder.",
     "launch_cta": "See templates",
     "launch_cta2": "AI Builder",
     "launch_f1": "Professional showcase site",
@@ -46,13 +46,13 @@
     "security_f2": "Detailed PDF report",
     "security_f3": "AI recommendations",
     "security_f4": "Performance & SEO included",
-    "inbox_tagline": "All your customers, one interface",
-    "inbox_desc": "Webchat, email, voice — centralized. AI responds for you, qualifies your leads and alerts you on hot prospects. Full CRM for SMBs.",
+    "inbox_tagline": "Every call picked up, every message answered — even at night",
+    "inbox_desc": "A customer calling on a Saturday night, an Instagram DM at midnight, an email on Sunday morning: someone answers, qualifies the request, and lets you know if it's worth your time. You stop missing things, even when you're closed.",
     "inbox_cta": "Join waiting list",
-    "inbox_f1": "Webchat + Email + Voice",
-    "inbox_f2": "Automatic AI responses",
-    "inbox_f3": "Lead scoring",
-    "inbox_f4": "Analytics dashboard"
+    "inbox_f1": "Phone, WhatsApp, email, website",
+    "inbox_f2": "Answers within seconds, day and night",
+    "inbox_f3": "Flags your hottest leads",
+    "inbox_f4": "Full history of every conversation"
   },
   "templates_section": {
     "badge": "AeviaLaunch — Websites",

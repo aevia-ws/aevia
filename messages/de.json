@@ -7,11 +7,11 @@
     "ecosystem": "Ökosystem"
   },
   "hero": {
-    "badge": "Aevia Ökosystem — Digitale Werkzeuge für Unternehmen",
-    "title1": "Alles, was dein",
-    "title2": "Business braucht",
-    "title3": "online",
-    "description": "Website, Sicherheit, Kundenverwaltung — drei Tools für KMU, die eine seriöse digitale Präsenz ohne Kopfschmerzen wollen.",
+    "badge": "Restaurants, Friseure, Handwerker, Praxen — die KI, die antwortet, während du arbeitest",
+    "title1": "Verlier keinen Kunden mehr.",
+    "title2": "Aevias KI antwortet für dich",
+    "title3": "am Telefon, auf WhatsApp, per E-Mail und auf deiner Website",
+    "description": "Eine Reservierung am Freitagabend, eine Frage am Sonntag, ein verpasster Anruf mitten im Stress: Aevia antwortet an deiner Stelle, qualifiziert die Anfrage und meldet sich, wenn es wichtig wird. Du kümmerst dich um dein Geschäft — nicht ums Telefon.",
     "cta_primary": "Projekt starten",
     "cta_secondary": "Dienste entdecken"
   },
@@ -26,13 +26,13 @@
     "ai_label": "KI die antwortet"
   },
   "products": {
-    "section_title": "Drei Tools, eine Marke",
-    "section_sub": "Jedes Aevia-Produkt beantwortet einen spezifischen Bedarf. Unabhängig oder kombiniert decken sie Ihre digitale Präsenz von A bis Z ab.",
+    "section_title": "Drei Probleme gelöst, ein Ort",
+    "section_sub": "Eine Website, die Ihnen Kunden bringt, eine KI, die ihnen antwortet, ein Audit, das alles schützt. Einzeln oder zusammen.",
     "available": "Verfügbar",
     "coming_soon": "Demnächst",
     "notify": "Bei Start benachrichtigen",
-    "launch_tagline": "Ihre Website in 7 Tagen",
-    "launch_desc": "Wählen Sie aus 3 professionellen Templates — Landing Page, E-Commerce oder Vitrine. Wir personalisieren, wir deployen. Oder nutzen Sie den KI-Builder für Ihren Content in 60 Sekunden.",
+    "launch_tagline": "Eine Website, die Ihnen Kunden bringt — live in 7 Tagen",
+    "launch_desc": "Eine glaubwürdige Online-Präsenz noch vor Ende der Woche, ohne das Hin und Her einer klassischen Agentur. Wählen Sie einen Stil aus unseren Templates, wir passen ihn an Ihre Marke an und stellen ihn online — oder generieren Sie alles in 60 Sekunden mit dem KI-Builder.",
     "launch_cta": "Templates ansehen",
     "launch_cta2": "KI-Builder",
     "launch_f1": "Professionelle Showcase-Website",
@@ -46,13 +46,13 @@
     "security_f2": "Detaillierter PDF-Bericht",
     "security_f3": "KI-Empfehlungen",
     "security_f4": "Performance & SEO inklusive",
-    "inbox_tagline": "Alle Kunden, eine Oberfläche",
-    "inbox_desc": "Webchat, E-Mail, Sprache — zentralisiert. Die KI antwortet für Sie, qualifiziert Ihre Leads und warnt Sie bei heißen Interessenten. Vollständiges CRM für KMU.",
+    "inbox_tagline": "Jeder Anruf entgegengenommen, jede Nachricht beantwortet — auch nachts",
+    "inbox_desc": "Ein Kunde, der am Samstagabend anruft, eine Instagram-Nachricht um Mitternacht, eine E-Mail am Sonntagmorgen: Jemand antwortet, qualifiziert die Anfrage und informiert Sie, wenn es wichtig ist. Ihnen entgeht nichts mehr — auch nicht, wenn Sie geschlossen haben.",
     "inbox_cta": "Warteliste beitreten",
-    "inbox_f1": "Webchat + E-Mail + Sprache",
-    "inbox_f2": "Automatische KI-Antworten",
-    "inbox_f3": "Lead-Scoring",
-    "inbox_f4": "Analytics-Dashboard"
+    "inbox_f1": "Telefon, WhatsApp, E-Mail, Website",
+    "inbox_f2": "Antwortet in Sekunden, Tag und Nacht",
+    "inbox_f3": "Priorisiert Ihre besten Leads",
+    "inbox_f4": "Vollständiger Verlauf jedes Gesprächs"
   },
   "templates_section": {
     "badge": "AeviaLaunch — Websites",
