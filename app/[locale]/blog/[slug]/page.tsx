@@ -4,7 +4,7 @@ import { use } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ArrowLeft, Clock, Tag, Calendar, ArrowRight } from "lucide-react";
-import { BLOG_POSTS, getBlogPost, formatDate } from "@/lib/blog-posts";
+import { BLOG_POSTS, getBlogPost, formatDate, localizePost } from "@/lib/blog-posts";
 import { notFound } from "next/navigation";
 
 const CATEGORY_COLORS: Record<string, { bg: string; text: string; ring: string }> = {
@@ -103,12 +103,15 @@ export default function ArticlePage({
   const resolvedParams = use(params);
   const pathname = usePathname();
   const locale = resolvedParams.locale ?? pathname.split("/")[1] ?? "fr";
-  const post = getBlogPost(resolvedParams.slug);
+  const rawPost = getBlogPost(resolvedParams.slug);
 
-  if (!post) notFound();
+  if (!rawPost) notFound();
 
+  const post = localizePost(rawPost, locale);
   const style = getCategoryStyle(post.category);
-  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug).slice(0, 2);
+  const relatedPosts = BLOG_POSTS.filter((p) => p.slug !== post.slug)
+    .slice(0, 2)
+    .map((p) => localizePost(p, locale));
 
   return (
     <div className="min-h-screen">
@@ -134,7 +137,7 @@ export default function ArticlePage({
             </span>
             <span className="flex items-center gap-1.5 text-xs text-zinc-500">
               <Calendar size={11} />
-              {formatDate(post.date)}
+              {formatDate(post.date, locale)}
             </span>
             <span className="flex items-center gap-1.5 text-xs text-zinc-500">
               <Clock size={11} />

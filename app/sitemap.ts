@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { routing } from '@/i18n/routing'
 import { VS_PAGES } from '@/lib/vs-content'
-import { BLOG_POSTS } from '@/lib/blog-posts'
+import { BLOG_POSTS, localesForPost } from '@/lib/blog-posts'
 
 const BASE = 'https://aevia.services'
 
@@ -43,13 +43,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }))
 
-  // Blog posts — content is French, indexed under /fr/blog/[slug]
-  const blogPosts: MetadataRoute.Sitemap = BLOG_POSTS.map((post) => ({
-    url: `${BASE}/fr/blog/${post.slug}`,
-    lastModified: new Date(post.date),
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }))
+  // Blog posts — one URL per available locale, with hreflang alternates
+  // between the translated versions (French is always available).
+  const blogPosts: MetadataRoute.Sitemap = BLOG_POSTS.flatMap((post) => {
+    const locales = localesForPost(post)
+    const languages = Object.fromEntries(
+      locales.map((l) => [l, `${BASE}/${l}/blog/${post.slug}`])
+    )
+    return locales.map((locale) => ({
+      url: `${BASE}/${locale}/blog/${post.slug}`,
+      lastModified: new Date(post.date),
+      changeFrequency: 'monthly' as const,
+      priority: locale === 'fr' ? 0.7 : 0.65,
+      alternates: { languages },
+    }))
+  })
 
   return [
     ...localeHomes,

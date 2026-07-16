@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getBlogPost } from "@/lib/blog-posts";
+import { getBlogPost, localizePost, localesForPost } from "@/lib/blog-posts";
 
 const BASE = "https://aevia.services";
 
@@ -9,13 +9,17 @@ export async function generateMetadata({
   params: Promise<{ slug: string; locale: string }>;
 }): Promise<Metadata> {
   const { slug, locale } = await params;
-  const post = getBlogPost(slug);
-  if (!post) return { title: "Article introuvable" };
+  const rawPost = getBlogPost(slug);
+  if (!rawPost) return { title: "Article introuvable" };
+  const post = localizePost(rawPost, locale);
   const url = `${BASE}/${locale}/blog/${slug}`;
+  const languages = Object.fromEntries(
+    localesForPost(rawPost).map((l) => [l, `${BASE}/${l}/blog/${slug}`])
+  );
   return {
     title: post.title,
     description: post.excerpt,
-    alternates: { canonical: url },
+    alternates: { canonical: url, languages },
     openGraph: {
       type: "article",
       title: post.title,
@@ -42,7 +46,8 @@ export default async function ArticleLayout({
   params: Promise<{ slug: string; locale: string }>;
 }) {
   const { slug, locale } = await params;
-  const post = getBlogPost(slug);
+  const rawPost = getBlogPost(slug);
+  const post = rawPost ? localizePost(rawPost, locale) : undefined;
   const url = `${BASE}/${locale}/blog/${slug}`;
 
   const graph: object[] = [];

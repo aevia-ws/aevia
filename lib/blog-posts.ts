@@ -3,6 +3,15 @@ export interface BlogFaqItem {
   a: string;
 }
 
+/** Translated variant of a post's textual fields (title/excerpt/content/faq). */
+export interface BlogPostTranslation {
+  title: string;
+  excerpt: string;
+  content: string;
+  category?: string;
+  faq?: BlogFaqItem[];
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -13,6 +22,8 @@ export interface BlogPost {
   content: string;
   /** Optional structured FAQ — emitted as FAQPage JSON-LD for rich results + LLM citation. */
   faq?: BlogFaqItem[];
+  /** Optional per-locale translations. Keys are locale codes ("en", "es", ...). Falls back to French. */
+  i18n?: Record<string, BlogPostTranslation>;
 }
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -1612,6 +1623,176 @@ Ne laissez plus le téléphone sonner dans le vide pendant le service.
         a: "Français, anglais, espagnol, portugais et plus — l'agent s'adapte à la langue du client.",
       },
     ],
+    i18n: {
+      en: {
+        title: "AI phone answering for restaurants: never miss a reservation again",
+        excerpt:
+          "A missed call is an empty table. Here is how an AI voice agent answers the phone for you, takes reservations and orders 24/7 — even in the middle of the rush.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **A restaurant misses a large share of its calls** during service, when nobody can pick up — and every missed call is a potential lost reservation.
+- **An AI phone system answers every call**, understands the request, checks availability and takes the booking, without keeping the customer waiting.
+- **The voice agent does more than route calls**: it actually creates the reservation, adds it to the calendar and can send the order to the point-of-sale.
+- **Available 24/7, in several languages**, and far cheaper than a dedicated person to answer the phone.
+
+---
+
+## The problem: the phone rings when you are already swamped
+
+In a restaurant, calls almost always come at the worst moment: mid-service, when the dining room is full and no one has a free hand. So the phone rings into the void. And a customer who gets no answer rarely calls back — they book somewhere else.
+
+This is not an organization problem, it is an availability problem. You cannot be in the kitchen, in the dining room and on the phone at once. And hiring someone just to answer calls is not profitable for almost any establishment.
+
+---
+
+## The solution: an AI voice agent that picks up for you
+
+An AI phone system is a voice agent that answers the phone on a dedicated line. When a customer calls:
+
+1. **The agent picks up immediately**, introduces itself on behalf of the restaurant and listens.
+2. **It understands the request in natural language** — "I'd like a table for 4 on Saturday around 8pm."
+3. **It checks availability in real time** based on your capacity and time slots.
+4. **It confirms and records the reservation** — not just "I'll note it", the booking is actually created and added to your calendar.
+5. **It can also take a takeaway order** and pass it to your point-of-sale.
+
+The key point: the action is completed end to end. This is not a voicemail that leaves you a message to handle later — the work is done during the call.
+
+---
+
+## Why it is more than a voicemail
+
+Many "phone reception" tools just record a message or redirect to a form. That does not solve the problem: the customer wants an answer now, not a callback.
+
+A real AI voice agent:
+
+- **Answers in the customer's language** — useful in tourist areas.
+- **Handles several calls at once** — no busy tone.
+- **Never gets tired, never mistypes**, and works Sunday at midnight too.
+- **Syncs everything** with your calendar and, for orders, with your point-of-sale through an integration like HubRise (compatible with POS software such as Popina).
+
+---
+
+## How much does it cost, compared to a lost reservation?
+
+The real calculation is not the price of the tool, but the cost of missed bookings. A single table of 4 can be worth 100 to 200 EUR in revenue. Over a month, a few missed calls a day add up fast.
+
+A service like AeviaInbox offers AI voice from 49 USD/month, with tiers based on call-minute volume. In other words, the tool pays for itself with the first or second reservation it recovers.
+
+---
+
+## Frequently asked questions
+
+**Does the AI actually take the reservation, or just a message?**
+It actually takes the reservation: it checks availability, confirms with the customer and records the booking in your calendar.
+
+**What happens if the request is too complex?**
+The agent can transfer the call or note the request for a human callback. But the vast majority of calls (booking, opening hours, placing an order) are handled automatically.
+
+**Does it work with my point-of-sale?**
+Yes, for POS systems compatible with HubRise (including Popina): the order can be pushed directly.
+
+**What languages does the agent answer in?**
+French, English, Spanish, Portuguese and more — the agent adapts to the customer's language.
+
+---
+
+Stop letting the phone ring into the void during service.
+
+👉 [Discover AeviaInbox's AI phone system](https://inbox.aevia.services)
+`,
+        faq: [
+          { q: "Does the AI actually take the reservation, or just a message?", a: "It actually takes the reservation: it checks availability, confirms with the customer and records the booking in the restaurant's calendar." },
+          { q: "What happens if the request is too complex?", a: "The agent can transfer the call or note the request for a human callback. The vast majority of calls (booking, hours, orders) are handled automatically." },
+          { q: "Does it work with my point-of-sale?", a: "Yes, for POS systems compatible with HubRise (including Popina): the order can be pushed directly to the till." },
+          { q: "What languages does the voice agent answer in?", a: "French, English, Spanish, Portuguese and more — the agent adapts to the customer's language." },
+        ],
+      },
+      es: {
+        title: "Centralita telefónica con IA para restaurantes: no pierdas ni una reserva",
+        excerpt:
+          "Una llamada perdida es una mesa vacía. Así es como un agente de voz con IA contesta el teléfono por ti, toma reservas y pedidos 24/7 — incluso en plena hora punta.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Un restaurante pierde buena parte de sus llamadas** durante el servicio, cuando nadie puede contestar — y cada llamada perdida es una reserva potencial perdida.
+- **Una centralita con IA contesta todas las llamadas**, entiende la petición, comprueba la disponibilidad y toma la reserva, sin hacer esperar al cliente.
+- **El agente de voz hace más que desviar llamadas**: crea realmente la reserva, la añade al calendario y puede enviar el pedido a la caja.
+- **Disponible 24/7, en varios idiomas**, y mucho más barato que una persona dedicada a contestar el teléfono.
+
+---
+
+## El problema: el teléfono suena cuando ya estás desbordado
+
+En un restaurante, las llamadas casi siempre llegan en el peor momento: en pleno servicio, con la sala llena y nadie con una mano libre. El teléfono suena en vano. Y un cliente que no obtiene respuesta rara vez vuelve a llamar — reserva en otro sitio.
+
+No es un problema de organización, es un problema de disponibilidad. No puedes estar en la cocina, en la sala y al teléfono a la vez. Y contratar a alguien solo para contestar llamadas no es rentable para casi ningún local.
+
+---
+
+## La solución: un agente de voz con IA que contesta por ti
+
+Una centralita con IA es un agente de voz que contesta el teléfono en una línea dedicada. Cuando un cliente llama:
+
+1. **El agente contesta de inmediato**, se presenta en nombre del restaurante y escucha.
+2. **Entiende la petición en lenguaje natural** — "quiero una mesa para 4 el sábado sobre las 20h."
+3. **Comprueba la disponibilidad en tiempo real** según tu aforo y tus franjas horarias.
+4. **Confirma y registra la reserva** — no solo "lo anoto", la reserva se crea de verdad y se añade a tu calendario.
+5. **También puede tomar un pedido para llevar** y enviarlo a tu caja.
+
+Lo clave: la acción se completa de principio a fin. No es un contestador que te deja un mensaje para gestionar más tarde — el trabajo se hace durante la llamada.
+
+---
+
+## Por qué es más que un contestador
+
+Muchas herramientas de "recepción telefónica" solo graban un mensaje o redirigen a un formulario. Eso no resuelve el problema: el cliente quiere una respuesta ahora, no que le devuelvan la llamada.
+
+Un verdadero agente de voz con IA:
+
+- **Responde en el idioma del cliente** — útil en zonas turísticas.
+- **Gestiona varias llamadas a la vez** — sin tono de ocupado.
+- **No se cansa, no comete errores al anotar**, y trabaja también el domingo a medianoche.
+- **Sincroniza todo** con tu calendario y, para los pedidos, con tu caja mediante una integración como HubRise (compatible con software de TPV como Popina).
+
+---
+
+## Cuánto cuesta, comparado con una reserva perdida
+
+El cálculo real no es el precio de la herramienta, sino el coste de las reservas perdidas. Una sola mesa de 4 puede suponer entre 100 y 200 EUR de facturación. En un mes, unas pocas llamadas perdidas al día suman mucho.
+
+Un servicio como AeviaInbox ofrece voz con IA desde 49 USD/mes, con niveles según el volumen de minutos de llamada. Es decir, la herramienta se amortiza con la primera o segunda reserva que recupera.
+
+---
+
+## Preguntas frecuentes
+
+**¿La IA toma realmente la reserva, o solo un mensaje?**
+Toma realmente la reserva: comprueba la disponibilidad, confirma con el cliente y registra la reserva en tu calendario.
+
+**¿Qué pasa si la petición es demasiado compleja?**
+El agente puede transferir la llamada o anotar la petición para una devolución humana. La gran mayoría de las llamadas (reservar, horarios, pedidos) se gestionan automáticamente.
+
+**¿Funciona con mi caja registradora?**
+Sí, con las cajas compatibles con HubRise (incluida Popina): el pedido se puede enviar directamente.
+
+**¿En qué idiomas responde el agente?**
+Francés, inglés, español, portugués y más — el agente se adapta al idioma del cliente.
+
+---
+
+Deja de dejar que el teléfono suene en vano durante el servicio.
+
+👉 [Descubre la centralita con IA de AeviaInbox](https://inbox.aevia.services)
+`,
+        faq: [
+          { q: "¿La IA toma realmente la reserva, o solo un mensaje?", a: "Toma realmente la reserva: comprueba la disponibilidad, confirma con el cliente y registra la reserva en el calendario del restaurante." },
+          { q: "¿Qué pasa si la petición es demasiado compleja?", a: "El agente puede transferir la llamada o anotar la petición para una devolución humana. La gran mayoría de las llamadas (reservar, horarios, pedidos) se gestionan automáticamente." },
+          { q: "¿Funciona con mi caja registradora?", a: "Sí, con las cajas compatibles con HubRise (incluida Popina): el pedido se puede enviar directamente a la caja." },
+          { q: "¿En qué idiomas responde el agente de voz?", a: "Francés, inglés, español, portugués y más — el agente se adapta al idioma del cliente." },
+        ],
+      },
+    },
   },
   {
     slug: "agent-vocal-ia-prise-rendez-vous",
@@ -1710,6 +1891,174 @@ Rendez à votre équipe le temps passé au téléphone.
         a: "Oui, 24h/24 — c'est justement là que se perdent le plus de rendez-vous aujourd'hui.",
       },
     ],
+    i18n: {
+      en: {
+        title: "AI voice agent: automated appointment booking for clinics, garages and practices",
+        excerpt:
+          "Dental offices, garages, veterinary clinics: an AI voice agent answers the phone, offers open slots and books the appointment, without tying up your front desk.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **Phone-based appointment booking eats up front-desk time** that could go to greeting people in person and to patients already there.
+- **An AI voice agent answers every call**, offers the slots that are genuinely available and books the appointment automatically.
+- **Ideal for dental and medical offices, vets, garages and salons** that get a steady flow of appointment calls.
+- **The appointment is actually created and synced** with the calendar, not just noted for later.
+
+---
+
+## The phone that never stops ringing
+
+In a practice or a garage, a large share of calls are about one thing: booking, moving or cancelling an appointment. It is repetitive, it constantly interrupts whoever is at the front desk, and at peak times the calls pile up — some patients or customers hit a voicemail and never call back.
+
+The cost is twofold: front-desk time spent on a mechanical task, and appointments lost when no one can pick up.
+
+---
+
+## What an AI appointment-booking voice agent does
+
+The agent answers the phone and handles the request end to end:
+
+- **It identifies the reason** (new appointment, reschedule, cancellation, opening hours).
+- **It checks the calendar in real time** and offers the slots that are genuinely open.
+- **It books the appointment** in the chosen slot and records it in the calendar.
+- **It can send a confirmation** and handle multilingual requests.
+
+Here too, the difference from a plain voicemail is essential: the appointment is actually booked, not left pending.
+
+---
+
+## For which professionals?
+
+This approach works especially well for:
+
+- **Dental and medical offices** — a constant flow of booking and rescheduling calls.
+- **Clinics and veterinary practices** — urgent and planned consultations.
+- **Garages and auto centers** — booking for servicing, inspection, repair.
+- **Salons, spas and studios** — service bookings.
+
+The common thread: lots of repetitive appointment calls, and front-desk staff who would be better focused on the people in front of them.
+
+---
+
+## A time saving you can measure
+
+Every appointment call handled automatically is a few minutes returned to your team, multiplied by dozens of calls a day. And every call answered outside opening hours is an appointment you would have lost.
+
+AeviaInbox offers this AI voice from 49 USD/month, with tiers based on call volume. The math is simple: how many appointments do you lose today because no one can pick up?
+
+---
+
+## Frequently asked questions
+
+**Does the agent have access to my calendar?**
+Yes, it checks availability in real time and books the appointment directly into the synced calendar.
+
+**Can it handle cancellations and reschedules?**
+Yes, it handles booking as well as rescheduling and cancellation.
+
+**What about a sensitive medical request?**
+The agent books the appointment; it does not give medical advice and can route to a human callback if the request is outside its scope.
+
+**Does the voice agent work outside opening hours?**
+Yes, 24/7 — which is exactly when most appointments are lost today.
+
+---
+
+Give your team back the time spent on the phone.
+
+👉 [Discover AeviaInbox's AI voice agent](https://inbox.aevia.services)
+`,
+        faq: [
+          { q: "Does the agent have access to my calendar?", a: "Yes, it checks availability in real time and books the appointment directly into the synced calendar." },
+          { q: "Can it handle cancellations and reschedules?", a: "Yes, it handles booking as well as rescheduling and cancellation." },
+          { q: "What about a sensitive medical request?", a: "The agent books the appointment; it does not give medical advice and can route to a human callback if the request is outside its scope." },
+          { q: "Does the voice agent work outside opening hours?", a: "Yes, 24/7 — which is exactly when most appointments are lost today." },
+        ],
+      },
+      es: {
+        title: "Agente de voz con IA: reserva automática de citas para clínicas, talleres y consultas",
+        excerpt:
+          "Clínicas dentales, talleres, clínicas veterinarias: un agente de voz con IA contesta el teléfono, propone los huecos libres y agenda la cita, sin ocupar a tu recepción.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Reservar citas por teléfono consume tiempo de recepción** que podría dedicarse a atender en persona y a los pacientes que ya están allí.
+- **Un agente de voz con IA contesta todas las llamadas**, propone los huecos realmente disponibles y agenda la cita automáticamente.
+- **Ideal para clínicas dentales y médicas, veterinarios, talleres y centros de estética** con un flujo constante de llamadas de citas.
+- **La cita se crea de verdad y se sincroniza** con la agenda, no solo se anota para después.
+
+---
+
+## El teléfono que no para de sonar
+
+En una consulta o un taller, gran parte de las llamadas son sobre una sola cosa: reservar, cambiar o cancelar una cita. Es repetitivo, interrumpe constantemente a quien está en recepción, y en horas punta las llamadas se acumulan — algunos pacientes o clientes caen en un contestador y no vuelven a llamar.
+
+El coste es doble: tiempo de recepción en una tarea mecánica, y citas perdidas cuando nadie puede contestar.
+
+---
+
+## Qué hace un agente de voz con IA para reservar citas
+
+El agente contesta el teléfono y gestiona la petición de principio a fin:
+
+- **Identifica el motivo** (nueva cita, cambio, cancelación, horarios).
+- **Consulta la agenda en tiempo real** y propone los huecos realmente libres.
+- **Agenda la cita** en el hueco elegido y la registra en la agenda.
+- **Puede enviar una confirmación** y gestionar peticiones multilingües.
+
+También aquí la diferencia con un simple contestador es esencial: la cita se agenda de verdad, no queda pendiente.
+
+---
+
+## ¿Para qué profesionales?
+
+Este enfoque funciona especialmente bien para:
+
+- **Clínicas dentales y médicas** — flujo constante de llamadas de reserva y cambios.
+- **Clínicas y consultas veterinarias** — urgencias y consultas planificadas.
+- **Talleres y centros de automóvil** — reservas para revisión, ITV, reparación.
+- **Centros de estética, spas y estudios** — reservas de servicios.
+
+El punto común: muchas llamadas repetitivas de citas, y un personal de recepción que rendiría más centrado en quien tiene delante.
+
+---
+
+## Un ahorro de tiempo que se mide
+
+Cada llamada de cita gestionada automáticamente son unos minutos devueltos a tu equipo, multiplicados por decenas de llamadas al día. Y cada llamada atendida fuera del horario es una cita que habrías perdido.
+
+AeviaInbox ofrece esta voz con IA desde 49 USD/mes, con niveles según el volumen de llamadas. El cálculo es simple: ¿cuántas citas pierdes hoy porque nadie puede contestar?
+
+---
+
+## Preguntas frecuentes
+
+**¿El agente tiene acceso a mi agenda?**
+Sí, consulta la disponibilidad en tiempo real y agenda la cita directamente en la agenda sincronizada.
+
+**¿Puede gestionar cancelaciones y cambios?**
+Sí, gestiona tanto la reserva como el cambio o la cancelación.
+
+**¿Y una petición médica delicada?**
+El agente agenda la cita; no da consejo médico y puede derivar a una devolución humana si la petición queda fuera de su alcance.
+
+**¿El agente de voz funciona fuera del horario de apertura?**
+Sí, 24/7 — que es justo cuando más citas se pierden hoy.
+
+---
+
+Devuelve a tu equipo el tiempo que pasa al teléfono.
+
+👉 [Descubre el agente de voz con IA de AeviaInbox](https://inbox.aevia.services)
+`,
+        faq: [
+          { q: "¿El agente tiene acceso a mi agenda?", a: "Sí, consulta la disponibilidad en tiempo real y agenda la cita directamente en la agenda sincronizada." },
+          { q: "¿Puede gestionar cancelaciones y cambios?", a: "Sí, gestiona tanto la reserva como el cambio o la cancelación." },
+          { q: "¿Y una petición médica delicada?", a: "El agente agenda la cita; no da consejo médico y puede derivar a una devolución humana si la petición queda fuera de su alcance." },
+          { q: "¿El agente de voz funciona fuera del horario de apertura?", a: "Sí, 24/7 — que es justo cuando más citas se pierden hoy." },
+        ],
+      },
+    },
   },
   {
     slug: "combien-coute-agent-telephonique-ia",
@@ -1814,6 +2163,186 @@ Faites le calcul pour votre activité : combien vous coûtent aujourd'hui les ap
         a: "On choisit un palier adapté à son volume ; si le volume grandit, on passe au palier supérieur.",
       },
     ],
+    i18n: {
+      en: {
+        title: "How much does an AI phone agent cost for a small business?",
+        excerpt:
+          "Pricing, what is included, and how to work out the ROI of an AI voice agent that answers your calls. The real comparison: the cost of the tool versus the cost of missed calls.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **An AI phone agent costs from around 49 USD/month** for a small business, depending on the call-minute volume included.
+- **The right calculation is not the price of the tool**, but what it brings in: every recovered missed call is a customer won.
+- **Pricing is modular**: you can take voice only, messages only, or both.
+- **No hardware, no hiring**: the agent runs on a dedicated line, ready to answer 24/7.
+
+---
+
+## What drives the price of an AI voice agent
+
+The cost of an AI phone agent depends mainly on two things:
+
+1. **Call volume** — the more calls you receive, the more minutes are handled.
+2. **What the agent does** — answering simple questions costs less than a full booking or synced appointment flow.
+
+Unlike a receptionist or a call center, there is no salary, no payroll taxes, no hardware: the agent is a software service running on a dedicated line.
+
+---
+
+## The price tiers, concretely
+
+At AeviaInbox, pricing is modular and the price per tier is the same whatever mode you choose (messages only, voice only, or both) — only the included quota changes:
+
+- **Starter — 49 USD/month**: for a small volume of calls or messages.
+- **Growth — 99 USD/month**: for a steady flow.
+- **Pro — 199 USD/month**: for a sustained volume.
+- **Business — 399 USD/month**: for a high volume.
+- **Scale — 999 USD/month**: for the largest needs.
+
+The appeal of this model: you do not pay for an opaque "all-inclusive" bundle. If you only need voice, you take voice; if you also want WhatsApp and email, you switch to the combined mode.
+
+---
+
+## The real comparison: tool vs missed calls
+
+To judge the price, compare it to the cost of doing nothing. A simple example:
+
+- A restaurant missing 3 bookings a day at a 120 EUR average check loses around 360 EUR/day in potential revenue.
+- A garage missing 2 appointment calls a day loses two jobs.
+
+Against those numbers, a subscription at 49 to 199 USD/month pays for itself in a handful of recovered calls. It is that gap — a few tens of euros a month versus hundreds in lost sales — that makes an AI voice agent worthwhile for a small business.
+
+---
+
+## What is included (and what is not)
+
+Included in a service like AeviaInbox:
+- The line and the AI voice agent.
+- Natural-language understanding and answering in the customer's language.
+- Actually creating bookings/appointments and syncing the calendar.
+- POS integration for restaurants (HubRise / Popina).
+
+To check for your needs: the minute volume of the tier you pick, and whether you also want the messaging channels (WhatsApp, Instagram, email) on top of voice.
+
+---
+
+## Frequently asked questions
+
+**Is there a commitment?**
+The model is a monthly subscription; you pick your tier based on your volume.
+
+**Can I take voice only, without the messages?**
+Yes, the "voice only" mode exists, as do "messages only" and both combined.
+
+**Do I need hardware or a technical setup?**
+No hardware: the agent runs on a dedicated line, with no heavy installation.
+
+**Does the price go up if I get more calls?**
+You pick a tier suited to your volume; if the volume grows, you move up a tier.
+
+---
+
+Do the math for your business: how much do the calls no one answers cost you today?
+
+👉 [See AeviaInbox pricing](https://inbox.aevia.services/en/pricing)
+`,
+        faq: [
+          { q: "Is there a commitment for an AI phone agent?", a: "The model is a monthly subscription; you pick your tier based on your call and message volume." },
+          { q: "Can I take voice only, without the messages?", a: "Yes, the voice-only mode exists, as do messages-only and both combined." },
+          { q: "Do I need hardware or a technical setup?", a: "No hardware: the agent runs on a dedicated line, with no heavy installation." },
+          { q: "Does the price go up if I get more calls?", a: "You pick a tier suited to your volume; if the volume grows, you move up a tier." },
+        ],
+      },
+      es: {
+        title: "¿Cuánto cuesta un agente telefónico con IA para una pequeña empresa?",
+        excerpt:
+          "Precio, qué incluye y cómo calcular la rentabilidad de un agente de voz con IA que contesta tus llamadas. La comparación real: el coste de la herramienta frente al de las llamadas perdidas.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Un agente telefónico con IA cuesta desde unos 49 USD/mes** para una pequeña empresa, según el volumen de minutos de llamada incluidos.
+- **El cálculo correcto no es el precio de la herramienta**, sino lo que aporta: cada llamada perdida recuperada es un cliente ganado.
+- **La tarificación es modular**: puedes tomar solo voz, solo mensajes, o ambos.
+- **Sin hardware, sin contratar**: el agente funciona en una línea dedicada, listo para contestar 24/7.
+
+---
+
+## Qué determina el precio de un agente de voz con IA
+
+El coste de un agente telefónico con IA depende sobre todo de dos cosas:
+
+1. **El volumen de llamadas** — cuantas más llamadas recibas, más minutos se gestionan.
+2. **Lo que hace el agente** — responder preguntas simples cuesta menos que un flujo completo de reserva o de cita sincronizada.
+
+A diferencia de una recepcionista o un call center, no hay salario, ni cotizaciones, ni hardware: el agente es un servicio de software que funciona en una línea dedicada.
+
+---
+
+## Los niveles de precio, en concreto
+
+En AeviaInbox la tarificación es modular y el precio por nivel es el mismo sea cual sea el modo elegido (solo mensajes, solo voz, o ambos) — solo cambia la cuota incluida:
+
+- **Starter — 49 USD/mes**: para un volumen pequeño de llamadas o mensajes.
+- **Growth — 99 USD/mes**: para un flujo regular.
+- **Pro — 199 USD/mes**: para un volumen sostenido.
+- **Business — 399 USD/mes**: para un volumen alto.
+- **Scale — 999 USD/mes**: para las mayores necesidades.
+
+La ventaja de este modelo: no pagas por un paquete "todo incluido" opaco. Si solo necesitas voz, tomas voz; si además quieres WhatsApp y email, pasas al modo combinado.
+
+---
+
+## La comparación real: herramienta frente a llamadas perdidas
+
+Para juzgar el precio, compáralo con el coste de no hacer nada. Un ejemplo simple:
+
+- Un restaurante que pierde 3 reservas al día con un ticket medio de 120 EUR pierde unos 360 EUR/día de facturación potencial.
+- Un taller que pierde 2 llamadas de cita al día pierde dos trabajos.
+
+Frente a esas cifras, una suscripción de 49 a 199 USD/mes se amortiza con un puñado de llamadas recuperadas. Es ese desfase — unas decenas de euros al mes frente a cientos en ventas perdidas — lo que hace que un agente de voz con IA valga la pena para una pequeña estructura.
+
+---
+
+## Qué incluye (y qué no)
+
+Incluido en un servicio como AeviaInbox:
+- La línea y el agente de voz con IA.
+- La comprensión del lenguaje natural y la respuesta en el idioma del cliente.
+- La creación real de reservas/citas y la sincronización del calendario.
+- La integración con la caja para restaurantes (HubRise / Popina).
+
+A comprobar según tu necesidad: el volumen de minutos del nivel que elijas, y si además quieres los canales de mensajería (WhatsApp, Instagram, email) junto con la voz.
+
+---
+
+## Preguntas frecuentes
+
+**¿Hay permanencia?**
+El modelo es una suscripción mensual; eliges tu nivel según tu volumen.
+
+**¿Puedo tomar solo la voz, sin los mensajes?**
+Sí, el modo "solo voz" existe, igual que "solo mensajes" o ambos combinados.
+
+**¿Necesito hardware o una instalación técnica?**
+Sin hardware: el agente funciona en una línea dedicada, sin instalación pesada.
+
+**¿Sube el precio si recibo más llamadas?**
+Eliges un nivel adaptado a tu volumen; si el volumen crece, pasas al nivel superior.
+
+---
+
+Haz el cálculo para tu negocio: ¿cuánto te cuestan hoy las llamadas que nadie contesta?
+
+👉 [Ver los precios de AeviaInbox](https://inbox.aevia.services/es/pricing)
+`,
+        faq: [
+          { q: "¿Hay permanencia con un agente telefónico con IA?", a: "El modelo es una suscripción mensual; eliges tu nivel según tu volumen de llamadas y mensajes." },
+          { q: "¿Puedo tomar solo la voz, sin los mensajes?", a: "Sí, el modo solo-voz existe, igual que solo-mensajes o ambos combinados." },
+          { q: "¿Necesito hardware o una instalación técnica?", a: "Sin hardware: el agente funciona en una línea dedicada, sin instalación pesada." },
+          { q: "¿Sube el precio si recibo más llamadas?", a: "Eliges un nivel adaptado a tu volumen; si el volumen crece, pasas al nivel superior." },
+        ],
+      },
+    },
   },
   {
     slug: "ne-plus-manquer-appels-clients-commerce",
@@ -1910,6 +2439,170 @@ Arrêtez de laisser vos clients aller chez le concurrent d'à côté faute de r�
         a: "Oui, la voix et les messageries (WhatsApp, Instagram, email) peuvent être réunies dans une seule solution.",
       },
     ],
+    i18n: {
+      en: {
+        title: "Missed calls = lost customers: how to stop losing them in your business",
+        excerpt:
+          "Every unanswered call is a customer going elsewhere. Here is why businesses lose calls, what it really costs, and how to fix it without hiring.",
+        category: "AI Voice & Telephony",
+        content: `## Key takeaways in 30 seconds
+
+- **A customer who reaches an unanswered phone rarely calls back** — they contact the next competitor.
+- **Calls are lost at the worst moments**: peak hours, lunch break, evenings and weekends.
+- **The answer is not necessarily to hire**: an AI voice agent picks up every call, 24/7.
+- **What matters is answering now** — not calling back later, once the customer has already booked elsewhere.
+
+---
+
+## Why businesses lose so many calls
+
+It is not a lack of diligence, it is a matter of simultaneity. In a shop, a clinic or a restaurant, calls arrive exactly when you are already busy with the customers in front of you. You cannot be everywhere. And in the evening, at the weekend or during a break, there is simply no one to pick up.
+
+The problem is customer behavior: faced with a phone ringing into the void or a voicemail, the vast majority leave no message and do not try again later. They move on to the next place. The missed call is not "postponed", it is definitively lost.
+
+---
+
+## What a missed call really costs
+
+A missed call is not neutral: it is a sale, a booking or an appointment going to a competitor. Depending on the business:
+
+- **Restaurant**: a lost table, often 100 to 200 EUR of average spend.
+- **Garage, tradesperson**: an unbooked job.
+- **Salon, studio**: an unbooked service.
+
+Added up over a month, these misses represent a share of revenue far greater than the cost of a solution to fix it.
+
+---
+
+## The false solutions
+
+Before the right answer, let us rule out the ones that do not really work:
+
+- **Voicemail**: the customer wants an answer, not to leave a message. Callback rates are very low.
+- **Redirecting to a form or website**: it adds friction, many give up.
+- **Hiring someone to answer the phone**: rarely profitable for a small business, and it does not cover evenings and weekends.
+
+---
+
+## The right answer: pick up every call, automatically
+
+An AI voice agent solves the problem at its root: it picks up every call, immediately, including outside opening hours and even when several people call at once.
+
+It understands the request, answers it or performs the action (booking, appointment, order, information), in the customer's language. For the caller, the experience is smooth: they get their answer right away. For you, the call is no longer lost.
+
+Services like AeviaInbox offer this AI voice from 49 USD/month, with the option to also add WhatsApp, Instagram and email in the same solution — so you miss nothing, whatever channel the customer uses to reach you.
+
+---
+
+## Frequently asked questions
+
+**Does the customer realize they are talking to an AI?**
+The agent is transparent and efficient; what matters to the caller is getting an immediate answer or booking.
+
+**And for truly unusual requests?**
+They can be transferred or noted for a human callback. Most everyday calls are handled automatically.
+
+**Does it replace my team?**
+No, it offloads repetitive calls so the team can focus on the customers present — and it covers the moments when no one can pick up.
+
+**Can I also centralize WhatsApp and emails?**
+Yes, voice and messaging (WhatsApp, Instagram, email) can be brought together in a single solution.
+
+---
+
+Stop letting your customers go to the competitor next door for lack of an answer.
+
+👉 [Discover AeviaInbox](https://inbox.aevia.services)
+`,
+        faq: [
+          { q: "Does the customer realize they are talking to an AI?", a: "The agent is transparent and efficient; what matters to the caller is getting an immediate answer or booking." },
+          { q: "And for truly unusual requests?", a: "They can be transferred or noted for a human callback. Most everyday calls are handled automatically." },
+          { q: "Does it replace my team?", a: "No, it offloads repetitive calls so the team can focus on the customers present — and it covers the moments when no one can pick up." },
+          { q: "Can I also centralize WhatsApp and emails?", a: "Yes, voice and messaging (WhatsApp, Instagram, email) can be brought together in a single solution." },
+        ],
+      },
+      es: {
+        title: "Llamadas perdidas = clientes perdidos: cómo dejar de perderlas en tu negocio",
+        excerpt:
+          "Cada llamada sin respuesta es un cliente que se va a otro sitio. Por qué los negocios pierden llamadas, cuánto cuesta de verdad y cómo solucionarlo sin contratar.",
+        category: "Voz IA y Telefonía",
+        content: `## Lo esencial en 30 segundos
+
+- **Un cliente que se topa con un teléfono sin respuesta rara vez vuelve a llamar** — contacta al siguiente competidor.
+- **Las llamadas se pierden en los peores momentos**: horas punta, pausa de la comida, tardes y fines de semana.
+- **La solución no es necesariamente contratar**: un agente de voz con IA contesta todas las llamadas, 24/7.
+- **Lo que cuenta es responder ahora** — no devolver la llamada más tarde, cuando el cliente ya ha reservado en otro sitio.
+
+---
+
+## Por qué los negocios pierden tantas llamadas
+
+No es falta de seriedad, es una cuestión de simultaneidad. En un comercio, una clínica o un restaurante, las llamadas llegan justo cuando ya estás ocupado con los clientes que tienes delante. No puedes estar en todas partes. Y por la tarde, el fin de semana o en una pausa, sencillamente no hay nadie para contestar.
+
+El problema es el comportamiento del cliente: ante un teléfono que suena en vano o un contestador, la gran mayoría no deja mensaje ni lo intenta más tarde. Pasa al siguiente sitio. La llamada perdida no se "aplaza", se pierde definitivamente.
+
+---
+
+## Cuánto cuesta de verdad una llamada perdida
+
+Una llamada perdida no es neutra: es una venta, una reserva o una cita que se va a un competidor. Según la actividad:
+
+- **Restaurante**: una mesa perdida, a menudo 100 a 200 EUR de ticket.
+- **Taller, autónomo**: un trabajo sin reservar.
+- **Centro de estética, estudio**: un servicio sin reservar.
+
+Sumadas a lo largo de un mes, estas pérdidas representan una parte de la facturación muy superior al coste de una solución para remediarlo.
+
+---
+
+## Las falsas soluciones
+
+Antes de la respuesta correcta, descartemos las que no funcionan de verdad:
+
+- **El contestador**: el cliente quiere una respuesta, no dejar un mensaje. La tasa de devolución de llamada es muy baja.
+- **Redirigir a un formulario o web**: añade fricción, muchos abandonan.
+- **Contratar a alguien para contestar el teléfono**: rara vez rentable para una estructura pequeña, y no cubre tardes ni fines de semana.
+
+---
+
+## La respuesta correcta: contestar todas las llamadas, automáticamente
+
+Un agente de voz con IA resuelve el problema de raíz: contesta todas las llamadas, de inmediato, incluso fuera del horario y aunque varias personas llamen a la vez.
+
+Entiende la petición, la responde o realiza la acción (reserva, cita, pedido, información), en el idioma del cliente. Para quien llama, la experiencia es fluida: obtiene su respuesta al momento. Para ti, la llamada ya no se pierde.
+
+Servicios como AeviaInbox ofrecen esta voz con IA desde 49 USD/mes, con la opción de añadir también WhatsApp, Instagram y email en la misma solución — para no perder nada, sea cual sea el canal por el que el cliente te contacte.
+
+---
+
+## Preguntas frecuentes
+
+**¿Se da cuenta el cliente de que habla con una IA?**
+El agente es transparente y eficaz; lo que importa a quien llama es obtener una respuesta o reserva inmediata.
+
+**¿Y para peticiones realmente particulares?**
+Pueden transferirse o anotarse para una devolución humana. La mayoría de las llamadas cotidianas se gestionan automáticamente.
+
+**¿Sustituye a mi equipo?**
+No, descarga las llamadas repetitivas para que el equipo se centre en los clientes presentes — y cubre los momentos en que nadie puede contestar.
+
+**¿Puedo centralizar también WhatsApp y los emails?**
+Sí, la voz y la mensajería (WhatsApp, Instagram, email) pueden reunirse en una sola solución.
+
+---
+
+Deja de dejar que tus clientes se vayan al competidor de al lado por falta de respuesta.
+
+👉 [Descubre AeviaInbox](https://inbox.aevia.services)
+`,
+        faq: [
+          { q: "¿Se da cuenta el cliente de que habla con una IA?", a: "El agente es transparente y eficaz; lo que importa a quien llama es obtener una respuesta o reserva inmediata." },
+          { q: "¿Y para peticiones realmente particulares?", a: "Pueden transferirse o anotarse para una devolución humana. La mayoría de las llamadas cotidianas se gestionan automáticamente." },
+          { q: "¿Sustituye a mi equipo?", a: "No, descarga las llamadas repetitivas para que el equipo se centre en los clientes presentes — y cubre los momentos en que nadie puede contestar." },
+          { q: "¿Puedo centralizar también WhatsApp y los emails?", a: "Sí, la voz y la mensajería (WhatsApp, Instagram, email) pueden reunirse en una sola solución." },
+        ],
+      },
+    },
   },
 ];
 
@@ -1917,8 +2610,39 @@ export function getBlogPost(slug: string): BlogPost | undefined {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
-export function formatDate(dateStr: string): string {
-  return new Date(dateStr).toLocaleDateString("fr-FR", {
+/**
+ * Return a post with its textual fields swapped to the requested locale's
+ * translation when one exists, otherwise the original French. The shape is a
+ * normal BlogPost so every existing caller keeps working unchanged.
+ */
+export function localizePost(post: BlogPost, locale: string): BlogPost {
+  const t = post.i18n?.[locale];
+  if (!t) return post;
+  return {
+    ...post,
+    title: t.title,
+    excerpt: t.excerpt,
+    content: t.content,
+    category: t.category ?? post.category,
+    faq: t.faq ?? post.faq,
+  };
+}
+
+/** Locale codes that have a translation for the given post (always includes "fr"). */
+export function localesForPost(post: BlogPost): string[] {
+  return ["fr", ...Object.keys(post.i18n ?? {})];
+}
+
+const DATE_LOCALES: Record<string, string> = {
+  fr: "fr-FR",
+  en: "en-US",
+  es: "es-ES",
+  de: "de-DE",
+  pt: "pt-PT",
+};
+
+export function formatDate(dateStr: string, locale = "fr"): string {
+  return new Date(dateStr).toLocaleDateString(DATE_LOCALES[locale] ?? "fr-FR", {
     year: "numeric",
     month: "long",
     day: "numeric",
