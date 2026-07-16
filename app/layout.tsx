@@ -72,17 +72,89 @@ export const metadata: Metadata = {
 const organizationSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': 'https://aevia.services/#organization',
   name: 'Aevia',
   url: 'https://aevia.services',
+  logo: 'https://aevia.services/brand/aevia-logo.png',
   description:
-    "Suite d'outils digitaux pour PME et indépendants : création de landing pages, sécurité web, et messagerie omnicanale. Made in France.",
-  sameAs: [
-    'https://github.com/Maeglin10',
-  ],
+    "Plateforme tout-en-un pour TPE, PME et indépendants : site web professionnel, service client par IA (téléphone, WhatsApp, Instagram, email) disponible 24h/24, et audit de sécurité web. Basée à Lyon, France.",
+  email: 'valentinmilliand@aevia.services',
+  founder: {
+    '@type': 'Person',
+    name: 'Valentin Milliand',
+    jobTitle: 'Fondateur, développeur fullstack',
+  },
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Lyon',
+    addressCountry: 'FR',
+  },
+  areaServed: ['FR', 'EU'],
+  knowsLanguage: ['fr', 'en', 'es', 'de', 'pt'],
+  identifier: { '@type': 'PropertyValue', propertyID: 'SIREN', value: '852546225' },
+  sameAs: ['https://github.com/Maeglin10'],
   makesOffer: [
     { '@type': 'Offer', name: 'Aevia Launch', url: 'https://launch.aevia.services' },
     { '@type': 'Offer', name: 'Aevia Security', url: 'https://security.aevia.services' },
     { '@type': 'Offer', name: 'Aevia Inbox', url: 'https://inbox.aevia.services' },
+  ],
+}
+
+const productsSchema = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Service',
+      '@id': 'https://launch.aevia.services/#service',
+      name: 'AeviaLaunch',
+      serviceType: 'Création de site web professionnel',
+      provider: { '@id': 'https://aevia.services/#organization' },
+      url: 'https://launch.aevia.services',
+      description:
+        "Création de sites web professionnels livrés en 2h à 7 jours selon le plan, optimisés SEO et mobile-first, hébergement inclus. Plus de 100 thèmes par secteur.",
+      areaServed: ['FR', 'EU'],
+      offers: [
+        { '@type': 'Offer', name: 'Landing', price: '399', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Essentiel', price: '599', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Pro', price: '899', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Premium', price: '1499', priceCurrency: 'EUR' },
+      ],
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://inbox.aevia.services/#app',
+      name: 'AeviaInbox',
+      applicationCategory: 'BusinessApplication',
+      operatingSystem: 'Web',
+      provider: { '@id': 'https://aevia.services/#organization' },
+      url: 'https://inbox.aevia.services',
+      description:
+        "Service client par IA 24h/24 : agent vocal sur ligne téléphonique dédiée (réservations, commandes) et messagerie unifiée WhatsApp, Instagram, Facebook, email. Modes messages seuls, voix seule ou les deux.",
+      offers: [
+        { '@type': 'Offer', name: 'Starter', price: '49', priceCurrency: 'USD' },
+        { '@type': 'Offer', name: 'Growth', price: '99', priceCurrency: 'USD' },
+        { '@type': 'Offer', name: 'Pro', price: '199', priceCurrency: 'USD' },
+        { '@type': 'Offer', name: 'Business', price: '399', priceCurrency: 'USD' },
+        { '@type': 'Offer', name: 'Scale', price: '999', priceCurrency: 'USD' },
+      ],
+    },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': 'https://security.aevia.services/#app',
+      name: 'AeviaSecurity',
+      applicationCategory: 'SecurityApplication',
+      operatingSystem: 'Web',
+      provider: { '@id': 'https://aevia.services/#organization' },
+      url: 'https://security.aevia.services',
+      description:
+        "Audit de sécurité web instantané : score sur 100 en sécurité, performances (Core Web Vitals) et SEO, avec rapport rédigé par IA. Scan gratuit sans compte.",
+      offers: [
+        { '@type': 'Offer', name: 'Scan gratuit', price: '0', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Solo', price: '9', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Pro', price: '29', priceCurrency: 'EUR' },
+        { '@type': 'Offer', name: 'Business', price: '79', priceCurrency: 'EUR' },
+      ],
+    },
   ],
 }
 
@@ -100,6 +172,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productsSchema) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-[#09090b] text-white">

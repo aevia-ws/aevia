@@ -1507,6 +1507,331 @@ Ne laissez pas une vulnérabilité évitable compromettre l'avenir et la réputa
 👉 [Tester mon site web gratuitement en 60 secondes avec Aevia Security](https://security.aevia.services)
 `,
   },
+  {
+    slug: "standard-telephonique-ia-restaurant",
+    title: "Standard téléphonique IA pour restaurant : ne ratez plus une seule réservation",
+    excerpt:
+      "Un appel manqué, c'est une table vide. Voici comment un agent vocal IA répond au téléphone à votre place, prend les réservations et les commandes 24h/24, même en plein coup de feu.",
+    date: "2026-07-16",
+    readingTime: "7 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **Un restaurant manque une grande partie de ses appels** aux heures de service, quand personne ne peut décrocher — chaque appel manqué est une réservation potentielle perdue.
+- **Un standard téléphonique IA décroche à chaque appel**, comprend la demande, vérifie les disponibilités et prend la réservation, sans faire attendre le client.
+- **L'agent vocal ne se contente pas de router** : il crée réellement la réservation, la met au calendrier et peut transmettre la commande à la caisse.
+- **Disponible 24h/24, dans plusieurs langues**, et bien moins cher qu'un poste dédié à répondre au téléphone.
+
+---
+
+## Le problème : le téléphone sonne quand vous êtes déjà débordé
+
+Dans un restaurant, les appels arrivent presque toujours au pire moment : en plein service, quand la salle est pleine et que personne n'a une main de libre. Résultat, le téléphone sonne dans le vide. Or un client qui n'obtient pas de réponse ne rappelle presque jamais — il réserve ailleurs.
+
+Ce n'est pas un problème d'organisation, c'est un problème de disponibilité. On ne peut pas être à la fois en cuisine, en salle et au téléphone. Et embaucher quelqu'un uniquement pour répondre aux appels n'est rentable pour presque aucun établissement.
+
+---
+
+## La solution : un agent vocal IA qui décroche à votre place
+
+Un standard téléphonique IA est un agent vocal qui répond au téléphone sur une ligne dédiée. Concrètement, quand un client appelle :
+
+1. **L'agent décroche immédiatement**, se présente au nom du restaurant et écoute la demande.
+2. **Il comprend la demande en langage naturel** — "je voudrais une table pour 4 personnes samedi soir vers 20h".
+3. **Il vérifie les disponibilités en temps réel** selon votre capacité et vos créneaux.
+4. **Il confirme et enregistre la réservation** — pas juste "je note", la réservation est réellement créée et ajoutée à votre calendrier.
+5. **Il peut aussi prendre une commande à emporter** et la transmettre à votre caisse.
+
+Le point clé : l'action est réalisée de bout en bout. Ce n'est pas un répondeur qui prend un message que vous devrez traiter plus tard — le travail est fait au moment de l'appel.
+
+---
+
+## Pourquoi c'est plus qu'un simple répondeur
+
+Beaucoup d'outils "d'accueil téléphonique" se contentent d'enregistrer un message ou de renvoyer vers un formulaire. Ça ne règle pas le problème : le client veut une réponse maintenant, pas être rappelé.
+
+Un vrai agent vocal IA :
+
+- **Répond dans la langue du client** — utile dans les zones touristiques.
+- **Gère plusieurs appels en même temps** — pas de tonalité "occupé".
+- **Ne se fatigue pas, ne fait pas d'erreur de saisie**, et travaille aussi le dimanche à minuit.
+- **Synchronise tout** avec votre calendrier et, pour les commandes, avec votre caisse via une intégration comme HubRise (compatible avec des logiciels de caisse comme Popina).
+
+---
+
+## Combien ça coûte, comparé à une réservation perdue ?
+
+Le vrai calcul n'est pas le prix de l'outil, mais le coût des réservations ratées. Une seule table de 4 couverts perdue peut représenter 100 à 200 € de chiffre d'affaires. Sur un mois, quelques appels manqués par jour finissent par peser lourd.
+
+Un service comme AeviaInbox propose la voix IA à partir de 49 $/mois, avec des paliers selon le volume de minutes d'appel. Autrement dit, l'outil est rentabilisé dès la première ou deuxième réservation qu'il récupère.
+
+---
+
+## Questions fréquentes
+
+**L'IA prend-elle vraiment la réservation, ou juste un message ?**
+Elle prend réellement la réservation : elle vérifie les disponibilités, confirme au client et enregistre la réservation dans votre calendrier.
+
+**Que se passe-t-il si la demande est trop complexe ?**
+L'agent peut transférer l'appel ou noter la demande pour un rappel humain. Mais l'immense majorité des appels (réserver, connaître les horaires, passer une commande) sont traités automatiquement.
+
+**Est-ce que ça marche avec ma caisse ?**
+Oui pour les caisses compatibles HubRise (dont Popina) : la commande peut être poussée directement.
+
+**Dans quelles langues l'agent répond-il ?**
+Français, anglais, espagnol, portugais et plus — l'agent s'adapte à la langue du client.
+
+---
+
+Ne laissez plus le téléphone sonner dans le vide pendant le service.
+
+👉 [Découvrir le standard téléphonique IA d'AeviaInbox](https://inbox.aevia.services)
+`,
+  },
+  {
+    slug: "agent-vocal-ia-prise-rendez-vous",
+    title: "Agent vocal IA : la prise de rendez-vous automatique pour cabinets, garages et cliniques",
+    excerpt:
+      "Cabinets dentaires, garages, cliniques vétérinaires : un agent vocal IA répond au téléphone, propose les créneaux libres et fixe le rendez-vous, sans mobiliser votre secrétariat.",
+    date: "2026-07-16",
+    readingTime: "6 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **La prise de rendez-vous par téléphone monopolise du temps** de secrétariat qui pourrait servir à l'accueil physique et aux patients présents.
+- **Un agent vocal IA répond à chaque appel**, propose les créneaux réellement disponibles et fixe le rendez-vous automatiquement.
+- **Idéal pour les cabinets dentaires, médicaux, vétérinaires, garages et instituts** qui reçoivent un flux régulier d'appels pour des rendez-vous.
+- **Le rendez-vous est réellement créé et synchronisé** avec l'agenda, pas simplement noté pour plus tard.
+
+---
+
+## Le téléphone qui n'arrête pas de sonner
+
+Dans un cabinet ou un garage, une grande partie des appels concernent une seule chose : prendre, décaler ou annuler un rendez-vous. C'est répétitif, ça interrompt en permanence la personne à l'accueil, et aux heures de pointe, les appels s'accumulent — certains patients ou clients tombent sur un répondeur et ne rappellent pas.
+
+Le coût est double : du temps de secrétariat mobilisé sur une tâche mécanique, et des rendez-vous perdus quand personne ne peut décrocher.
+
+---
+
+## Ce que fait un agent vocal IA de prise de rendez-vous
+
+L'agent répond au téléphone et gère la demande de bout en bout :
+
+- **Il identifie le motif** (nouveau rendez-vous, report, annulation, question sur les horaires).
+- **Il consulte l'agenda en temps réel** et propose les créneaux réellement libres.
+- **Il fixe le rendez-vous** au créneau choisi et l'enregistre dans l'agenda.
+- **Il peut envoyer une confirmation** et gérer les demandes multilingues.
+
+Là encore, la différence avec un simple répondeur est essentielle : le rendez-vous est réellement posé, pas laissé en attente de traitement.
+
+---
+
+## Pour quels professionnels ?
+
+Cette approche fonctionne particulièrement bien pour :
+
+- **Cabinets dentaires et médicaux** — flux constant d'appels pour rendez-vous et reports.
+- **Cliniques et cabinets vétérinaires** — urgences et consultations planifiées.
+- **Garages et centres auto** — prise de rendez-vous pour révision, contrôle, réparation.
+- **Instituts, salons, spas** — réservations de prestations.
+
+Le point commun : beaucoup d'appels répétitifs pour des rendez-vous, et un personnel d'accueil qui gagnerait à se concentrer sur les clients présents.
+
+---
+
+## Un gain de temps qui se mesure
+
+Chaque appel de prise de rendez-vous traité automatiquement, c'est quelques minutes rendues à votre équipe, multipliées par des dizaines d'appels par jour. Et chaque appel décroché en dehors des heures d'ouverture, c'est un rendez-vous que vous auriez perdu.
+
+AeviaInbox propose cette voix IA à partir de 49 $/mois, avec des paliers selon le volume d'appels. Le calcul est simple : combien de rendez-vous perdez-vous aujourd'hui parce que personne ne peut décrocher ?
+
+---
+
+## Questions fréquentes
+
+**L'agent a-t-il accès à mon agenda ?**
+Oui, il consulte les disponibilités en temps réel et pose le rendez-vous directement dans l'agenda synchronisé.
+
+**Peut-il gérer les annulations et reports ?**
+Oui, il traite aussi bien la prise que le report ou l'annulation.
+
+**Que se passe-t-il pour une demande médicale sensible ?**
+L'agent fixe le rendez-vous ; il ne donne pas d'avis médical et peut orienter vers un rappel humain si la demande sort de son périmètre.
+
+**Fonctionne-t-il en dehors des heures d'ouverture ?**
+Oui, 24h/24 — c'est justement là que se perdent le plus de rendez-vous aujourd'hui.
+
+---
+
+Rendez à votre équipe le temps passé au téléphone.
+
+👉 [Découvrir l'agent vocal IA d'AeviaInbox](https://inbox.aevia.services)
+`,
+  },
+  {
+    slug: "combien-coute-agent-telephonique-ia",
+    title: "Combien coûte un agent téléphonique IA pour une petite entreprise ?",
+    excerpt:
+      "Prix, ce qui est inclus, et comment calculer la rentabilité d'un agent vocal IA qui répond à vos appels. Le vrai comparatif : le coût de l'outil face au coût des appels manqués.",
+    date: "2026-07-16",
+    readingTime: "6 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **Un agent téléphonique IA coûte à partir d'environ 49 $/mois** pour une petite entreprise, selon le volume de minutes d'appel inclus.
+- **Le bon calcul n'est pas le prix de l'outil**, mais ce qu'il rapporte : chaque appel manqué récupéré est un client gagné.
+- **La tarification est modulable** : on peut prendre la voix seule, les messages seuls, ou les deux.
+- **Pas de matériel, pas d'embauche** : l'agent tourne sur une ligne dédiée, prêt à répondre 24h/24.
+
+---
+
+## Ce qui fait le prix d'un agent vocal IA
+
+Le coût d'un agent téléphonique IA dépend surtout de deux choses :
+
+1. **Le volume d'appels** — plus vous recevez d'appels, plus le nombre de minutes traitées est élevé.
+2. **Ce que l'agent fait** — répondre à des questions simples coûte moins qu'un flux complet de réservation ou de prise de rendez-vous synchronisée.
+
+Contrairement à une secrétaire ou un centre d'appel, il n'y a ni salaire, ni charges, ni matériel : l'agent est un service logiciel qui tourne sur une ligne dédiée.
+
+---
+
+## Les paliers de prix, concrètement
+
+Chez AeviaInbox, la tarification est modulable et le prix par palier est le même quel que soit le mode choisi (messages seuls, voix seule, ou les deux) — seul le quota inclus change :
+
+- **Starter — 49 $/mois** : pour un petit volume d'appels ou de messages.
+- **Growth — 99 $/mois** : pour un flux régulier.
+- **Pro — 199 $/mois** : pour un volume soutenu.
+- **Business — 399 $/mois** : pour un fort volume.
+- **Scale — 999 $/mois** : pour les plus gros besoins.
+
+L'intérêt de ce modèle : on ne paie pas pour un forfait "tout inclus" opaque. Si vous n'avez besoin que de la voix, vous prenez la voix ; si vous voulez aussi WhatsApp et email, vous passez en mode combiné.
+
+---
+
+## Le vrai comparatif : outil vs appels manqués
+
+Pour juger le prix, il faut le comparer au coût de ne rien faire. Prenons un exemple simple :
+
+- Un restaurant qui rate 3 réservations par jour à 120 € de panier moyen perd environ 360 €/jour de chiffre d'affaires potentiel.
+- Un garage qui manque 2 prises de rendez-vous par jour perd deux interventions.
+
+Face à ces montants, un abonnement à 49 à 199 $/mois se rentabilise en une poignée d'appels récupérés. C'est ce décalage — quelques dizaines d'euros par mois contre des centaines d'euros de ventes perdues — qui rend un agent vocal IA intéressant pour une petite structure.
+
+---
+
+## Ce qui est inclus (et ce qui ne l'est pas)
+
+Inclus dans un service comme AeviaInbox :
+- La ligne et l'agent vocal IA.
+- La compréhension du langage naturel et la réponse dans la langue du client.
+- La création réelle des réservations / rendez-vous et la synchronisation calendrier.
+- L'intégration caisse pour les restaurants (HubRise / Popina).
+
+À vérifier selon votre besoin : le volume de minutes du palier choisi, et si vous voulez aussi les canaux de messagerie (WhatsApp, Instagram, email) en plus de la voix.
+
+---
+
+## Questions fréquentes
+
+**Y a-t-il un engagement ?**
+Le modèle est un abonnement mensuel ; on choisit son palier selon son volume.
+
+**Puis-je prendre seulement la voix, sans les messages ?**
+Oui, le mode "voix seule" existe, tout comme "messages seuls" ou les deux combinés.
+
+**Faut-il du matériel ou une installation technique ?**
+Non, pas de matériel : l'agent fonctionne sur une ligne dédiée, sans installation lourde.
+
+**Le prix augmente-t-il si je reçois plus d'appels ?**
+On choisit un palier adapté à son volume ; si le volume grandit, on passe au palier supérieur.
+
+---
+
+Faites le calcul pour votre activité : combien vous coûtent aujourd'hui les appels que personne ne décroche ?
+
+👉 [Voir les tarifs d'AeviaInbox](https://inbox.aevia.services/fr/pricing)
+`,
+  },
+  {
+    slug: "ne-plus-manquer-appels-clients-commerce",
+    title: "Appels manqués = clients perdus : comment ne plus en rater dans votre commerce",
+    excerpt:
+      "Chaque appel sans réponse est un client qui va voir ailleurs. Voici pourquoi les commerces perdent des appels, ce que ça coûte vraiment, et comment y remédier sans embaucher.",
+    date: "2026-07-16",
+    readingTime: "6 min",
+    category: "IA Vocale & Téléphonie",
+    content: `## À retenir en 30 secondes
+
+- **Un client qui tombe sur un téléphone sans réponse rappelle rarement** — il contacte le concurrent suivant.
+- **Les appels se perdent surtout aux pires moments** : heures de pointe, pause déjeuner, soir et week-end.
+- **La solution n'est pas forcément d'embaucher** : un agent vocal IA décroche à chaque appel, 24h/24.
+- **Ce qui compte, c'est de répondre maintenant** — pas de rappeler plus tard, quand le client a déjà réservé ailleurs.
+
+---
+
+## Pourquoi les commerces perdent autant d'appels
+
+Ce n'est pas un manque de sérieux, c'est une question de simultanéité. Dans un commerce, une clinique ou un restaurant, les appels arrivent au moment où l'on est déjà occupé avec les clients présents. On ne peut pas être partout. Et le soir, le week-end ou pendant la pause, il n'y a tout simplement personne pour décrocher.
+
+Le problème, c'est le comportement du client : face à un téléphone qui sonne dans le vide ou un répondeur, la grande majorité ne laisse pas de message et n'essaie pas plus tard. Elle passe à l'établissement suivant. L'appel manqué n'est pas "reporté", il est définitivement perdu.
+
+---
+
+## Ce que coûte vraiment un appel manqué
+
+Un appel manqué n'est pas neutre : c'est une vente, une réservation ou un rendez-vous qui part chez un concurrent. Selon l'activité :
+
+- **Restaurant** : une table perdue, soit souvent 100 à 200 € de panier.
+- **Garage, artisan** : une intervention non planifiée.
+- **Institut, salon** : une prestation non réservée.
+
+Additionnés sur un mois, ces manques représentent une part de chiffre d'affaires bien plus importante que le coût d'une solution pour y remédier.
+
+---
+
+## Les fausses solutions
+
+Avant d'arriver à la bonne réponse, écartons celles qui ne marchent pas vraiment :
+
+- **Le répondeur** : le client veut une réponse, pas laisser un message. Taux de rappel très faible.
+- **Le renvoi vers un formulaire ou un site** : ça ajoute une friction, beaucoup abandonnent.
+- **Embaucher pour répondre au téléphone** : rarement rentable pour une petite structure, et ça ne couvre pas les soirs et week-ends.
+
+---
+
+## La bonne réponse : décrocher à chaque appel, automatiquement
+
+Un agent vocal IA règle le problème à la racine : il décroche à chaque appel, immédiatement, y compris en dehors des heures d'ouverture et même quand plusieurs personnes appellent en même temps.
+
+Il comprend la demande, y répond ou réalise l'action (réservation, rendez-vous, commande, information), dans la langue du client. Pour l'appelant, l'expérience est fluide : il a sa réponse tout de suite. Pour vous, l'appel n'est plus perdu.
+
+Des services comme AeviaInbox proposent cette voix IA à partir de 49 $/mois, avec la possibilité d'ajouter aussi WhatsApp, Instagram et email dans la même solution — pour ne plus rien manquer, quel que soit le canal par lequel le client vous contacte.
+
+---
+
+## Questions fréquentes
+
+**Le client se rend-il compte qu'il parle à une IA ?**
+L'agent est transparent et efficace ; l'important pour l'appelant, c'est d'obtenir une réponse ou une réservation immédiate.
+
+**Et pour les demandes vraiment particulières ?**
+Elles peuvent être transférées ou notées pour un rappel humain. La majorité des appels courants sont traités automatiquement.
+
+**Est-ce que ça remplace mon équipe ?**
+Non, ça la décharge des appels répétitifs pour qu'elle se concentre sur les clients présents — et ça couvre les moments où personne ne peut décrocher.
+
+**Puis-je aussi centraliser WhatsApp et les emails ?**
+Oui, la voix et les messageries peuvent être réunies dans une seule solution.
+
+---
+
+Arrêtez de laisser vos clients aller chez le concurrent d'à côté faute de réponse.
+
+👉 [Découvrir AeviaInbox](https://inbox.aevia.services)
+`,
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
