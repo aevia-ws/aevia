@@ -2427,6 +2427,220 @@ Les templates AeviaLaunch sont conçus avec un tunnel de conversion intégré :
 - Formulaire de contact minimaliste (3 champs max)
 
 Le design est pensé pour convertir — pas seulement pour être beau.`,
+    i18n: {
+      en: {
+        title: "Conversion funnel: how to turn your visitors into customers",
+        excerpt:
+          "Having traffic without conversion is like a shop full of browsers who never reach the till. Here are the mechanics that make a sales funnel actually work.",
+        category: "Web & Marketing",
+        content: `## Key takeaways in 30 seconds
+
+- **A conversion funnel** = the sequence of steps between "unknown visitor" and "paying customer"
+- **Most sites lose 95% of their visitors** for lack of a structured funnel
+- **3 key elements**: a clear value proposition, social proof, a friction-free call to action
+- **Measure each step** — without analytics, you are working blind
+
+---
+
+## Why your site has traffic but few conversions
+
+Picture a physical shop where 100 people walk in, look around, and 95 leave empty-handed. You would call that a layout, presentation or salesperson problem.
+
+On the web, that is exactly what happens for most sites. Traffic arrives — via Google, social media, word of mouth — and leaves without converting.
+
+The difference between a site that converts and a brochure site is a **structured conversion funnel**: a sequence of steps that guide the visitor from "I'm discovering" to "I'm becoming a customer".
+
+---
+
+## The 4 steps of an effective funnel
+
+### Step 1 — Capture attention (the promise)
+
+The visitor lands on your page. In under 5 seconds, they must understand:
+
+- What you do
+- What concrete problem you solve
+- Why you rather than someone else
+
+Your hero headline and subheadline are the most important elements of your site. They work while you sleep. Test, refine, test again.
+
+Bad example: "Welcome to [Company Name] — your trusted partner"
+
+Good example: "Professional websites delivered in 7 days — no agency, no surprises"
+
+### Step 2 — Build trust (the proof)
+
+The visitor is interested. But they do not know you. They need reassurance.
+
+Proof elements that work:
+- **Customer testimonials with photo and name** — not anonymous
+- **Case studies with quantified results** — "Jean grew his leads by 40% in 3 months"
+- **Logos of known clients** if applicable
+- **Concrete numbers** — "200 clients supported", "7 years of experience"
+- **Certifications or labels** relevant to your sector
+
+### Step 3 — Remove objections (the friction)
+
+Even convinced in principle, the visitor has objections in mind: "It's too expensive", "I'm not sure it works for me", "I need to talk to my partner".
+
+Anticipate these objections in your content:
+- A well-thought-out FAQ
+- A guarantee (money-back, trial period)
+- Information about the process (how does it actually work?)
+- Transparent pricing with what it includes
+
+### Step 4 — The call to action (zero friction)
+
+The final CTA must be obvious, unambiguous, and friction-free. Every extra step you add reduces the conversion rate.
+
+Compare:
+- **A lot of friction**: "Fill out our 12-field form to receive our brochure, then we'll call you within 48h"
+- **Little friction**: "Book a 20-min slot online" (direct Calendly link)
+
+---
+
+## Measure to improve
+
+Without measurement, you optimize blind. The key funnel metrics:
+
+- **Bounce rate**: what % of visitors leave without seeing a second page?
+- **Landing page conversion rate**: what % click your main CTA?
+- **Form conversion rate**: what % complete the form?
+- **Closing rate**: what % of contacts become customers?
+
+Each step can be optimized independently. Google Analytics 4 gives you this data for free.
+
+---
+
+## A/B testing: test before deciding
+
+Do not assume what works. Test two versions of your CTA, your headline, your layout — and let the data decide.
+
+Tools like Vercel Speed Insights or Google Optimize let you test two versions on visitor segments and objectively measure which converts better.
+
+A headline change that improves conversion by 15% can double your leads without increasing your traffic.
+
+---
+
+## The concrete example of AeviaLaunch
+
+AeviaLaunch templates are built with a conversion funnel baked in:
+
+- Hero with a clear value proposition
+- Customer testimonials section
+- FAQ section answering common objections
+- CTA repeated 3 times down the page
+- A minimal contact form (3 fields max)
+
+The design is built to convert — not just to look good.`,
+      },
+      es: {
+        title: "Embudo de conversión: cómo convertir a tus visitantes en clientes",
+        excerpt:
+          "Tener tráfico sin conversión es como una tienda llena de curiosos que nunca pasan por caja. Estas son las mecánicas que hacen que un embudo de ventas funcione de verdad.",
+        category: "Web & Marketing",
+        content: `## Lo esencial en 30 segundos
+
+- **Un embudo de conversión** = la secuencia de pasos entre "visitante desconocido" y "cliente que paga"
+- **La mayoría de las webs pierden el 95% de sus visitantes** por falta de un embudo estructurado
+- **3 elementos clave**: una propuesta de valor clara, prueba social, una llamada a la acción sin fricción
+- **Mide cada paso** — sin analítica, trabajas a ciegas
+
+---
+
+## Por qué tu web tiene tráfico pero pocas conversiones
+
+Imagina una tienda física donde entran 100 personas, miran, y 95 se van con las manos vacías. Lo llamarías un problema de distribución, de presentación o de vendedor.
+
+En la web, es exactamente lo que pasa en la mayoría de los sitios. El tráfico llega — vía Google, redes sociales, boca a boca — y se va sin convertir.
+
+La diferencia entre una web que convierte y una web de presentación es la presencia de un **embudo de conversión estructurado**: una secuencia de pasos que guían al visitante de "estoy descubriendo" a "me convierto en cliente".
+
+---
+
+## Los 4 pasos de un embudo eficaz
+
+### Paso 1 — Captar la atención (la promesa)
+
+El visitante llega a tu página. En menos de 5 segundos debe entender:
+
+- Qué haces
+- Qué problema concreto resuelves
+- Por qué tú y no otro
+
+Tu titular y subtítulo de hero son los elementos más importantes de tu web. Trabajan mientras duermes. Prueba, ajusta, vuelve a probar.
+
+Mal ejemplo: "Bienvenido a [Nombre de la empresa] — tu socio de confianza"
+
+Buen ejemplo: "Webs profesionales entregadas en 7 días — sin agencia, sin sorpresas"
+
+### Paso 2 — Generar confianza (la prueba)
+
+El visitante está interesado. Pero no te conoce. Necesita tranquilidad.
+
+Los elementos de prueba que funcionan:
+- **Testimonios de clientes con foto y nombre** — no anónimos
+- **Casos de éxito con resultados cuantificados** — "Jean aumentó sus contactos un 40% en 3 meses"
+- **Logos de clientes conocidos** si procede
+- **Cifras concretas** — "200 clientes acompañados", "7 años de experiencia"
+- **Certificaciones o sellos** relevantes para tu sector
+
+### Paso 3 — Eliminar objeciones (las fricciones)
+
+Aunque convencido en principio, el visitante tiene objeciones en mente: "Es demasiado caro", "No estoy seguro de que funcione para mí", "Tengo que hablarlo con mi socio".
+
+Anticipa estas objeciones en tu contenido:
+- Una FAQ bien pensada
+- Una garantía (satisfecho o te devolvemos el dinero, periodo de prueba)
+- Información sobre el proceso (¿cómo funciona en concreto?)
+- Un precio transparente con lo que incluye
+
+### Paso 4 — La llamada a la acción (fricción cero)
+
+El CTA final debe ser evidente, sin ambigüedad y sin fricción. Cada paso adicional que añades reduce la tasa de conversión.
+
+Compara:
+- **Mucha fricción**: "Rellena nuestro formulario de 12 campos para recibir nuestro folleto, luego te llamaremos en 48h"
+- **Poca fricción**: "Reserva un hueco de 20 min online" (enlace directo de Calendly)
+
+---
+
+## Medir para mejorar
+
+Sin medición, optimizas a ciegas. Las métricas clave de un embudo:
+
+- **Tasa de rebote**: ¿qué % de visitantes se va sin ver una segunda página?
+- **Tasa de conversión de la landing**: ¿qué % hace clic en tu CTA principal?
+- **Tasa de conversión del formulario**: ¿qué % completa el formulario?
+- **Tasa de cierre**: ¿qué % de los contactos se convierte en cliente?
+
+Cada paso puede optimizarse de forma independiente. Google Analytics 4 te da estos datos gratis.
+
+---
+
+## El A/B testing: probar antes de decidir
+
+No supongas lo que funciona. Prueba dos versiones de tu CTA, tu titular, tu diseño — y deja que los datos decidan.
+
+Herramientas como Vercel Speed Insights o Google Optimize permiten probar dos versiones en segmentos de visitantes y medir objetivamente cuál convierte mejor.
+
+Un cambio de titular que mejora la conversión un 15% puede duplicar tus leads sin aumentar tu tráfico.
+
+---
+
+## El ejemplo concreto de AeviaLaunch
+
+Las plantillas de AeviaLaunch están diseñadas con un embudo de conversión integrado:
+
+- Hero con una propuesta de valor clara
+- Sección de testimonios de clientes
+- Sección de FAQ que responde a las objeciones comunes
+- CTA repetido 3 veces en la página
+- Un formulario de contacto minimalista (3 campos máximo)
+
+El diseño está pensado para convertir — no solo para ser bonito.`,
+      },
+    },
   },
   {
     slug: "segmentation-clients-fidelisation",
@@ -2520,6 +2734,188 @@ Notez dans votre CRM comment chaque client préfère être contacté. Et respect
 La segmentation parfaite n'existe pas au jour 1. Elle se construit au fil des interactions. Plus vous en savez sur chaque client, plus votre segmentation est précise et vos actions pertinentes.
 
 L'important, c'est de commencer. Même une segmentation simple (actifs vs inactifs, gros panier vs petit panier) est infiniment plus efficace que de traiter tous vos clients de façon identique.`,
+    i18n: {
+      en: {
+        title: "Segmenting your customers: the key to loyalty and smarter selling",
+        excerpt:
+          "Treating every customer the same wastes your marketing effort. Segmentation lets you send the right message to the right person at the right time.",
+        category: "CRM & Support",
+        content: `## Key takeaways in 30 seconds
+
+- **Segmentation** = dividing your customers into homogeneous groups to speak to them differently
+- **Retention costs 5 to 7 times less than acquisition** — but requires knowing your customers well
+- **4 basic segmentations**: recency, frequency, average basket, preferred contact channel
+- **A CRM or unified inbox** is essential to segment effectively
+
+---
+
+## Why segmentation changes everything
+
+Imagine getting a newsletter from a brand you follow. The first email offers exactly what you have been looking for for weeks — you click, you buy. The second email is about a product that does not concern you at all — you delete it unread.
+
+The difference between those two experiences is segmentation. Or the lack of it.
+
+For an SME, segmenting the customer base is one of the most effective levers to grow revenue without growing the acquisition budget. You focus on the customers who already trust you — and speak to them relevantly.
+
+---
+
+## The 4 basic segmentations to start with
+
+### 1. RFM segmentation (Recency, Frequency, Monetary)
+
+A classic marketing model, applicable to any business with a purchase history:
+
+- **Recency** — how long since the customer last bought? A recently active customer is easier to re-engage
+- **Frequency** — how many times have they bought? Frequent customers are your potential advocates
+- **Monetary** — what is their average basket or total revenue? These are your high-value customers
+
+Rank your customers across these 3 dimensions and you get immediately actionable segments:
+- **Champions** (recent, frequent, big basket) → build loyalty, ask for reviews, offer upsell
+- **Dormant** (old customer, no recent purchase) → reactivation, special offer
+- **New** (recent first purchase) → onboarding, encourage the second purchase
+
+### 2. Segmentation by preferred channel
+
+Some customers prefer WhatsApp. Others email. Others come in-store or call.
+
+Use each customer's preferred channel for your communications. A WhatsApp message to someone who never opens DMs is a wasted message. An email to someone who always replies on Instagram, same thing.
+
+### 3. Segmentation by need type
+
+If your products or services cover several uses, segment by need type. Example for a web agency: clients who need a brochure site vs those who need an e-commerce store. These two groups have very different buying cycles, objections and support needs.
+
+### 4. Segmentation by satisfaction
+
+Your promoters (very satisfied customers) deserve different attention from your detractors (dissatisfied customers). Promoters are your best potential salespeople — ask them for testimonials, reviews, referrals. Detractors should be handled as a priority — solving their problem can turn them into loyal customers.
+
+---
+
+## The tools to segment
+
+To segment, you first need to **centralize customer data**. You cannot segment if your customer history is scattered across WhatsApp, email, an Excel sheet and your memory.
+
+A CRM or unified inbox like **Aevia Inbox** lets you:
+
+- Centralize every interaction per customer (WhatsApp, email, Instagram, Messenger)
+- Tag customers (VIP, Hot prospect, To follow up, etc.)
+- See the full history before each exchange
+- Filter by tag to target an action on a specific segment
+
+---
+
+## Putting it into practice: 3 concrete actions this week
+
+**Action 1 — Identify the 20% of customers who generate 80% of your revenue**
+
+This is the Pareto principle. These customers deserve special attention: loyalty program, priority access, personalized contact. If you do not look after them, someone else will.
+
+**Action 2 — List your customers inactive for more than 6 months**
+
+These are your "dormant" ones. A simple personalized message — "We were thinking of you, here's a welcome-back offer" — often reactivates 10 to 20% of that list.
+
+**Action 3 — Categorize your contacts by preferred channel**
+
+Note in your CRM how each customer prefers to be contacted. And respect that preference in your communications.
+
+---
+
+## Segmentation, a tool that sharpens over time
+
+Perfect segmentation does not exist on day 1. It is built over the course of interactions. The more you know about each customer, the more precise your segmentation and the more relevant your actions.
+
+What matters is to start. Even simple segmentation (active vs inactive, big basket vs small basket) is infinitely more effective than treating all your customers identically.`,
+      },
+      es: {
+        title: "Segmentar a tus clientes: la clave para fidelizar y vender de forma más inteligente",
+        excerpt:
+          "Tratar a todos tus clientes igual es desperdiciar tu esfuerzo de marketing. La segmentación permite dirigir el mensaje adecuado a la persona adecuada en el momento adecuado.",
+        category: "CRM & Support",
+        content: `## Lo esencial en 30 segundos
+
+- **La segmentación** = dividir a tus clientes en grupos homogéneos para hablarles de forma distinta
+- **Fidelizar cuesta de 5 a 7 veces menos que captar** — pero requiere conocer bien a tus clientes
+- **4 segmentaciones básicas**: recencia, frecuencia, ticket medio, canal de contacto preferido
+- **Un CRM o bandeja unificada** es indispensable para segmentar con eficacia
+
+---
+
+## Por qué la segmentación lo cambia todo
+
+Imagina recibir una newsletter de una marca que sigues. El primer email te ofrece exactamente lo que buscabas desde hace semanas — haces clic, compras. El segundo email habla de un producto que no te concierne en absoluto — lo borras sin leerlo.
+
+La diferencia entre esas dos experiencias es la segmentación. O su ausencia.
+
+Para una pyme, segmentar la base de clientes es una de las palancas más eficaces para aumentar la facturación sin aumentar el presupuesto de captación. Te centras en los clientes que ya confían en ti — y les hablas de forma pertinente.
+
+---
+
+## Las 4 segmentaciones básicas para empezar
+
+### 1. La segmentación RFM (Recencia, Frecuencia, Monto)
+
+Un modelo clásico en marketing, aplicable a toda empresa con un historial de compras:
+
+- **Recencia** — ¿cuánto hace que el cliente no compra? Un cliente activo recientemente es más fácil de reactivar
+- **Frecuencia** — ¿cuántas veces ha comprado? Los clientes frecuentes son tus embajadores potenciales
+- **Monto (Monetary)** — ¿cuál es su ticket medio o su facturación total? Son tus clientes de alto valor
+
+Clasifica a tus clientes en estas 3 dimensiones y obtienes segmentos inmediatamente accionables:
+- **Campeones** (reciente, frecuente, ticket alto) → fideliza, pide reseñas, ofrece upsell
+- **Dormidos** (cliente antiguo, sin compra reciente) → reactivación, oferta especial
+- **Nuevos** (primera compra reciente) → onboarding, fomentar la segunda compra
+
+### 2. La segmentación por canal preferido
+
+Algunos clientes prefieren WhatsApp. Otros el email. Otros vienen a la tienda o llaman.
+
+Usa el canal preferido de cada cliente para tus comunicaciones. Un mensaje de WhatsApp a alguien que nunca abre los DM es un mensaje perdido. Un email a alguien que siempre responde por Instagram, igual.
+
+### 3. La segmentación por tipo de necesidad
+
+Si tus productos o servicios cubren varios usos, segmenta por tipo de necesidad. Ejemplo para una agencia web: los clientes que necesitan una web de presentación frente a los que necesitan una tienda e-commerce. Estos dos grupos tienen ciclos de compra, objeciones y necesidades de soporte muy distintos.
+
+### 4. La segmentación por satisfacción
+
+Tus promotores (clientes muy satisfechos) merecen una atención distinta a la de tus detractores (clientes insatisfechos). Los promotores son tus mejores comerciales potenciales — pídeles testimonios, reseñas, recomendaciones. Los detractores deben tratarse con prioridad — resolver su problema puede convertirlos en clientes fieles.
+
+---
+
+## Las herramientas para segmentar
+
+Para segmentar, primero hay que **centralizar los datos de los clientes**. Imposible segmentar si tu historial de clientes está disperso entre WhatsApp, email, una hoja de Excel y tu memoria.
+
+Un CRM o una bandeja unificada como **Aevia Inbox** permite:
+
+- Centralizar todas las interacciones por cliente (WhatsApp, email, Instagram, Messenger)
+- Etiquetar a los clientes (VIP, Prospecto caliente, A reactivar, etc.)
+- Ver el historial completo antes de cada intercambio
+- Filtrar por etiqueta para dirigir una acción a un segmento concreto
+
+---
+
+## Puesta en práctica: 3 acciones concretas esta semana
+
+**Acción 1 — Identifica el 20% de clientes que generan el 80% de tu facturación**
+
+Es el principio de Pareto. Estos clientes merecen una atención especial: programa de fidelidad, acceso prioritario, contacto personalizado. Si no los cuidas, otro lo hará.
+
+**Acción 2 — Lista tus clientes inactivos desde hace más de 6 meses**
+
+Son tus "dormidos". Un simple mensaje personalizado — "Pensábamos en ti, aquí tienes una oferta de bienvenida de vuelta" — reactiva a menudo entre el 10 y el 20% de esa lista.
+
+**Acción 3 — Categoriza tus contactos según su canal preferido**
+
+Anota en tu CRM cómo prefiere cada cliente que le contacten. Y respeta esa preferencia en tus comunicaciones.
+
+---
+
+## La segmentación, una herramienta que se afina con el tiempo
+
+La segmentación perfecta no existe el día 1. Se construye a lo largo de las interacciones. Cuanto más sabes de cada cliente, más precisa es tu segmentación y más pertinentes tus acciones.
+
+Lo importante es empezar. Incluso una segmentación simple (activos vs inactivos, ticket alto vs ticket bajo) es infinitamente más eficaz que tratar a todos tus clientes de forma idéntica.`,
+      },
+    },
   },
   {
     slug: "optimiser-presence-en-ligne",
@@ -2620,6 +3016,202 @@ Si vous deviez ne choisir qu'une priorité, commencez par votre site web et votr
 Ensuite, mesurez. Google Analytics 4 est gratuit et vous dira exactement d'où viennent vos visiteurs, quelles pages ils regardent, et où ils décrochent.
 
 La présence en ligne n'est pas une case à cocher — c'est un actif qui se construit dans le temps. Plus tôt vous commencez, plus l'avance est grande.`,
+    i18n: {
+      en: {
+        title: "5 ways to optimize your online presence in 2026",
+        excerpt:
+          "A website is no longer enough. Discover the 5 levers that really make the difference so people find you — and choose you — online.",
+        category: "Web & Marketing",
+        content: `## Why your online presence is your best salesperson
+
+In 2026, the first thing a potential customer does before calling you or walking through your door is search for you on Google. In under 10 seconds, they judge your seriousness, your credibility, and decide whether to contact you or move on to a competitor.
+
+The good news? Most small businesses still neglect this reality. Which means if you act now, you have a real window of opportunity.
+
+Here are the 5 levers that concretely change the game.
+
+---
+
+## 1. A professional website — not just "a site"
+
+The difference between a site that converts and one that drives visitors away often comes down to a few details: a dated design, fuzzy copy, no clear call to action, poor-quality photos.
+
+A good site in 2026 is:
+
+- **A crystal-clear core message** from the first second — what you do, for whom, and why choose you
+- **A clear visual hierarchy** — the visitor knows where to click
+- **A visible contact form or call-to-action button** on every page
+- **A mobile-first design** — over 65% of visits come from smartphones
+
+Solutions like AeviaLaunch deliver a professional, customized site deployed in 7 days — without sacrificing quality for speed.
+
+---
+
+## 2. Local SEO — being found by people near you
+
+If your clientele is local, local SEO is your absolute priority. It means optimizing your presence so Google shows you when someone searches "plumber Paris 15" or "vegetarian restaurant Lyon center".
+
+The concrete actions:
+
+- **Weave your city and neighborhood** naturally into your copy, title tags and meta descriptions
+- **Create dedicated pages** for each geographic area if you cover several
+- **Get Google reviews** — they directly influence your position in local results
+- **Build local backlinks** — professional directories, regional press, partnerships
+
+---
+
+## 3. Google Business Profile — your most powerful free storefront
+
+Many founders created their Google Business Profile once, then forgot it. That is a mistake.
+
+A well-maintained profile appears in the "Local Pack" — the three map results shown at the top of Google. That is massive, free visibility.
+
+What to do regularly:
+
+- **Update your hours** — especially public holidays
+- **Publish posts** (offers, events, news) — at least twice a month
+- **Reply to all reviews**, positive and negative — it shows you are active and professional
+- **Add photos** of your team, premises, products — profiles with photos get 42% more direction requests
+
+---
+
+## 4. Social media — choosing rather than doing everything
+
+The classic mistake: trying to be everywhere. The result is abandoned accounts that give a bad image.
+
+The effective strategy: **pick one or two networks** where your customers really are, and be consistent and relevant.
+
+- **Instagram and TikTok** for retail, beauty, food, crafts — anything visual
+- **LinkedIn** for B2B services, consulting, professional services
+- **Facebook** is still useful for local groups and events
+
+What works in 2026: authentic, useful content. Not disguised ads — tips, behind-the-scenes, customer stories.
+
+---
+
+## 5. Load speed — the invisible that costs you
+
+Here is a stat worth pondering: if your site takes more than 3 seconds to load, 53% of mobile visitors leave without seeing a single page.
+
+Speed affects your bounce rate, your conversion rate, and your Google ranking (Core Web Vitals) all at once.
+
+The basic optimizations:
+
+- **Compress your images** — use modern formats like WebP
+- **Choose fast hosting** — a 2 EUR/month host does not offer the same response times as cloud hosting
+- **Enable caching** at the server and browser level
+- **Minimize third-party scripts** — every plugin, widget or tracker adds weight
+
+Not sure about your site's speed? Tools like AeviaSecurity give you a performance score in seconds, plus concrete recommendations to fix it.
+
+---
+
+## Where to start?
+
+If you had to pick just one priority, start with your website and your Google Business Profile. These are the two touchpoints most scrutinized by your potential customers.
+
+Then measure. Google Analytics 4 is free and tells you exactly where your visitors come from, which pages they view, and where they drop off.
+
+Online presence is not a box to tick — it is an asset built over time. The earlier you start, the bigger your lead.`,
+      },
+      es: {
+        title: "5 formas de optimizar tu presencia online en 2026",
+        excerpt:
+          "Una web ya no basta. Descubre las 5 palancas que marcan la diferencia de verdad para que te encuentren — y te elijan — en internet.",
+        category: "Web & Marketing",
+        content: `## Por qué tu presencia online es tu mejor comercial
+
+En 2026, lo primero que hace un cliente potencial antes de llamarte o entrar por tu puerta es buscarte en Google. En menos de 10 segundos juzga tu seriedad, tu credibilidad, y decide si te contacta o pasa a la competencia.
+
+¿La buena noticia? La mayoría de las pymes aún descuidan esta realidad. Lo que significa que si actúas ahora, tienes una verdadera ventana de oportunidad.
+
+Estas son las 5 palancas que cambian las cosas de verdad.
+
+---
+
+## 1. Una web profesional — no solo "una web"
+
+La diferencia entre una web que convierte y una que ahuyenta a los visitantes suele estar en unos detalles: un diseño anticuado, textos confusos, sin una llamada a la acción clara, fotos de mala calidad.
+
+Una buena web en 2026 es:
+
+- **Un mensaje principal nítido** desde el primer segundo — qué haces, para quién, y por qué elegirte
+- **Una jerarquía visual clara** — el visitante sabe dónde hacer clic
+- **Un formulario de contacto o un botón de llamada a la acción visible** en cada página
+- **Un diseño mobile-first** — más del 65% de las visitas vienen del smartphone
+
+Soluciones como AeviaLaunch permiten obtener una web profesional, personalizada y desplegada en 7 días — sin sacrificar la calidad por la rapidez.
+
+---
+
+## 2. El SEO local — que te encuentren las personas cerca de ti
+
+Si tu clientela es local, el SEO local es tu prioridad absoluta. Consiste en optimizar tu presencia para que Google te muestre cuando alguien busca "fontanero Madrid centro" o "restaurante vegetariano Valencia".
+
+Las acciones concretas:
+
+- **Integra tu ciudad y tu barrio** de forma natural en tus textos, tus etiquetas title y tus meta descripciones
+- **Crea páginas dedicadas** a cada zona geográfica si operas en varias
+- **Consigue reseñas de Google** — influyen directamente en tu posición en los resultados locales
+- **Construye backlinks locales** — directorios profesionales, prensa regional, colaboraciones
+
+---
+
+## 3. El perfil de Google Business — tu escaparate gratuito más potente
+
+Muchos emprendedores crearon su perfil de Google Business un día y luego lo olvidaron. Es un error.
+
+Un perfil bien mantenido aparece en el "Pack Local" — los tres resultados con mapa que se muestran arriba en Google. Es una visibilidad enorme y gratuita.
+
+Lo que hay que hacer con regularidad:
+
+- **Actualiza tus horarios** — sobre todo los festivos
+- **Publica posts** (ofertas, eventos, novedades) — al menos dos veces al mes
+- **Responde a todas las reseñas**, positivas y negativas — demuestra que estás activo y eres profesional
+- **Añade fotos** de tu equipo, tu local, tus productos — los perfiles con fotos reciben un 42% más de solicitudes de cómo llegar
+
+---
+
+## 4. Las redes sociales — elegir en vez de hacerlo todo
+
+El error clásico: intentar estar en todas partes. El resultado son cuentas abandonadas que dan mala imagen.
+
+La estrategia eficaz: **elige una o dos redes** donde tus clientes estén de verdad, y sé constante y relevante.
+
+- **Instagram y TikTok** para comercio, belleza, restauración, oficios — todo lo visual
+- **LinkedIn** para servicios B2B, consultoría, profesiones liberales
+- **Facebook** sigue siendo útil para grupos locales y eventos
+
+Lo que funciona en 2026: contenido auténtico y útil. No publicidad disfrazada — consejos, entre bastidores, historias de clientes.
+
+---
+
+## 5. La velocidad de carga — lo invisible que sale caro
+
+Una estadística que hace pensar: si tu web tarda más de 3 segundos en cargar, el 53% de los visitantes móviles se van sin haber visto una sola página.
+
+La velocidad afecta a la vez a tu tasa de rebote, tu tasa de conversión y tu posición en los resultados de Google (Core Web Vitals).
+
+Las optimizaciones básicas:
+
+- **Comprime tus imágenes** — usa formatos modernos como WebP
+- **Elige un hosting rápido** — un hosting de 2 EUR/mes no ofrece los mismos tiempos de respuesta que un hosting cloud
+- **Activa el cacheo** a nivel de servidor y de navegador
+- **Minimiza los scripts de terceros** — cada plugin, widget o tracker añade peso
+
+¿No estás seguro de la velocidad de tu web? Herramientas como AeviaSecurity te dan en segundos una puntuación de rendimiento, además de recomendaciones concretas para solucionarlo.
+
+---
+
+## ¿Por dónde empezar?
+
+Si tuvieras que elegir una sola prioridad, empieza por tu web y tu perfil de Google Business. Son los dos puntos de contacto más escrutados por tus clientes potenciales.
+
+Luego mide. Google Analytics 4 es gratis y te dirá exactamente de dónde vienen tus visitantes, qué páginas ven y dónde abandonan.
+
+La presencia online no es una casilla que marcar — es un activo que se construye con el tiempo. Cuanto antes empieces, mayor será tu ventaja.`,
+      },
+    },
   },
   {
     slug: "audit-securite-site-web",
@@ -2717,6 +3309,196 @@ Si vous n'avez jamais fait d'audit de sécurité, commencez par vérifier deux c
 2. Votre certificat SSL est-il valide et à jour ? (cliquez sur le cadenas dans la barre d'adresse)
 
 Ensuite, lancez un audit gratuit pour avoir le tableau complet. Il vaut mieux découvrir une vulnérabilité vous-même que laisser un bot ou un attaquant la découvrir à votre place.`,
+    i18n: {
+      en: {
+        title: "Why you should audit your website's security (and how to do it)",
+        excerpt:
+          "Is your site actually secure? SSL, HTTP headers, OWASP vulnerabilities, DNS — here is what you must check and why it cannot wait.",
+        category: "Cybersécurité",
+        content: `## Web security is not just for big companies
+
+"I'm only a small business, who would want to hack my site?"
+
+That is the most dangerous reasoning there is. The reality is that 43% of cyberattacks target small businesses — not because they are interesting targets in themselves, but because they are easy prey.
+
+The bots scanning the internet for vulnerabilities do not tell the difference between a multinational and a bakery's brochure site. They test the same flaws everywhere, automatically, 24/7.
+
+A compromised site means damaged reputation, exposed customer data, and often weeks of work to put everything back in order — not to mention potential GDPR penalties.
+
+---
+
+## What attackers really look for
+
+Understanding common attack vectors means understanding what to protect. Here are the most frequent on SME sites.
+
+### SSL/HTTPS — the essential baseline
+
+A plain HTTP site (without the "S") transmits all data in the clear over the network. Logins, contact forms, payment information — all interceptable.
+
+Today, browsers explicitly show "Not secure" for sites without HTTPS, which drives visitors away before they have even read your content.
+
+Also check: a misconfigured, expired, or incomplete-chain SSL certificate can be as problematic as no SSL at all.
+
+### OWASP Top 10 flaws
+
+OWASP (Open Web Application Security Project) publishes a yearly ranking of the most exploited web vulnerabilities. The most frequent on CMSs like WordPress or Prestashop:
+
+- **SQL injection** — a poorly protected form field can grant access to your entire database
+- **Cross-Site Scripting (XSS)** — malicious code injected into your pages and run in your visitors' browsers
+- **Outdated components** — a plugin or theme left un-updated with a publicly known flaw
+
+### Security HTTP headers
+
+HTTP headers are instructions your server sends browsers to tell them how to behave. Many sites ignore them entirely.
+
+The critical headers:
+
+- \`Content-Security-Policy\` — defines the allowed sources for scripts, images, styles
+- \`X-Frame-Options\` — stops your site from being loaded in an iframe (clickjacking)
+- \`Strict-Transport-Security\` — forces HTTPS even if someone types "http://"
+- \`X-Content-Type-Options\` — stops browsers from guessing the content type
+
+### DNS security
+
+Little known, but crucial. Misconfigured DNS records can let attackers spoof your domain to send phishing emails in your name.
+
+The protocols to check: **SPF**, **DKIM** and **DMARC** to protect your email reputation, and validating your DNS zone to avoid "DNS hijacking".
+
+---
+
+## How to audit your site without being a developer
+
+The good news: you do not need to be a security expert to get a clear picture of your site's state.
+
+Tools like **AeviaSecurity** can, in under 60 seconds, scan your domain and give you:
+
+- An overall security score out of 100
+- The detail of identified issues, ranked by criticality
+- Concrete recommendations for each flaw
+
+It is a good starting point to know where you stand before going further.
+
+For deeper audits, tools like **Mozilla Observatory**, **Security Headers** or **Qualys SSL Labs** analyze specific aspects in detail.
+
+---
+
+## Continuous monitoring — because a flaw can appear at any time
+
+An audit is a snapshot at a moment in time. Threats evolve. A plugin update can introduce a new vulnerability. An SSL certificate can expire.
+
+Best practices for the long run:
+
+- **Update your CMS and plugins** as soon as security updates are available
+- **Set expiry alerts** for your SSL certificates (think 30 days ahead)
+- **Do a quarterly audit** at minimum — or monthly if your site handles sensitive data
+- **Enable a WAF** (Web Application Firewall) if your host offers one
+
+---
+
+## Where to start?
+
+If you have never done a security audit, start by checking two things tonight:
+
+1. Is your site on HTTPS? (look at the URL in your browser)
+2. Is your SSL certificate valid and up to date? (click the padlock in the address bar)
+
+Then run a free audit to get the full picture. Better to find a vulnerability yourself than let a bot or an attacker find it for you.`,
+      },
+      es: {
+        title: "Por qué auditar la seguridad de tu web (y cómo hacerlo)",
+        excerpt:
+          "¿Tu web es realmente segura? SSL, cabeceras HTTP, vulnerabilidades OWASP, DNS — esto es lo que debes comprobar y por qué no puede esperar.",
+        category: "Cybersécurité",
+        content: `## La seguridad web no es solo para las grandes empresas
+
+"Solo soy una pequeña empresa, ¿quién querría hackear mi web?"
+
+Es el razonamiento más peligroso que existe. La realidad es que el 43% de los ciberataques apuntan a pequeñas estructuras — no porque sean objetivos interesantes en sí, sino porque son presas fáciles.
+
+Los bots que escanean internet en busca de vulnerabilidades no distinguen entre una multinacional y la web de presentación de una panadería. Prueban los mismos fallos en todas partes, automáticamente, 24/7.
+
+Una web comprometida es tu reputación dañada, los datos de tus clientes expuestos, y a menudo semanas de trabajo para volver a poner todo en orden — por no hablar de las posibles sanciones del RGPD.
+
+---
+
+## Qué buscan realmente los atacantes
+
+Entender los vectores de ataque comunes es entender qué proteger. Estos son los más frecuentes en las webs de pymes.
+
+### SSL/HTTPS — la base imprescindible
+
+Una web en HTTP simple (sin la "S") transmite todos los datos en claro por la red. Login, formularios de contacto, información de pago — todo es interceptable.
+
+Hoy, los navegadores muestran explícitamente "No seguro" para las webs sin HTTPS, lo que ahuyenta a los visitantes antes incluso de leer tu contenido.
+
+Comprueba también: un certificado SSL mal configurado, caducado o con una cadena incompleta puede ser tan problemático como la ausencia de SSL.
+
+### Los fallos del OWASP Top 10
+
+OWASP (Open Web Application Security Project) publica cada año el ranking de las vulnerabilidades web más explotadas. Las más frecuentes en CMS como WordPress o Prestashop:
+
+- **Inyección SQL** — un campo de formulario mal protegido puede dar acceso a toda tu base de datos
+- **Cross-Site Scripting (XSS)** — código malicioso inyectado en tus páginas y ejecutado en el navegador de tus visitantes
+- **Componentes obsoletos** — un plugin o un tema sin actualizar con un fallo conocido públicamente
+
+### Las cabeceras HTTP de seguridad
+
+Las cabeceras HTTP son instrucciones que tu servidor envía a los navegadores para indicarles cómo comportarse. Muchas webs las ignoran por completo.
+
+Las cabeceras críticas:
+
+- \`Content-Security-Policy\` — define las fuentes autorizadas para scripts, imágenes, estilos
+- \`X-Frame-Options\` — impide que tu web se cargue en un iframe (clickjacking)
+- \`Strict-Transport-Security\` — fuerza el HTTPS aunque alguien escriba "http://"
+- \`X-Content-Type-Options\` — impide que los navegadores adivinen el tipo de contenido
+
+### La seguridad DNS
+
+Poco conocida, pero crucial. Unos registros DNS mal configurados pueden permitir a los atacantes suplantar tu dominio para enviar emails de phishing en tu nombre.
+
+Los protocolos a comprobar: **SPF**, **DKIM** y **DMARC** para proteger tu reputación de email, y la validación de tu zona DNS para evitar el "DNS hijacking".
+
+---
+
+## Cómo auditar tu web sin ser desarrollador
+
+La buena noticia: no necesitas ser experto en seguridad para tener una visión clara del estado de tu web.
+
+Herramientas como **AeviaSecurity** permiten en menos de 60 segundos escanear tu dominio y obtener:
+
+- Una puntuación global de seguridad sobre 100
+- El detalle de los problemas identificados, por orden de criticidad
+- Recomendaciones concretas para cada fallo
+
+Es un buen punto de partida para saber cómo estás antes de ir más lejos.
+
+Para auditorías más profundas, herramientas como **Mozilla Observatory**, **Security Headers** o **Qualys SSL Labs** permiten analizar aspectos específicos en detalle.
+
+---
+
+## La monitorización continua — porque un fallo puede aparecer en cualquier momento
+
+Una auditoría es una foto en un instante. Las amenazas evolucionan. Una actualización de plugin puede introducir una nueva vulnerabilidad. Un certificado SSL puede caducar.
+
+Las buenas prácticas a largo plazo:
+
+- **Actualiza tu CMS y tus plugins** en cuanto haya actualizaciones de seguridad disponibles
+- **Configura alertas de caducidad** para tus certificados SSL (piénsalo con 30 días de antelación)
+- **Haz una auditoría trimestral** como mínimo — o mensual si tu web trata datos sensibles
+- **Activa un WAF** (Web Application Firewall) si tu hosting lo ofrece
+
+---
+
+## ¿Por dónde empezar?
+
+Si nunca has hecho una auditoría de seguridad, empieza por comprobar dos cosas esta noche:
+
+1. ¿Tu web está en HTTPS? (mira la URL en tu navegador)
+2. ¿Tu certificado SSL es válido y está al día? (haz clic en el candado en la barra de direcciones)
+
+Luego lanza una auditoría gratuita para tener el panorama completo. Mejor descubrir una vulnerabilidad tú mismo que dejar que un bot o un atacante la descubra por ti.`,
+      },
+    },
   },
   {
     slug: "gestion-messages-clients-multicanal",
