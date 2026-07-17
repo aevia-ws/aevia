@@ -1579,6 +1579,176 @@ Stratégies efficaces :
 Un ratio de 1 avis négatif pour 15 avis positifs est gérable. Un ratio de 1 pour 3 devient problématique.
 
 Des outils comme **Aevia Inbox** permettent d'automatiser les demandes d'avis post-achat via WhatsApp ou email, au moment optimal dans le parcours client.`,
+    i18n: {
+      en: {
+        title: "Negative reviews: the method to protect and strengthen your reputation",
+        excerpt:
+          "A bad Google review is not a disaster if you know how to reply. The right response can turn a detractor into an advocate — and reassure dozens of future customers.",
+        category: "Web & Marketing",
+        content: `## Key takeaways in 30 seconds
+
+- **88% of consumers** read reviews before buying — your reply to a negative review is read by every future customer
+- **Never reply in the heat of the moment** — wait at least 30 minutes before answering a negative review
+- **The winning structure**: acknowledge, apologize (without admitting fault if disputable), offer a solution, invite them to continue privately
+- **A bad review handled well** is more reassuring than a page of 100% 5-star reviews (which looks fake)
+
+---
+
+## Why your reply matters as much as the review itself
+
+Here is the reality few founders grasp: when a potential customer reads a negative review about your business, they are not just judging the review — they are also reading your reply. And your reply says a lot about how you treat customers.
+
+A professional, empathetic, constructive reply can fully neutralize a negative review. A bad reply (defensive, aggressive, or absent) makes it worse every time.
+
+The numbers speak: 45% of consumers are more likely to visit a business that responds to its negative reviews. 88% read the replies to negative reviews before deciding.
+
+---
+
+## The 30-minute rule
+
+Never reply to a negative review within 30 minutes of reading it. The immediate emotion — anger, a sense of injustice, the urge to defend yourself — leads to the worst responses.
+
+Wait. Read the review with some distance. Ask yourself: **is there a grain of truth in this feedback, even if the wording is unfair?**
+
+---
+
+## The 4-step reply structure
+
+### 1. Acknowledge the customer's experience
+
+Always start by acknowledging that the customer had a negative experience — even if you are convinced you are not at fault. This is not admitting a mistake, it is showing empathy.
+
+"Hello [first name if available], thank you for sharing your feedback. We are sincerely sorry your experience did not meet your expectations."
+
+### 2. Explain briefly (without getting defensive)
+
+If context can explain the situation without sounding like a hollow excuse, mention it briefly. But resist the natural reflex to counter-attack or minimize.
+
+"That day we were facing an exceptional situation [if true], and we should have communicated with you better."
+
+### 3. Offer a concrete solution
+
+This is what turns a negative exchange into a positive signal. Offer something concrete:
+
+- A direct contact to resolve the issue
+- A refund or goodwill gesture if appropriate
+- An invitation to return with special care
+
+### 4. Invite them to continue privately
+
+Close by moving the exchange to a private channel. It shows you take the matter seriously and avoids a public war.
+
+"We invite you to contact us directly at [number] or [email] so we can find a solution together."
+
+---
+
+## Mistakes to never make
+
+- **Publicly questioning the review's honesty**: "We have no record of your visit" — even if true, it sounds defensive
+- **Replying with complex technical arguments**: other readers do not understand and it looks like an attempt to muddy the waters
+- **Copy-pasting the same generic reply** on every negative review — readers notice
+- **Ignoring reviews** — no reply is perceived as indifference
+
+---
+
+## How to generate more positive reviews
+
+The best defense against negative reviews is enough positive ones that the bad ones look marginal.
+
+Effective strategies:
+- **Ask after every successful job** — by SMS or email, with a direct link to your Google page
+- **Make it easy** — a direct link to the review form, not to your general profile
+- **Ask at the right time** — right after the customer expresses satisfaction, not weeks later
+
+A ratio of 1 negative review to 15 positive is manageable. A ratio of 1 to 3 becomes a problem.
+
+Tools like **Aevia Inbox** can automate post-purchase review requests via WhatsApp or email, at the optimal moment in the customer journey.`,
+      },
+      es: {
+        title: "Reseñas negativas: el método para proteger y reforzar tu reputación",
+        excerpt:
+          "Una mala reseña de Google no es una catástrofe si sabes cómo responder. La respuesta adecuada puede convertir a un detractor en embajador — y tranquilizar a decenas de futuros clientes.",
+        category: "Web & Marketing",
+        content: `## Lo esencial en 30 segundos
+
+- **El 88% de los consumidores** leen las reseñas antes de comprar — tu respuesta a una reseña negativa la leen todos los futuros clientes
+- **Nunca respondas en caliente** — espera al menos 30 minutos antes de responder a una reseña negativa
+- **La estructura ganadora**: reconocer, disculparse (sin admitir culpa si es discutible), proponer una solución, invitar a seguir en privado
+- **Una mala reseña bien gestionada** tranquiliza más que una página con el 100% de reseñas de 5 estrellas (que parece falsa)
+
+---
+
+## Por qué tu respuesta cuenta tanto como la reseña
+
+Esta es la realidad que pocos emprendedores entienden: cuando un cliente potencial lee una reseña negativa sobre tu negocio, no solo juzga la reseña — también lee tu respuesta. Y tu respuesta dice mucho de cómo tratas a tus clientes.
+
+Una respuesta profesional, empática y constructiva puede neutralizar por completo una reseña negativa. Una mala respuesta (defensiva, agresiva o ausente) empeora la situación siempre.
+
+Los números hablan: el 45% de los consumidores son más propensos a visitar un negocio que responde a sus reseñas negativas. El 88% leen las respuestas a las reseñas negativas antes de decidir.
+
+---
+
+## La regla de los 30 minutos
+
+Nunca respondas a una reseña negativa en los 30 minutos siguientes a leerla. La emoción inmediata — enfado, sensación de injusticia, ganas de defenderte — lleva a las peores respuestas.
+
+Espera. Lee la reseña con distancia. Pregúntate: **¿hay algo de verdad en este comentario, aunque la formulación sea injusta?**
+
+---
+
+## La estructura de respuesta en 4 pasos
+
+### 1. Reconoce la experiencia del cliente
+
+Empieza siempre por reconocer que el cliente vivió una experiencia negativa — aunque estés convencido de que no tienes la culpa. No es admitir un error, es mostrar empatía.
+
+"Hola [nombre si está disponible], gracias por compartir tu opinión. Sentimos de verdad que tu experiencia no haya estado a la altura de tus expectativas."
+
+### 2. Explícate brevemente (sin ponerte a la defensiva)
+
+Si hay elementos de contexto que explican la situación sin parecer excusas vacías, menciónalos brevemente. Pero evita el reflejo natural de contraatacar o minimizar.
+
+"Ese día nos enfrentábamos a una situación excepcional [si es cierto], y deberíamos haber comunicado mejor contigo."
+
+### 3. Propón una solución concreta
+
+Es lo que convierte un intercambio negativo en una señal positiva. Ofrece algo concreto:
+
+- Un contacto directo para resolver el problema
+- Un reembolso o un gesto comercial si procede
+- Una invitación a volver con una atención especial
+
+### 4. Invita a seguir en privado
+
+Cierra llevando el intercambio a un canal privado. Muestra que te tomas el tema en serio y evita una guerra pública.
+
+"Te invitamos a contactarnos directamente en el [número] o en [email] para que podamos encontrar una solución juntos."
+
+---
+
+## Errores que nunca debes cometer
+
+- **Poner en duda públicamente la veracidad de la reseña**: "No tenemos constancia de tu visita" — aunque sea cierto, parece defensivo
+- **Responder con argumentos técnicos complejos**: los demás lectores no lo entienden y parece un intento de despistar
+- **Copiar y pegar la misma respuesta genérica** en todas las reseñas negativas — los lectores lo notan
+- **Ignorar las reseñas** — la ausencia de respuesta se percibe como indiferencia
+
+---
+
+## Cómo generar más reseñas positivas
+
+La mejor defensa contra las reseñas negativas es un volumen suficiente de positivas para que las malas parezcan marginales.
+
+Estrategias eficaces:
+- **Pide después de cada trabajo exitoso** — por SMS o email, con un enlace directo a tu página de Google
+- **Facilita el proceso** — un enlace directo al formulario de reseña, no a tu perfil general
+- **Pide en el momento adecuado** — justo después de que el cliente exprese su satisfacción, no semanas más tarde
+
+Una proporción de 1 reseña negativa por cada 15 positivas es manejable. Una de 1 por cada 3 se vuelve un problema.
+
+Herramientas como **Aevia Inbox** permiten automatizar las solicitudes de reseña posventa por WhatsApp o email, en el momento óptimo del recorrido del cliente.`,
+      },
+    },
   },
   {
     slug: "ia-support-client-pme",
@@ -1970,6 +2140,184 @@ Allez sur **haveibeenpwned.com** et entrez votre adresse email professionnelle. 
 Si c'est le cas — et pour beaucoup d'adresses emails actives depuis plusieurs années, c'est le cas — changez immédiatement les mots de passe de tous les services liés à cette adresse et activez le 2FA partout.
 
 Des outils comme **AeviaSecurity** permettent également d'auditer la sécurité globale de votre domaine, incluant la vérification de vos enregistrements email (SPF, DKIM, DMARC) qui protègent votre domaine contre l'usurpation.`,
+    i18n: {
+      en: {
+        title: "Password security: protect your business accounts in 2026",
+        excerpt:
+          "80% of data breaches involve weak or compromised passwords. These simple practices remove most of the risk — without hurting your productivity.",
+        category: "Cybersécurité",
+        content: `## Key takeaways in 30 seconds
+
+- **A reused password** across several services is a major risk — if one service is hacked, all your accounts are
+- **A password manager** (Bitwarden, 1Password) solves 90% of account security problems
+- **Two-factor authentication (2FA)** is the second most important lock — turn it on everywhere
+- **Phishing attacks** target your business accounts first (email, CRM, bank, suppliers)
+
+---
+
+## The reality of account compromises in 2026
+
+In 2023, the Verizon Data Breach Investigations Report estimated that **80% of data breaches involve stolen or weak passwords**. This is not about sophisticated hackers in dark basements — it is often much simpler.
+
+An employee uses the same password for their work email and an online forum. That forum gets hacked. The database is sold on the dark web. A bot tests those credentials against your bank, your host, your CRM.
+
+This scenario repeats millions of times a month. And the target can be any business.
+
+---
+
+## The most common dangerous practices
+
+- **Reusing the same password** across services (or slight variants: "Password1", "Password2")
+- **Using personal information**: date of birth, a child's name, the company name
+- **Storing passwords in an Excel file** or a sticky note on the desk
+- **Sharing passwords by email or WhatsApp** with colleagues
+- **Not changing a password after an employee leaves**
+
+---
+
+## The solution: a password manager
+
+A password manager generates, stores and auto-fills unique, complex passwords for every service. You only need to remember **one master password**.
+
+Recommended options:
+
+- **Bitwarden** — open source, free for the essentials, team version available
+- **1Password** — excellent for teams, with a built-in security audit
+- **Dashlane** — intuitive interface, good for the less tech-savvy
+
+Concrete benefits:
+- 20+ character passwords generated automatically
+- A unique password per service — a breach only affects one account
+- Secure sharing with colleagues without sending the password in plain text
+- Alerts when one of your services suffers a data leak
+
+---
+
+## Two-factor authentication (2FA)
+
+2FA adds a second check on top of the password: a temporary code sent by SMS, generated by an app, or via a physical key.
+
+Even if your password is compromised, the attacker cannot access your account without that second factor.
+
+Turn on 2FA first on:
+- Your business email (Gmail, Outlook)
+- Your host and your domain registrar
+- Your bank account and payment tools (Stripe, PayPal)
+- Your CRM and customer tools
+- Your professional social media accounts
+
+Recommended 2FA apps: **Google Authenticator**, **Authy** (allows backup), **Microsoft Authenticator**.
+
+---
+
+## Best practices for a team
+
+If you have colleagues, account security becomes a collective matter:
+
+- **Use a team manager** (1Password Teams, Bitwarden Business) — access is centralized and revocable
+- **Offboarding protocol**: whenever an employee leaves, immediately change the passwords of the shared accounts they had access to
+- **Named accounts**: avoid shared generic "contact@" or "admin" accounts — create individual accounts with appropriate rights
+- **Quarterly audit**: check who has access to what, and revoke unnecessary access
+
+---
+
+## The basic test to do now
+
+Go to **haveibeenpwned.com** and enter your business email address. This service indexes stolen databases and tells you if your email was compromised in a known leak.
+
+If it was — and for many addresses active for several years, it was — immediately change the passwords of every service tied to that address and enable 2FA everywhere.
+
+Tools like **AeviaSecurity** can also audit your domain's overall security, including checking your email records (SPF, DKIM, DMARC) that protect your domain against spoofing.`,
+      },
+      es: {
+        title: "Seguridad de contraseñas: protege tus cuentas profesionales en 2026",
+        excerpt:
+          "El 80% de las brechas de datos implican contraseñas débiles o comprometidas. Estas prácticas simples eliminan la mayor parte del riesgo — sin afectar a tu productividad.",
+        category: "Cybersécurité",
+        content: `## Lo esencial en 30 segundos
+
+- **Una contraseña reutilizada** en varios servicios es un riesgo mayor — si un servicio es hackeado, todas tus cuentas lo están
+- **Un gestor de contraseñas** (Bitwarden, 1Password) resuelve el 90% de los problemas de seguridad de cuentas
+- **La autenticación de dos factores (2FA)** es el segundo cerrojo más importante — actívala en todas partes
+- **Los ataques de phishing** apuntan primero a tus cuentas profesionales (email, CRM, banco, proveedores)
+
+---
+
+## La realidad de las cuentas comprometidas en 2026
+
+En 2023, el informe Verizon Data Breach Investigations estimaba que **el 80% de las brechas de datos implican contraseñas robadas o débiles**. No es cuestión de hackers sofisticados en sótanos oscuros — a menudo es mucho más simple.
+
+Un empleado usa la misma contraseña en su email profesional y en un foro online. Ese foro es hackeado. La base de datos se vende en la dark web. Un bot prueba esas credenciales contra tu banco, tu hosting, tu CRM.
+
+Este escenario se repite millones de veces al mes. Y el objetivo puede ser cualquier empresa.
+
+---
+
+## Las prácticas peligrosas más comunes
+
+- **Reutilizar la misma contraseña** en varios servicios (o variantes ligeras: "Contraseña1", "Contraseña2")
+- **Usar información personal**: fecha de nacimiento, nombre de un hijo, nombre de la empresa
+- **Guardar las contraseñas en un archivo Excel** o una nota en el escritorio
+- **Compartir contraseñas por email o WhatsApp** con compañeros
+- **No cambiar una contraseña tras la salida de un empleado**
+
+---
+
+## La solución: un gestor de contraseñas
+
+Un gestor de contraseñas genera, guarda y rellena automáticamente contraseñas únicas y complejas para cada servicio. Solo tienes que recordar **una única contraseña maestra**.
+
+Opciones recomendadas:
+
+- **Bitwarden** — código abierto, gratis para lo esencial, versión para equipos disponible
+- **1Password** — excelente para equipos, con una auditoría de seguridad integrada
+- **Dashlane** — interfaz intuitiva, buena para los menos tecnológicos
+
+Ventajas concretas:
+- Contraseñas de 20+ caracteres generadas automáticamente
+- Una contraseña única por servicio — una brecha solo afecta a una cuenta
+- Compartición segura con colaboradores sin transmitir la contraseña en claro
+- Alertas cuando uno de tus servicios sufre una fuga de datos
+
+---
+
+## La autenticación de dos factores (2FA)
+
+El 2FA añade una segunda verificación además de la contraseña: un código temporal enviado por SMS, generado por una app, o mediante una llave física.
+
+Aunque tu contraseña esté comprometida, el atacante no puede acceder a tu cuenta sin ese segundo factor.
+
+Activa el 2FA con prioridad en:
+- Tu email profesional (Gmail, Outlook)
+- Tu hosting y tu registrador de dominio
+- Tu cuenta bancaria y tus herramientas de pago (Stripe, PayPal)
+- Tu CRM y tus herramientas de clientes
+- Tus cuentas profesionales de redes sociales
+
+Apps de 2FA recomendadas: **Google Authenticator**, **Authy** (permite copia de seguridad), **Microsoft Authenticator**.
+
+---
+
+## Buenas prácticas para un equipo
+
+Si tienes colaboradores, la seguridad de las cuentas se vuelve un asunto colectivo:
+
+- **Usa un gestor de equipo** (1Password Teams, Bitwarden Business) — los accesos están centralizados y son revocables
+- **Protocolo de salida**: cada vez que un empleado se va, cambia de inmediato las contraseñas de las cuentas compartidas a las que tenía acceso
+- **Cuentas nominales**: evita las cuentas genéricas compartidas "contact@" o "admin" — crea cuentas individuales con los permisos adecuados
+- **Auditoría trimestral**: revisa quién tiene acceso a qué, y revoca los accesos innecesarios
+
+---
+
+## La prueba básica que hacer ahora
+
+Ve a **haveibeenpwned.com** e introduce tu dirección de email profesional. Este servicio indexa las bases de datos robadas y te indica si tu email fue comprometido en una fuga conocida.
+
+Si es el caso — y para muchas direcciones activas desde hace varios años, lo es — cambia de inmediato las contraseñas de todos los servicios ligados a esa dirección y activa el 2FA en todas partes.
+
+Herramientas como **AeviaSecurity** también permiten auditar la seguridad global de tu dominio, incluida la verificación de tus registros de email (SPF, DKIM, DMARC) que protegen tu dominio contra la suplantación.`,
+      },
+    },
   },
   {
     slug: "tunnel-conversion-landing-page",
