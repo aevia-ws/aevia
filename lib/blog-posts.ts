@@ -108,6 +108,166 @@ Un outil comme **Google PageSpeed Insights** vous donnera en 30 secondes le scor
 **AeviaLaunch** propose une bibliothèque de plus de 200 templates sectoriels pensés pour la performance et la conversion — restauration, conseil, e-commerce, beauté, immobilier, et bien d'autres. Chaque template est mobile-first, personnalisable, et déployé en moins de 7 jours.
 
 La meilleure approche : filtrez par secteur d'activité d'abord, puis par style visuel. Vous réduirez votre sélection à 3-5 candidats sérieux au lieu de vous perdre dans une galerie de plusieurs centaines d'options.`,
+    i18n: {
+      en: {
+        title: "How to choose the right website template for your business",
+        excerpt:
+          "All templates look alike from a distance, but the wrong choice costs you credibility. Here is how to find the one that fits your sector, your brand and your goals.",
+        category: "Web & Marketing",
+        content: `## Key takeaways in 30 seconds
+
+- **Looks alone are not enough** — the design must match your sector and your audience
+- **Mobile first** — over 65% of traffic comes from smartphones, pick a mobile-first template
+- **Speed matters as much as design** — a beautiful but slow site drives visitors away
+- **Adaptability** — your template should hold your brand identity without a full rebuild
+
+---
+
+## The "pretty template" trap
+
+The first reaction when browsing a template library is often: "That one is gorgeous." But choosing on looks alone is like picking a shop because it has nice lighting.
+
+A website template is above all a **communication structure**. Does it surface the right information? Does it guide the visitor toward the action you want? Does it reflect your brand's personality?
+
+---
+
+## Sector fit — rule number one
+
+A law firm and a streetwear shop cannot use the same template. Not because of an absolute rule, but because your visitors have implicit expectations.
+
+- **Professional services, consulting, B2B** — clean design, serious typography, few colors, focus on credibility and references
+- **Retail, food, trades** — product/ambiance photos front and center, a buy or book CTA visible on arrival
+- **Creatives, studios, agencies** — room for visual boldness, animations, full-screen portfolios
+- **Health, wellness, coaching** — soft tones, authentic human photos, a reassuring voice
+
+Before choosing your template, ask: does a visitor who does not know my brand immediately understand what I do and who for?
+
+---
+
+## Mobile-first: non-negotiable
+
+In 2026, designing a site "for desktop then adapting it to mobile" is a fundamental mistake. Over 65% of global web traffic comes from smartphones. And Google indexes the mobile version of your site first for ranking.
+
+A good mobile-first template is recognizable by:
+
+- **Action buttons that are easy to tap** with a thumb — at least 44px tall
+- **Text readable without zooming** — 16px minimum for body copy
+- **A hamburger menu or adapted navigation** — no elements running off-screen
+- **Optimized images** that do not slow loading on mobile networks
+
+Test the template on your phone before adopting it. Not in a desktop tab in responsive mode — on your actual phone.
+
+---
+
+## Customization: how far can you go?
+
+The best template is the one that already looks like what you want, not the one that requires rebuilding everything.
+
+Ask these concrete questions:
+
+- **Are the colors easily swapped** for your brand palette?
+- **Does the section structure match your content** — or will you need to add/remove a lot?
+- **Are the fonts replaceable** or baked irremovably into the design?
+- **Are there useless sections** (FAQ, testimonials, blog) you will never use and that add maintenance weight?
+
+---
+
+## Performance: the decisive invisible
+
+Two visually identical sites can have very different load times depending on the quality of the code behind them.
+
+Templates built on modern frameworks like **Next.js** natively include progressive image loading, smart caching and code splitting. Those built on older systems or overloaded with plugins can weigh 5 to 10 times more.
+
+A tool like **Google PageSpeed Insights** will give you a template's performance score in 30 seconds — before you adopt it.
+
+---
+
+## Where to actually start
+
+**AeviaLaunch** offers a library of over 100 sector templates built for performance and conversion — food, consulting, e-commerce, beauty, real estate and many more. Each template is mobile-first, customizable, and delivered in under 7 days.
+
+The best approach: filter by sector first, then by visual style. You will narrow your shortlist to 3-5 serious candidates instead of getting lost in a gallery of hundreds.`,
+      },
+      es: {
+        title: "Cómo elegir la plantilla de web adecuada para tu actividad",
+        excerpt:
+          "Todas las plantillas se parecen de lejos, pero la mala elección cuesta cara en credibilidad. Cómo encontrar la que encaja con tu sector, tu imagen y tus objetivos.",
+        category: "Web & Marketing",
+        content: `## Lo esencial en 30 segundos
+
+- **La estética por sí sola no basta** — el diseño debe encajar con tu sector y tu público
+- **Primero el móvil** — más del 65% del tráfico viene de smartphones, elige una plantilla mobile-first
+- **La velocidad cuenta tanto como el diseño** — una web bonita pero lenta ahuyenta a los visitantes
+- **Adaptabilidad** — tu plantilla debe acoger tu identidad sin una reforma completa
+
+---
+
+## La trampa de la plantilla "bonita"
+
+La primera reacción al recorrer una biblioteca de plantillas suele ser: "Esa es preciosa." Pero elegir solo por lo estético es como elegir un local porque tiene buena luz.
+
+Una plantilla de web es ante todo una **estructura de comunicación**. ¿Destaca la información adecuada? ¿Guía al visitante hacia la acción que quieres? ¿Refleja la personalidad de tu marca?
+
+---
+
+## La adecuación al sector — la regla número 1
+
+Un despacho de abogados y una tienda de streetwear no pueden usar la misma plantilla. No por una regla absoluta, sino porque tus visitantes tienen expectativas implícitas.
+
+- **Profesiones liberales, consultoría, B2B** — diseño depurado, tipografías serias, pocos colores, énfasis en la credibilidad y las referencias
+- **Comercio, restauración, oficios** — fotos de producto/ambiente en primer plano, un CTA de compra o reserva visible al llegar
+- **Creativos, estudios, agencias** — espacio para la audacia visual, animaciones, portfolios a pantalla completa
+- **Salud, bienestar, coaching** — tonos suaves, fotos humanas auténticas, un tono tranquilizador
+
+Antes de elegir tu plantilla, pregúntate: ¿un visitante que no conoce mi marca entiende de inmediato qué hago y para quién?
+
+---
+
+## Mobile-first: no negociable
+
+En 2026, diseñar una web "para escritorio y luego adaptarla al móvil" es un error fundamental. Más del 65% del tráfico web mundial viene de smartphones. Y Google indexa primero la versión móvil de tu web para el posicionamiento.
+
+Una buena plantilla mobile-first se reconoce por:
+
+- **Botones de acción fáciles de pulsar** con el pulgar — mínimo 44px de alto
+- **Textos legibles sin zoom** — 16px mínimo para el cuerpo de texto
+- **Un menú hamburguesa o navegación adaptada** — sin elementos que se salgan de la pantalla
+- **Imágenes optimizadas** que no ralenticen la carga en redes móviles
+
+Prueba la plantilla en tu teléfono antes de adoptarla. No en una pestaña de escritorio en modo responsive — en tu teléfono real.
+
+---
+
+## La personalización: ¿hasta dónde se puede llegar?
+
+La mejor plantilla es la que ya se parece a lo que quieres, no la que exige reconstruirlo todo.
+
+Hazte estas preguntas concretas:
+
+- **¿Los colores se cambian fácilmente** por tu identidad gráfica?
+- **¿La estructura de secciones encaja con tu contenido** — o habrá que añadir/quitar mucho?
+- **¿Las tipografías son reemplazables** o están integradas de forma irremplazable en el diseño?
+- **¿Hay secciones inútiles** (FAQ, testimonios, blog) que nunca usarás y que añadirán mantenimiento?
+
+---
+
+## Rendimiento: lo invisible decisivo
+
+Dos webs visualmente idénticas pueden tener tiempos de carga muy distintos según la calidad del código que las sostiene.
+
+Las plantillas construidas sobre frameworks modernos como **Next.js** incluyen de forma nativa la carga progresiva de imágenes, el cacheo inteligente y el code splitting. Las construidas sobre sistemas más antiguos o sobrecargadas de plugins pueden pesar 5 a 10 veces más.
+
+Una herramienta como **Google PageSpeed Insights** te dará en 30 segundos la puntuación de rendimiento de una plantilla de ejemplo — antes de adoptarla.
+
+---
+
+## Por dónde empezar en concreto
+
+**AeviaLaunch** ofrece una biblioteca de más de 100 plantillas sectoriales pensadas para el rendimiento y la conversión — restauración, consultoría, e-commerce, belleza, inmobiliaria y muchas más. Cada plantilla es mobile-first, personalizable y desplegada en menos de 7 días.
+
+El mejor enfoque: filtra primero por sector, luego por estilo visual. Reducirás tu selección a 3-5 candidatas serias en lugar de perderte en una galería de cientos de opciones.`,
+      },
+    },
   },
   {
     slug: "rgpd-site-web-obligations-2026",
