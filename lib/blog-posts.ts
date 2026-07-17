@@ -896,6 +896,210 @@ Avant de faire quoi que ce soit, mesurez votre situation de départ avec :
 Puis appliquez les optimisations dans l'ordre ci-dessus (images d'abord, elles ont le plus grand impact) et remesurer après chaque étape.
 
 Un site qui passe de 6 secondes à 2 secondes de chargement peut voir ses conversions augmenter de 30 à 50 %. C'est souvent le meilleur retour sur investissement d'une amélioration technique.`,
+    i18n: {
+      en: {
+        title: "Website speed: the 5 optimizations that really make a difference",
+        excerpt:
+          "A slow site means lost customers and weaker rankings. These 5 concrete actions can cut your load time by 40 to 70% without rebuilding your site.",
+        category: "Web & Marketing",
+        content: `## Key takeaways in 30 seconds
+
+- **Images account for 60 to 80% of a page's weight** — that is where the impact is biggest
+- **A CDN** can cut load time by 30 to 50% for visitors outside your region
+- **Every third-party JavaScript** (chat, analytics, pixel) adds 100 to 500 ms of load
+- **Google Core Web Vitals** have directly affected your search ranking since 2021
+
+---
+
+## The direct link between speed and revenue
+
+This is not just a technical matter. Website speed has a measurable impact on your conversions:
+
+- **+1 second** of load time = **-7%** conversions (Akamai)
+- **53%** of mobile visitors leave if a page takes more than **3 seconds** to load (Google)
+- **Amazon** estimated that every 100 ms of latency costs it **1% of revenue**
+
+And since 2021, Google factors Core Web Vitals (the real load speed users perceive) into its ranking criteria. A slow site is penalized twice: by the visitors who leave, and by Google ranking it lower.
+
+---
+
+## Optimization 1 — Compress and convert your images
+
+Images account for 60 to 80% of a web page's total weight on average. That is often where the gain is most spectacular.
+
+Two concrete actions:
+
+**Convert to WebP**: this modern format produces images of quality equivalent to JPEG/PNG at 25 to 35% less weight. Most modern CMSs handle it natively. For WordPress, plugins like Imagify or ShortPixel convert automatically.
+
+**Resize before uploading**: uploading a 5000x4000px photo to display it at 800px wide loads 6 times more data than needed. Resize your images to their real display size before putting them online.
+
+Target: no image above 200 KB on your site. Full-screen hero images can go up to 400 KB if it is a high-quality photo.
+
+---
+
+## Optimization 2 — Lazy loading
+
+Lazy loading means only loading images as they are about to enter the visitor's viewport — not all at once when the page loads.
+
+In practice, a visitor landing on your homepage only needs the images visible without scrolling. Images further down the page can wait.
+
+Setup is simple with the native HTML attribute: \`loading="lazy"\` on your \`<img>\` tags. Modern frameworks like Next.js apply it automatically.
+
+Typical gain: a 40 to 60% reduction in the initial weight the page loads.
+
+---
+
+## Optimization 3 — Reduce third-party scripts
+
+Every external script you add to your site — Google Analytics, Meta Pixel, Hotjar, Intercom, a chat widget, social share buttons — has a performance cost.
+
+On average, a third-party script adds 100 to 500 ms of load time. If you have 6 or 7, you are already at 1 to 3 seconds of latency from those tools alone.
+
+Concrete actions:
+- **Audit your scripts**: which do you actually use? Disable anything you do not need
+- **Load them deferred** with the \`defer\` or \`async\` attribute on \`<script>\` tags
+- **Use Google Analytics 4 server-side** to avoid the cookie and shrink the client script
+- **Replace Hotjar** with lighter alternatives if you only use basic heatmaps
+
+---
+
+## Optimization 4 — Cache effectively
+
+Caching means storing a version of your page or resources closer to the visitor, so they do not have to be recomputed or re-transferred on every visit.
+
+**Browser caching**: configure \`Cache-Control\` HTTP headers so static resources (images, CSS, JS) are stored in the visitor's browser for 1 to 12 months.
+
+**CDN (Content Delivery Network)**: a CDN like Cloudflare (free for the basics) delivers your content from servers geographically close to your visitors. For a European site with European visitors, that is a 30 to 50% reduction in load times.
+
+---
+
+## Optimization 5 — Move to fast hosting
+
+A 2 EUR/month host on a shared server with 500 other sites does not offer the same performance as a cloud host or a well-configured VPS.
+
+Server response time (TTFB — Time To First Byte) should be under **200 ms** for a properly hosted site. If your TTFB exceeds 500 ms, hosting is probably the problem.
+
+Fast, accessible alternatives:
+- **Vercel or Netlify** for static sites and Next.js apps
+- **Render.com** for apps with a backend
+- **OVH Performance** or **Infomaniak** for WordPress on a VPS
+
+---
+
+## Measure before and after
+
+Before doing anything, measure your starting point with:
+
+- **Google PageSpeed Insights** — score and Core Web Vitals
+- **GTmetrix** — a waterfall chart to see exactly what loads slowly
+- **WebPageTest** — testing from different geographic locations
+
+Then apply the optimizations in the order above (images first, they have the biggest impact) and re-measure after each step.
+
+A site that goes from 6 seconds to 2 seconds of load time can see conversions rise by 30 to 50%. It is often the best return on investment of any technical improvement.`,
+      },
+      es: {
+        title: "Velocidad de la web: las 5 optimizaciones que marcan la diferencia",
+        excerpt:
+          "Una web lenta son clientes perdidos y peor posicionamiento. Estas 5 acciones concretas pueden reducir tu tiempo de carga entre un 40 y un 70% sin rehacer tu web.",
+        category: "Web & Marketing",
+        content: `## Lo esencial en 30 segundos
+
+- **Las imágenes suponen entre el 60 y el 80% del peso de una página** — ahí es donde el impacto es mayor
+- **Una CDN** puede reducir el tiempo de carga entre un 30 y un 50% para los visitantes fuera de tu zona
+- **Cada script JavaScript de terceros** (chat, analytics, píxel) añade de 100 a 500 ms de carga
+- **Los Core Web Vitals de Google** afectan directamente a tu posición en los resultados desde 2021
+
+---
+
+## El vínculo directo entre velocidad e ingresos
+
+No es solo una cuestión técnica. La velocidad de una web tiene un impacto medible en tus conversiones:
+
+- **+1 segundo** de carga = **-7%** de conversiones (Akamai)
+- El **53%** de los visitantes móviles abandonan si una página tarda más de **3 segundos** en cargar (Google)
+- **Amazon** estimó que cada 100 ms de latencia le cuesta un **1% de ingresos**
+
+Y desde 2021, Google incorpora los Core Web Vitals (la velocidad de carga real que perciben los usuarios) a sus criterios de posicionamiento. Una web lenta está doblemente penalizada: por los visitantes que se van y por Google, que la posiciona peor.
+
+---
+
+## Optimización 1 — Comprime y convierte tus imágenes
+
+Las imágenes suponen de media entre el 60 y el 80% del peso total de una página web. A menudo es ahí donde la ganancia es más espectacular.
+
+Dos acciones concretas:
+
+**Convierte a WebP**: este formato moderno produce imágenes de calidad equivalente a JPEG/PNG con un 25-35% menos de peso. La mayoría de los CMS modernos lo gestionan de forma nativa. Para WordPress, plugins como Imagify o ShortPixel convierten automáticamente.
+
+**Redimensiona antes de subir**: subir una foto de 5000x4000px para mostrarla a 800px de ancho carga 6 veces más datos de los necesarios. Redimensiona tus imágenes a su tamaño real de visualización antes de publicarlas.
+
+Objetivo: ninguna imagen por encima de 200 KB en tu web. Las imágenes hero (a pantalla completa) pueden llegar a 400 KB si es una foto de alta calidad.
+
+---
+
+## Optimización 2 — La carga diferida (lazy loading)
+
+El lazy loading consiste en cargar las imágenes solo cuando están a punto de entrar en el viewport del visitante — no todas de golpe al cargar la página.
+
+En la práctica, un visitante que llega a tu home solo necesita las imágenes visibles sin hacer scroll. Las imágenes más abajo pueden esperar.
+
+La implementación es simple con el atributo HTML nativo: \`loading="lazy"\` en tus etiquetas \`<img>\`. Los frameworks modernos como Next.js lo aplican automáticamente.
+
+Ganancia típica: una reducción del 40 al 60% del peso inicial que carga la página.
+
+---
+
+## Optimización 3 — Reduce los scripts de terceros
+
+Cada script externo que añades a tu web — Google Analytics, Meta Pixel, Hotjar, Intercom, un widget de chat, botones para compartir en redes — tiene un coste en rendimiento.
+
+De media, un script de terceros añade de 100 a 500 ms de tiempo de carga. Si tienes 6 o 7, ya estás en 1 a 3 segundos de latencia solo por esas herramientas.
+
+Acciones concretas:
+- **Audita tus scripts**: ¿cuáles usas de verdad? Desactiva todo lo que no sirva
+- **Cárgalos de forma diferida** con el atributo \`defer\` o \`async\` en las etiquetas \`<script>\`
+- **Usa Google Analytics 4 en modo servidor** para evitar la cookie y reducir el script del cliente
+- **Sustituye Hotjar** por alternativas más ligeras si solo usas mapas de calor básicos
+
+---
+
+## Optimización 4 — Cachea de forma eficaz
+
+El cacheo consiste en almacenar una versión de tu página o tus recursos más cerca del visitante, para no tener que recalcularlos o retransferirlos en cada visita.
+
+**Caché de navegador**: configura las cabeceras HTTP \`Cache-Control\` para que los recursos estáticos (imágenes, CSS, JS) se guarden en el navegador del visitante durante 1 a 12 meses.
+
+**CDN (Content Delivery Network)**: una CDN como Cloudflare (gratis para lo básico) distribuye tu contenido desde servidores geográficamente cercanos a tus visitantes. Para una web europea con visitantes europeos, es una reducción del 30 al 50% de los tiempos de carga.
+
+---
+
+## Optimización 5 — Pásate a un hosting rápido
+
+Un hosting de 2 EUR/mes en un servidor compartido con otras 500 webs no ofrece el mismo rendimiento que un hosting cloud o un VPS bien configurado.
+
+El tiempo de respuesta del servidor (TTFB — Time To First Byte) debería ser inferior a **200 ms** para una web bien alojada. Si tu TTFB supera los 500 ms, el hosting es probablemente el problema.
+
+Alternativas rápidas y accesibles:
+- **Vercel o Netlify** para webs estáticas y aplicaciones Next.js
+- **Render.com** para aplicaciones con backend
+- **OVH Performance** o **Infomaniak** para WordPress en un VPS
+
+---
+
+## Mide antes y después
+
+Antes de hacer nada, mide tu punto de partida con:
+
+- **Google PageSpeed Insights** — puntuación y Core Web Vitals
+- **GTmetrix** — un gráfico waterfall para ver exactamente qué carga lento
+- **WebPageTest** — pruebas desde distintas ubicaciones geográficas
+
+Luego aplica las optimizaciones en el orden anterior (las imágenes primero, tienen el mayor impacto) y vuelve a medir tras cada paso.
+
+Una web que pasa de 6 segundos a 2 segundos de carga puede ver aumentar sus conversiones entre un 30 y un 50%. Suele ser el mejor retorno de la inversión de cualquier mejora técnica.`,
+      },
+    },
   },
   {
     slug: "repondre-avis-negatifs-reputation",
