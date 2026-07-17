@@ -469,6 +469,212 @@ Testez votre site maintenant :
 4. **Essayez de cliquer sur le bouton de contact** — est-il facile à trouver ?
 
 Si vous identifiez des problèmes, les outils comme AeviaLaunch permettent de reconstruire entièrement votre site sur des templates optimisés pour la conversion, la vitesse et le mobile — en moins d'une semaine.`,
+    i18n: {
+      en: {
+        title: "5 website mistakes that drive your customers away in 10 seconds",
+        excerpt:
+          "Most sites lose 40 to 60% of their visitors in the very first seconds. These mistakes are avoidable — and often fixable in a few hours.",
+        category: "Web & Marketing",
+        content: `## Key takeaways in 30 seconds
+
+- **Load time** is the first culprit — every extra second costs 7% of conversions
+- **Your core message** must be understood in under 5 seconds, or the visitor leaves
+- **Mobile**: if your site is not flawless on a phone, you lose 65% of your potential visitors
+- **No clear CTA**: if the visitor does not know what to do, they do nothing
+
+---
+
+## Why the first seconds are decisive
+
+According to online behavior studies, the decision to stay or leave is made in the **first 5 to 10 seconds** on a site. This is not a lack of attention from your visitors — it is natural filtering in the face of information overload.
+
+What your visitor is looking for on arrival: "Am I in the right place? Can this site help me?"
+
+If the answer is not immediate and positive, they leave.
+
+---
+
+## Mistake 1 — Load time that is too long
+
+This is the number-one cause of abandonment. The figures are relentless:
+
+- **3 seconds**: 53% of mobile visitors leave (Google, 2023)
+- **Every extra second**: -7% conversions
+- **A site that takes 5 seconds**: loses on average 38% more visitors than a site that takes 2 seconds
+
+The usual culprits: uncompressed images, low-end hosting, too many JavaScript scripts loading at once, unoptimized external fonts.
+
+The quick fix: compress your images to WebP, use a CDN, cut down on plugins or third-party scripts.
+
+---
+
+## Mistake 2 — A fuzzy core message
+
+Your visitor lands on your site. They look at the top of the page. In under 5 seconds, they must understand:
+
+1. What you do
+2. Who you do it for
+3. Why you and not someone else
+
+If your main headline says "Welcome to our site" or your tagline is so conceptual it means nothing concrete, you have a clarity problem.
+
+Test your site with someone who does not know you. Show them your homepage for 5 seconds. Ask what they think you do. The answer tells you everything.
+
+---
+
+## Mistake 3 — A site not optimized for mobile
+
+In 2026, over 65% of web traffic comes from smartphones. Yet many sites were built for desktop and "adapted" to mobile as an afterthought — with disastrous results.
+
+The warning signs:
+- Text too small to read without zooming
+- Buttons too close together (impossible to tap the right one)
+- A menu running off-screen
+- Images that "break" the layout on some devices
+
+Google penalizes non-mobile-friendly sites in its search results. Your customers and Google penalize you at the same time.
+
+---
+
+## Mistake 4 — No visible CTA
+
+CTA = Call To Action. The button or link that tells your visitor what to do next.
+
+"Contact us", "Request a quote", "Book now", "See our services" — whatever the wording, it must be visible immediately, without scrolling.
+
+The classic mistakes:
+- The contact button is only in the footer (nobody goes there)
+- The only CTA is a plain-text email address
+- There are 6 different CTAs on the same page and the visitor does not know which to pick
+
+An effective page has **one main CTA**, repeated 2 to 3 times down the page, worded to say exactly what will happen when clicked.
+
+---
+
+## Mistake 5 — Poor-quality photos and visuals
+
+Generic stock photos (forced smiles, suited handshakes), pixelated images, badly cropped screenshots — they instantly signal "little care, little professionalism".
+
+In 2026, visitors have a finely tuned radar for telling authentic from generic. Photos of your real place, your real team, your real products — even shot on a recent iPhone — convert better than polished stock images.
+
+If you do not have professional photos yet, a few rules for your own: natural light, neutral background, no clutter in the background, horizontal format for banners.
+
+---
+
+## The 5-minute diagnosis
+
+Test your site now:
+
+1. **Google PageSpeed Insights** — enter your URL and check the mobile score (target: 70+)
+2. **Open your site on your phone** — as if you were a first-time visitor
+3. **Time it**: how many seconds to understand what the site offers?
+4. **Try clicking the contact button** — is it easy to find?
+
+If you spot problems, tools like AeviaLaunch let you fully rebuild your site on templates optimized for conversion, speed and mobile — in under a week.`,
+      },
+      es: {
+        title: "5 errores de web que ahuyentan a tus clientes en 10 segundos",
+        excerpt:
+          "La mayoría de las webs pierden entre el 40 y el 60% de sus visitantes en los primeros segundos. Estos errores son evitables — y a menudo se corrigen en pocas horas.",
+        category: "Web & Marketing",
+        content: `## Lo esencial en 30 segundos
+
+- **El tiempo de carga** es el primer culpable — cada segundo de más cuesta un 7% de conversiones
+- **El mensaje principal** debe entenderse en menos de 5 segundos, o el visitante se va
+- **El móvil**: si tu web no es perfecta en el teléfono, pierdes el 65% de tus visitantes potenciales
+- **La falta de un CTA claro**: si el visitante no sabe qué hacer, no hace nada
+
+---
+
+## Por qué los primeros segundos son decisivos
+
+Según los estudios de comportamiento online, la decisión de quedarse o irse se toma en los **primeros 5 a 10 segundos** en una web. No es falta de atención de tus visitantes — es un filtrado natural ante la abundancia de información.
+
+Lo que tu visitante busca al llegar: "¿Estoy en el sitio correcto? ¿Esta web puede ayudarme?"
+
+Si la respuesta no es inmediata y positiva, se va.
+
+---
+
+## Error 1 — Un tiempo de carga demasiado largo
+
+Es la causa número uno de abandono. Las cifras son implacables:
+
+- **3 segundos**: el 53% de los visitantes móviles abandonan (Google, 2023)
+- **Cada segundo de más**: -7% de conversiones
+- **Una web que tarda 5 segundos**: pierde de media un 38% más de visitantes que una que tarda 2 segundos
+
+Los culpables habituales: imágenes sin comprimir, hosting de gama baja, demasiados scripts JavaScript cargando a la vez, tipografías externas sin optimizar.
+
+La solución rápida: comprime tus imágenes a WebP, usa una CDN, reduce los plugins o scripts de terceros.
+
+---
+
+## Error 2 — Un mensaje principal confuso
+
+Tu visitante llega a tu web. Mira la parte superior de la página. En menos de 5 segundos debe entender:
+
+1. Qué haces
+2. Para quién lo haces
+3. Por qué tú y no otro
+
+Si tu titular principal dice "Bienvenido a nuestra web" o tu eslogan es tan conceptual que no significa nada concreto, tienes un problema de claridad.
+
+Prueba tu web con alguien que no te conozca. Muéstrale tu home durante 5 segundos. Pregúntale qué cree que haces. La respuesta te lo dirá todo.
+
+---
+
+## Error 3 — Una web no optimizada para móvil
+
+En 2026, más del 65% del tráfico web viene de smartphones. Sin embargo, muchas webs se diseñaron para escritorio y se "adaptaron" al móvil como último recurso — con resultados desastrosos.
+
+Las señales de alarma:
+- Textos demasiado pequeños para leer sin zoom
+- Botones demasiado juntos (imposible pulsar el correcto)
+- Un menú que se sale de la pantalla
+- Imágenes que "rompen" el layout en algunos dispositivos
+
+Google penaliza las webs no mobile-friendly en sus resultados. Tus clientes y Google te penalizan a la vez.
+
+---
+
+## Error 4 — Sin un CTA visible
+
+CTA = Call To Action (llamada a la acción). El botón o enlace que le dice a tu visitante qué hacer a continuación.
+
+"Contáctanos", "Pedir presupuesto", "Reservar", "Ver nuestros servicios" — sea cual sea la formulación, debe verse de inmediato, sin hacer scroll.
+
+Los errores clásicos:
+- El botón de contacto solo está en el pie de página (nadie va ahí)
+- El único CTA es la dirección de email en texto plano
+- Hay 6 CTA distintos en la misma página y el visitante no sabe cuál elegir
+
+Una página eficaz tiene **un CTA principal**, repetido 2 o 3 veces a lo largo de la página, redactado para decir exactamente qué pasará al hacer clic.
+
+---
+
+## Error 5 — Fotos y elementos visuales de mala calidad
+
+Las fotos de stock genéricas (sonrisas forzadas, apretones de manos en traje), las imágenes pixeladas, las capturas mal recortadas — señalan al instante "poco cuidado, poca profesionalidad".
+
+En 2026, los visitantes tienen un radar muy afinado para distinguir lo auténtico de lo genérico. Fotos de tu lugar real, tu equipo real, tus productos reales — aunque estén hechas con un iPhone reciente — convierten mejor que bonitas fotos de banco de imágenes.
+
+Si aún no tienes fotos profesionales, unas reglas para las caseras: luz natural, fondo neutro, sin desorden al fondo, formato horizontal para las cabeceras.
+
+---
+
+## El diagnóstico en 5 minutos
+
+Prueba tu web ahora:
+
+1. **Google PageSpeed Insights** — introduce tu URL y mira la puntuación móvil (objetivo: 70+)
+2. **Abre tu web en tu teléfono** — como si fueras un visitante por primera vez
+3. **Cronométrate**: ¿en cuántos segundos entiendes lo que ofrece la web?
+4. **Intenta pulsar el botón de contacto** — ¿es fácil de encontrar?
+
+Si detectas problemas, herramientas como AeviaLaunch permiten reconstruir por completo tu web sobre plantillas optimizadas para la conversión, la velocidad y el móvil — en menos de una semana.`,
+      },
+    },
   },
   {
     slug: "whatsapp-business-guide-pme",
