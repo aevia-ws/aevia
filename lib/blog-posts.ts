@@ -364,6 +364,192 @@ AeviaLaunch intègre nativement les pages légales dans les templates — mentio
 - **Cookiebot Scanner** — scan gratuit de votre site pour identifier tous les cookies déposés
 
 Ne sous-estimez pas la conformité RGPD. Ce n'est pas du juridique ésotérique — c'est la base de la confiance que vos visiteurs vous accordent.`,
+    i18n: {
+      en: {
+        title: "GDPR in 2026: what your website absolutely must have",
+        excerpt:
+          "Cookies, legal notice, privacy policy — GDPR obligations are not optional. A clear guide to making your site compliant without drowning in legal jargon.",
+        category: "Cybersécurité",
+        content: `## Key takeaways in 30 seconds
+
+- **3 mandatory documents**: legal notice, privacy policy, and a cookie banner if you track visitors
+- **Consent must be explicit** — pre-ticked boxes have been illegal since 2020
+- **Penalties are real**: EU data protection authorities issue heavy fines every year, including for simple infringements
+- **Getting compliant takes 1 to 2 days** for a standard brochure site
+
+---
+
+## Why GDPR really concerns your small business
+
+"It's for big companies." That is the classic mistake. Data protection authorities oversee small businesses as much as multinationals — and proportional penalties still hurt a small structure.
+
+In practice, if your website:
+- Uses Google Analytics or any other tracking tool
+- Collects emails through a form
+- Sets cookies (advertising, analytics, social media)
+- Processes personal data of European customers
+
+...then GDPR applies to you, and your site must be compliant.
+
+---
+
+## The 3 documents every site must have
+
+### 1. The legal notice
+
+Mandatory for any professional in most EU countries. It should include:
+
+- Name or company name of the site's publisher
+- Registered office or professional address
+- Contact phone and email
+- Company registration number
+- Name and details of the site's host
+- If applicable: intra-EU VAT number
+
+### 2. The privacy policy
+
+Mandatory as soon as you collect personal data (a contact form email, analytics cookies, etc.). It must explain:
+
+- What data you collect
+- Why (the legal basis and purpose)
+- How long you keep it
+- Who has access (subprocessors, hosts, analytics tools)
+- How users can exercise their rights (access, rectification, deletion)
+
+### 3. The cookie consent banner
+
+If your site sets non-essential cookies (analytics, advertising, social media), you must obtain consent before setting them — not after.
+
+The rules in force:
+- Refusing must be as easy as accepting
+- No pre-ticked box
+- The visitor must be able to accept or refuse before browsing
+- Consent must be reversible (the user can change their mind)
+
+---
+
+## The most common mistakes
+
+- **Using Google Analytics without prior consent** — this is illegal. Several European sites have been sanctioned for exactly this.
+- **Having a banner with no clearly visible "Refuse" button** — the close "X" does not count as refusal.
+- **Generic copy-pasted legal notices** without the company's real information.
+- **Ignoring contact forms** — a form's email field collects personal data. You must state how it is used.
+
+---
+
+## What getting compliant actually involves
+
+For a standard brochure site, basic compliance takes **1 to 2 days**:
+
+1. Write the legal notice with your real information
+2. Write a privacy policy tailored to your tools (analytics, CRM, newsletter)
+3. Install a cookie consent management solution (Axeptio, Cookiebot, or an open-source option)
+4. Configure your analytics tool in "cookieless" or "IP anonymization" mode while waiting for consent
+
+AeviaLaunch includes the legal pages natively in its templates — legal notice, privacy policy and cookie management are ready to customize from the start.
+
+---
+
+## Official resources
+
+- **Your national data protection authority** (e.g. CNIL in France, AEPD in Spain) — practical guides on GDPR obligations for small businesses
+- **Cookiebot Scanner** — a free scan of your site to identify every cookie set
+
+Do not underestimate GDPR compliance. It is not esoteric legal work — it is the foundation of the trust your visitors place in you.`,
+      },
+      es: {
+        title: "RGPD en 2026: lo que tu web debe tener sí o sí",
+        excerpt:
+          "Cookies, aviso legal, política de privacidad — las obligaciones del RGPD no son opcionales. Una guía clara para cumplir sin ahogarte en jerga jurídica.",
+        category: "Cybersécurité",
+        content: `## Lo esencial en 30 segundos
+
+- **3 documentos obligatorios**: aviso legal, política de privacidad, y un banner de cookies si rastreas a los visitantes
+- **El consentimiento debe ser explícito** — la casilla premarcada es ilegal desde 2020
+- **Las sanciones son reales**: las autoridades de protección de datos de la UE imponen multas elevadas cada año, incluso por infracciones simples
+- **Cumplir lleva de 1 a 2 días** para una web de presentación estándar
+
+---
+
+## Por qué el RGPD sí concierne a tu pyme
+
+"Es para las grandes empresas." Es el error clásico. Las autoridades de protección de datos vigilan tanto a las pequeñas estructuras como a las multinacionales — y las sanciones proporcionales siguen doliendo a un negocio pequeño.
+
+En la práctica, si tu web:
+- Usa Google Analytics o cualquier otra herramienta de rastreo
+- Recopila emails mediante un formulario
+- Instala cookies (publicitarias, analíticas, de redes sociales)
+- Trata datos personales de clientes europeos
+
+...entonces el RGPD te aplica, y tu web debe cumplir.
+
+---
+
+## Los 3 documentos que toda web debe tener
+
+### 1. El aviso legal
+
+Obligatorio para todo profesional en la mayoría de los países de la UE. Debe incluir:
+
+- Nombre o razón social del editor del sitio
+- Domicilio social o dirección profesional
+- Teléfono y email de contacto
+- Número de registro de la empresa
+- Nombre y datos del proveedor de hosting
+- Si procede: número de IVA intracomunitario
+
+### 2. La política de privacidad
+
+Obligatoria en cuanto recopilas datos personales (el email de un formulario de contacto, cookies analíticas, etc.). Debe explicar:
+
+- Qué datos recopilas
+- Por qué (la base legal y la finalidad)
+- Cuánto tiempo los conservas
+- Quién tiene acceso (encargados del tratamiento, hosting, herramientas de analítica)
+- Cómo pueden los usuarios ejercer sus derechos (acceso, rectificación, supresión)
+
+### 3. El banner de consentimiento de cookies
+
+Si tu web instala cookies no esenciales (analítica, publicidad, redes sociales), debes obtener el consentimiento antes de instalarlas — no después.
+
+Las reglas vigentes:
+- Rechazar debe ser tan fácil como aceptar
+- Sin casilla premarcada
+- El visitante debe poder aceptar o rechazar antes de navegar
+- El consentimiento debe ser reversible (el usuario puede cambiar de opinión)
+
+---
+
+## Los errores más frecuentes
+
+- **Usar Google Analytics sin consentimiento previo** — es ilegal. Varios sitios europeos han sido sancionados por exactamente esto.
+- **Tener un banner sin un botón "Rechazar" claramente visible** — la "X" de cerrar no equivale a rechazo.
+- **Avisos legales genéricos copiados y pegados** sin la información real de la empresa.
+- **Ignorar los formularios de contacto** — el campo de email de un formulario recopila un dato personal. Debes indicar cómo se usa.
+
+---
+
+## Qué implica cumplir en la práctica
+
+Para una web de presentación estándar, el cumplimiento básico lleva **de 1 a 2 días**:
+
+1. Redactar el aviso legal con tu información real
+2. Redactar una política de privacidad adaptada a tus herramientas (analítica, CRM, newsletter)
+3. Instalar una solución de gestión del consentimiento de cookies (Axeptio, Cookiebot, o una opción de código abierto)
+4. Configurar tu herramienta de analítica en modo "sin cookies" o "anonimización de IP" mientras esperas el consentimiento
+
+AeviaLaunch incluye las páginas legales de forma nativa en sus plantillas — aviso legal, política de privacidad y gestión de cookies listas para personalizar desde el principio.
+
+---
+
+## Recursos oficiales
+
+- **Tu autoridad nacional de protección de datos** (p. ej. AEPD en España, CNIL en Francia) — guías prácticas sobre las obligaciones del RGPD para pymes
+- **Cookiebot Scanner** — un escaneo gratuito de tu web para identificar todas las cookies instaladas
+
+No subestimes el cumplimiento del RGPD. No es derecho esotérico — es la base de la confianza que tus visitantes depositan en ti.`,
+      },
+    },
   },
   {
     slug: "erreurs-site-web-font-fuir-clients",

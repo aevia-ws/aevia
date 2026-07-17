@@ -13,9 +13,10 @@ export async function generateMetadata({
   if (!rawPost) return { title: "Article introuvable" };
   const post = localizePost(rawPost, locale);
   const url = `${BASE}/${locale}/blog/${slug}`;
-  const languages = Object.fromEntries(
-    localesForPost(rawPost).map((l) => [l, `${BASE}/${l}/blog/${slug}`])
-  );
+  const languages = {
+    ...Object.fromEntries(localesForPost(rawPost).map((l) => [l, `${BASE}/${l}/blog/${slug}`])),
+    "x-default": `${BASE}/fr/blog/${slug}`,
+  };
   return {
     title: post.title,
     description: post.excerpt,

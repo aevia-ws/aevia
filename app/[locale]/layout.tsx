@@ -50,7 +50,10 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 } },
     alternates: {
       canonical: url,
-      languages: Object.fromEntries(LOCALES.map(l => [l, `${BASE}/${l}`])),
+      languages: {
+        ...Object.fromEntries(LOCALES.map(l => [l, `${BASE}/${l}`])),
+        'x-default': `${BASE}/${routing.defaultLocale}`,
+      },
     },
   };
 }
